@@ -1,7 +1,3 @@
-// import Home from "./components/Home";
-// import Portfolio from "./components/Portfolio";
-// import Services from "./components/Services";
-// import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrolltoTop";
 import { lazy, Suspense } from "react";
