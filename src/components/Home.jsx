@@ -530,7 +530,7 @@ function Home() {
               </div>
 
               <div className="work_feature__carousel">
-                <OwlCarousel className="owl-theme" loop={true} nav={true} margin={20} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png'></img> alt='img' ", "<img src='asset/right.png'></img> alt='img' "]}>
+                <OwlCarousel className="owl-theme" loop={true} nav={true} margin={20} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]}>
                   <div className="item">
 
                     <div className='work_feature__itemContainer row'>
@@ -692,7 +692,7 @@ function Home() {
                 </div>
               </div>
 
-              <OwlCarousel className="owl-theme carousel" loop={true} nav={true} margin={25} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png'></img> alt='img' ", "<img src='asset/right.png'></img> alt='img' "]}>
+              <OwlCarousel className="owl-theme carousel" loop={true} nav={true} margin={25} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]}>
 
                 <div className="item">
                   <div className="carousel__item__container row">
