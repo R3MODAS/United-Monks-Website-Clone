@@ -1,0 +1,40 @@
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  height: 60px;
+  padding: 0 15px;
+
+  .header__ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 15px;
+
+    .header__link {
+      text-transform: uppercase;
+      color: #000;
+      transition: all 0.4s;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      letter-spacing: normal;
+      font-size: 15px;
+
+      &:hover,
+      :active {
+        color: #14b88c !important;
+      }
+    }
+
+    .active {
+      color: #14b88c !important;
+    }
+  }
+}
