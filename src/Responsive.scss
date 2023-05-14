@@ -4284,6 +4284,10 @@
 }
 
 @media (max-width: 420px) {
+  #loader{
+    background-size: 100px;
+  }
+
   #content
     .content__wrapper
     #services__section
