@@ -13,6 +13,7 @@ function Home() {
   const el = useRef(null);
   const [scroll, setScroll] = useState(false);
   const [toggle, setToggle] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const stickyNav = () => {
     let scrollValue = window.scrollY;
@@ -23,6 +24,30 @@ function Home() {
       setScroll(false);
     }
   }
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    const gotoTop = document.querySelector("#gotoTop");
+    if (scrolled > 500) {
+      gotoTop.classList.add("fade");
+      gotoTop.classList.remove("fadeOut");
+      setVisible(true);
+    }
+    else if (scrolled <= 500) {
+      gotoTop.classList.remove("fade");
+      gotoTop.classList.add("fadeOut");
+      setTimeout(() => {
+        setVisible(false);
+      }, 500);
+    }
+  }
+
+  const scrolltoTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   const mouseEvent = (event) => {
 
@@ -78,11 +103,13 @@ function Home() {
 
     window.addEventListener('scroll', stickyNav);
     wrapper.addEventListener("mousemove", mouseEvent);
+    window.addEventListener("scroll", toggleVisible);
     AOS.init();
 
     return () => {
       window.removeEventListener('scroll', stickyNav);
       window.removeEventListener('mousemove', mouseEvent);
+      window.removeEventListener("scroll", toggleVisible);
       typed.destroy();
     }
   }, [])
@@ -901,6 +928,10 @@ function Home() {
 
       {/* ==================== Footer Section ====================== */}
       <Footer />
+
+      <div id='gotoTop' onClick={scrolltoTop} style={{ display: visible ? 'block' : 'none' }}>
+        <i className="ri-arrow-up-s-line"></i>
+      </div>
 
     </div>
   )

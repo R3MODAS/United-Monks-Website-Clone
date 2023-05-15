@@ -5,6 +5,31 @@ import { Link } from 'react-router-dom';
 function Services() {
 
   const [toggle, setToggle] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    const gotoTop = document.querySelector("#gotoTop");
+    if (scrolled > 500) {
+      gotoTop.classList.add("fade");
+      gotoTop.classList.remove("fadeOut");
+      setVisible(true);
+    }
+    else if (scrolled <= 500) {
+      gotoTop.classList.remove("fade");
+      gotoTop.classList.add("fadeOut");
+      setTimeout(() => {
+        setVisible(false);
+      }, 500);
+    }
+  }
+
+  const scrolltoTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
 
   const scrollBehaviour = () => {
     const sliderContainer = document.querySelector(".slider__container");
@@ -41,10 +66,12 @@ function Services() {
     window.addEventListener("scroll", scrollBehaviour);
     const wrapper = document.querySelector(".services__wrapper");
     wrapper.addEventListener("mousemove", MouseMove);
+    window.addEventListener("scroll", toggleVisible);
 
     return () => {
       wrapper.removeEventListener("mousemove", MouseMove);
       window.removeEventListener("scroll", scrollBehaviour);
+      window.removeEventListener("scroll", toggleVisible);
     }
   }, [])
 
@@ -410,6 +437,10 @@ function Services() {
       <div className='section'></div>
 
       <Footer />
+
+      <div id='gotoTop' onClick={scrolltoTop} style={{ display: visible ? 'block' : 'none' }}>
+        <i className="ri-arrow-up-s-line"></i>
+      </div>
 
 
     </div>

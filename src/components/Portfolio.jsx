@@ -5,6 +5,31 @@ import { Link } from 'react-router-dom';
 function Portfolio() {
 
     const [toggle, setToggle] = useState(false);
+    const [visible, setVisible] = useState(false);
+
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        const gotoTop = document.querySelector("#gotoTop");
+        if (scrolled > 500) {
+            gotoTop.classList.add("fade");
+            gotoTop.classList.remove("fadeOut");
+            setVisible(true);
+        }
+        else if (scrolled <= 500) {
+            gotoTop.classList.remove("fade");
+            gotoTop.classList.add("fadeOut");
+            setTimeout(() => {
+                setVisible(false);
+            }, 500);
+        }
+    }
+
+    const scrolltoTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
 
     const MouseMove = (event) => {
         const layer1 = document.querySelector(".layer1");
@@ -42,9 +67,11 @@ function Portfolio() {
         document.title = "Portfolio | Snapshots Of Our Most Prominent Work - United Monks";
         const wrapper = document.querySelector(".wrapper");
         wrapper.addEventListener("mousemove", MouseMove);
+        window.addEventListener("scroll", toggleVisible);
 
         return () => {
             wrapper.removeEventListener("mousemove", MouseMove);
+            window.removeEventListener("scroll", toggleVisible);
         }
     }, [])
 
@@ -452,6 +479,11 @@ function Portfolio() {
             </section>
 
             <Footer />
+
+            <div id='gotoTop' onClick={scrolltoTop} style={{ display: visible ? 'block' : 'none' }}>
+                <i className="ri-arrow-up-s-line"></i>
+            </div>
+
         </div>
     )
 }

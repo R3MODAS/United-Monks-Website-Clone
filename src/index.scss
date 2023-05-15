@@ -17,7 +17,7 @@ body {
   padding: 0 15px 15px;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
@@ -47,15 +47,15 @@ iframe {
 }
 
 label {
-	display: inline-block;
-	font-size: 13px;
-	font-weight: 700;
-	font-family: 'Raleway', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: #555;
-	margin-bottom: 10px;
-	cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 ::selection {
@@ -144,11 +144,11 @@ h6 {
   font-weight: bold;
 }
 
-.gray{
+.gray {
   color: #777;
 }
 
-.black{
+.black {
   color: #000;
 }
 
@@ -164,7 +164,7 @@ h6 {
   background-color: #14b88c;
 }
 
-.bg__white{
+.bg__white {
   background-color: white;
 }
 
@@ -172,41 +172,43 @@ h6 {
   background-color: rgb(0, 33, 72);
 }
 
-.bg__gray{
+.bg__gray {
   background-color: #f3f3f3;
 }
 
-.bg__black{
+.bg__black {
   background-color: #000;
 }
 
-.nopadding{
+.nopadding {
   padding: 0 !important;
 }
 
-.section{
+.section {
   padding-top: 80px;
   position: relative;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-.owl-carousel .owl-item img{
+.owl-carousel .owl-item img {
   display: block;
   width: 100%;
 }
-
-
 
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
@@ -240,7 +242,7 @@ input, button, select, optgroup, textarea {
   padding: 0 !important;
 }
 
-.row{
+.row {
   margin: 0;
 }
 
@@ -260,11 +262,11 @@ input, button, select, optgroup, textarea {
   content: "";
 }
 
-.container{
+.container {
   position: relative;
 }
 
-.parallax{
+.parallax {
   transform: translate3d(0px, 0px, 0px);
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -286,14 +288,14 @@ input, button, select, optgroup, textarea {
   height: 100%;
 }
 
-.small__circle{
+.small__circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   position: absolute;
 }
 
-.large__circle{
+.large__circle {
   position: absolute;
   width: 550px;
   height: 550px;
@@ -327,8 +329,7 @@ input, button, select, optgroup, textarea {
     transform: rotateZ(0) translate3d(0, 1.5%, 0) rotateZ(0);
   }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0)
-      rotateZ(-360deg);
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
     transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
   }
 }
@@ -339,8 +340,7 @@ input, button, select, optgroup, textarea {
     transform: rotateZ(0) translate3d(0, 1.5%, 0) rotateZ(0);
   }
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0)
-      rotateZ(-360deg);
+    -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
     transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
   }
 }
@@ -356,7 +356,7 @@ input, button, select, optgroup, textarea {
   border-radius: 50%;
 }
 
-a img{
+a img {
   border: none;
 }
 
@@ -381,7 +381,7 @@ a img{
 }
 
 // Loader
-#loader{
+#loader {
   width: 100%;
   height: 100%;
   background: #fff url("/asset/unitedmonks-loader.gif") no-repeat center;
@@ -389,4 +389,59 @@ a img{
   top: 0;
   left: 0;
   z-index: 999999;
+}
+
+.overflow {
+  overflow-x: hidden;
+}
+
+#gotoTop {
+  bottom: 30px;
+  border-radius: 50%;
+  color: #000;
+  background-color: #17d5a2;
+  z-index: 299;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 33px;
+  line-height: 47px;
+  text-align: center;
+  top: auto;
+  right: 40px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #17d5a2;
+    opacity: 0.8;
+  }
+
+}
+
+.fade{
+  animation: fade 2s both;
+}
+
+.fadeOut{
+  animation: fadeOut 2s both;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+
+  to{
+    opacity: 0;
+  }
 }

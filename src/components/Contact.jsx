@@ -1,8 +1,35 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from "./Footer";
 import { Link } from 'react-router-dom';
 
 function Contact() {
+
+    const [toggle, setToggle] = useState(false);
+    const [visible, setVisible] = useState(false);
+
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        const gotoTop = document.querySelector("#gotoTop");
+        if (scrolled > 500) {
+            gotoTop.classList.add("fade");
+            gotoTop.classList.remove("fadeOut");
+            setVisible(true);
+        }
+        else if (scrolled <= 500) {     
+            gotoTop.classList.remove("fade");
+            gotoTop.classList.add("fadeOut");
+            setTimeout(() => {
+                setVisible(false);
+            }, 500);
+        }
+    }
+
+    const scrolltoTop = () => {
+        window.scrollTo({
+            top : 0,
+            behavior : "smooth"
+        });
+    };
 
     const MouseMove = (event) => {
         const layer1 = document.querySelector(".layer1");
@@ -29,14 +56,12 @@ function Contact() {
 
     const ScrollUp = () => {
         const sliderContainer = document.querySelector(".slider__container");
-        const sliderText = document.querySelector(".slider__text");
-        const sliderBanner = document.querySelector(".slider__caption");
+        const sliderText = document.querySelector(".slider__text__container");
         let value = window.scrollY;
         let pos1 = -(value * 40 / 100)
 
         sliderContainer.setAttribute('style', 'transform: translate3d(0px, ' + pos1 + 'px, 0px)');
         sliderText.style.opacity = (1 - value / 700);
-        sliderBanner.style.opacity = (1 - value / 700);
     }
 
     useEffect(() => {
@@ -44,21 +69,56 @@ function Contact() {
         const wrapper = document.querySelector(".wrapper");
         window.addEventListener("scroll", ScrollUp);
         wrapper.addEventListener("mousemove", MouseMove);
+        window.addEventListener("scroll",toggleVisible);
 
         return () => {
             window.removeEventListener("scroll", ScrollUp);
             wrapper.removeEventListener("mousemove", MouseMove);
+            window.removeEventListener("scroll",toggleVisible);
         }
 
     }, [])
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper overflow'>
             <div className="left__border"></div>
             <div className="right__border"></div>
 
-            {/* ================== Navbar Section =================== */}
-            <header className='header__section'>
+            <div id="side__panel" onClick={() => setToggle(false)} className={`${toggle && "show__panel"}`}>
+
+                <div className="side__panel__wrap">
+                    <span id='close__menu'>
+                        <i className="ri-close-circle-fill"></i>
+                    </span>
+                    <div className="mobile__logo">
+                        <a href="/" className='retina__logo'>
+                            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+                        </a>
+                    </div>
+
+                    <nav className='side__panel__nav'>
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/">Our Story</Link></li>
+                            <li><Link to="/services">Services</Link></li>
+                            <li><Link to="/">Career</Link></li>
+                            <li><Link to="/portfolio" >Portfolio</Link></li>
+                            <li><Link to="/contact" className='active'>Contact</Link></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            {/* ======================= Navbar Section ===================== */}
+            <header className="header__section">
+
+                <div id="ham__menu" onClick={() => setToggle(true)}>
+                    <div className="bar__one"></div>
+                    <div className="bar__two"></div>
+                    <div className="bar__three"></div>
+                </div>
+
                 <div className="logo">
                     <a href="/" className='standard__logo'>
                         <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
@@ -115,13 +175,17 @@ function Contact() {
                     </div>
 
                     <div className="container clearfix">
-                        <div className="slider__text">
+                        <div className="slider__text__container">
                             <h1> Don’t be a stranger —</h1>
                             <h2>Say hello<span className='green'>.</span></h2>
+                            <div className="slider__caption">A little interest goes a long way. So, if you’re curious about us, want to collaborate with us, or be part of the United Monks team, don’t hesitate to reach out to us. Walk in, call us, or drop us a line, we’ll be glad to hear from you. </div>
                         </div>
-                        <div className="slider__caption">A little interest goes a long way. So,
-                            if you’re curious about us, want to collaborate with us, or be part of the United Monks team, don’t hesitate to reach out to us. Walk in, call us, or drop us a line, we’ll be glad to hear from you. </div>
                     </div>
+
+                    <a href="#content" className='scroll__animation__parent tab__visible'>
+                        <i className="ri-arrow-down-double-line scroll__animation"></i>
+                    </a>
+
                 </div>
             </section>
 
@@ -333,6 +397,10 @@ function Contact() {
             </div>
 
             <Footer />
+
+            <div id='gotoTop' onClick={scrolltoTop} style={{display : visible ? 'block' :  'none' }}>
+                <i className="ri-arrow-up-s-line"></i>
+            </div>
 
 
         </div>

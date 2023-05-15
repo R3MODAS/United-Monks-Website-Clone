@@ -220,6 +220,61 @@
     left: -19%;
     width: 100%;
   }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    width: 500px;
+    height: 500px;
+    top: 16%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    width: 540px;
+    height: 540px;
+    top: 15%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    width: 566px;
+    height: 566px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -129.25px;
+    padding-left: 120px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 65px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 100px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    font-size: 22px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 250px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__container {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -497,6 +552,47 @@
     .small__circle2 {
     right: -45%;
   }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -113px;
+    padding-left: 200px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 60px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 85px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    width: 66%;
+    font-size: 20px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 225px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    h4 {
+    font-size: 30px;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -699,6 +795,60 @@
     img {
     width: 70%;
   }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -96.75px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 55px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 80px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    width: 450px;
+    height: 450px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    width: 430px;
+    height: 430px;
+    top: 18%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .small__circle {
+    left: 30%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    width: 490px;
+    height: 490px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    width: 465px;
+    height: 465px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 215px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -843,6 +993,34 @@
 
   #content .content__wrapper #work__section .work__text h2 {
     font-size: 55px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    top: 25%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    top: 26%;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -105.25px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 200px;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section {
+    padding: 80px 100px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 55px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 75px;
   }
 }
 
@@ -1248,8 +1426,8 @@
     font-size: 163px;
   }
 
-   .left__border,
-   .right__border {
+  .left__border,
+  .right__border {
     display: none;
   }
 
@@ -1459,6 +1637,124 @@
     .map__img
     img {
     width: 87%;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -94px;
+    padding-left: 150px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 50px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 70px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    width: 69%;
+    font-size: 18px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    width: 360px;
+    height: 360px;
+    top: 30%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    width: 360px;
+    height: 360px;
+    left: -23%;
+    top: 30%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .small__circle {
+    bottom: 6%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    width: 480px;
+    height: 480px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    width: 430px;
+    height: 430px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 163px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text p {
+    width: 45%;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section {
+    padding: 80px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__submit
+    input {
+    font-size: 15px;
+  }
+
+  #footer .partnership__container {
+    padding: 20px;
+  }
+
+  #footer .partnership__container .partnership__img ul li {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #footer .partnership__container .partnership__img ul li img {
+    width: 80%;
+  }
+
+  #footer .footer__middle {
+    padding: 50px 0;
+  }
+
+  #footer .footer__middle h2 {
+    font-size: 45px;
+  }
+
+  #footer .footer__middle a {
+    font-size: 26px;
+  }
+
+  #footer .copyright__container {
+    padding: 40px 0 50px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li
+    .checkbox__parent
+    .checkbox__child
+    .label {
+    font-size: 15px;
   }
 }
 
@@ -1993,8 +2289,8 @@
     font-size: 18px;
   }
 
-   .left__border,
-   .right__border {
+  .left__border,
+  .right__border {
     display: none;
   }
 
@@ -2242,6 +2538,174 @@
     width: 40px;
     height: 40px;
   }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    width: 340px;
+    height: 340px;
+    top: 30%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    width: 327px;
+    height: 327px;
+    left: -35%;
+    top: 31%;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .small__circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    width: 385px;
+    height: 385px;
+    top: 10%;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    width: 360px;
+    height: 360px;
+    top: -2%;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    margin-top: -123.75px;
+    padding-left: 70px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 45px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 70px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    width: 83%;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .wrapper #slider__section2 .slider__container .scroll__animation__parent {
+    bottom: 80px;
+    height: 55px;
+    width: 55px;
+    transform: translate(-25%);
+  }
+
+  .wrapper #slider__section2 .slider__container .scroll__animation {
+    background: #14b88c;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    line-height: 1.8;
+    padding: 10px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 120px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    h4 {
+    font-size: 25px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    p {
+    padding: 20px 0 15px;
+    width: 100%;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text p {
+    width: 58%;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section {
+    padding: 60px;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section form h4 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__left {
+    margin: 0 25px 85px 0;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__right
+    .contact__text__left {
+    margin-left: 25px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li {
+    width: 49%;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li
+    .checkbox__parent
+    .checkbox__child
+    .label {
+    font-size: 17px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__submit
+    input {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2310,6 +2774,11 @@
 
   #content {
     top: 0px;
+  }
+
+  .wrapper #slider__section2 {
+    top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -2928,8 +3397,8 @@
     display: none;
   }
 
-   .left__border,
-   .right__border {
+  .left__border,
+  .right__border {
     display: none;
   }
 
@@ -3242,6 +3711,213 @@
 
   #content .content__wrapper #project__section .project__container .map__img {
     display: none;
+  }
+
+  #slider__section .slider__container .scroll__animation__parent {
+    display: block;
+    bottom: 100px;
+  }
+
+  #slider__section .slider__container .scroll__animation {
+    background: #14b88c;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    line-height: 1.8;
+    padding: 10px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    top: 10%;
+    left: -5%;
+    width: 240px;
+    height: 240px;
+    display: block;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .dotted__element {
+    display: none;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .small__circle {
+    bottom: 30%;
+    left: auto;
+    right: 11%;
+    display: block;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    display: none;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    display: none;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    padding-top: 300px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    top: 0px;
+    width: auto;
+    padding-left: 0;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 53px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .wrapper #slider__section2 {
+    height: 80vh;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 100px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    h4 {
+    font-size: 26px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    p {
+    width: 185px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text {
+    padding-bottom: 50px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text h4 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text p {
+    font-size: 18px;
+    padding-top: 15px;
+    width: 100%;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section {
+    margin: 0;
+    float: initial;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .wrapper #content .content__wrapper #contact__us__section form h4 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__left {
+    margin: 0 20px 30px 0;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__right
+    .contact__text__left {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__left
+    .text__group {
+    margin-bottom: 30px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text {
+    padding: 40px 0;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li
+    .checkbox__parent
+    .checkbox__child
+    .label {
+    margin: 0 0 15px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__submit
+    input {
+    font-size: 13px;
   }
 }
 
@@ -3871,8 +4547,8 @@
     display: none;
   }
 
-   .left__border,
-   .right__border {
+  .left__border,
+  .right__border {
     display: none;
   }
 
@@ -4198,6 +4874,149 @@
   #content .content__wrapper #project__section .project__container .map__img {
     display: none;
   }
+
+  .wrapper #slider__section2 .slider__container .parallax .large__circle {
+    top: 10%;
+    left: -13%;
+    width: 240px;
+    height: 240px;
+    display: block;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .largest__circle {
+    display: none;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .parallax
+    .dotted__green__element {
+    display: none;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container {
+    top: 0px;
+    width: auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    margin-top: 0px;
+    padding-left: 20px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h1 {
+    font-size: 24px;
+  }
+
+  .wrapper #slider__section2 .slider__container .slider__text__container h2 {
+    font-size: 53px;
+  }
+
+  .wrapper
+    #slider__section2
+    .slider__container
+    .slider__text__container
+    .slider__caption {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .wrapper #slider__section2 .slider__container .parallax .small__circle {
+    width: 40px;
+    height: 40px;
+    bottom: 50%;
+    left: auto;
+    right: 11%;
+    display: block;
+  }
+
+  .wrapper #slider__section2 {
+    height: 55vh;
+  }
+
+  .wrapper #content .content__wrapper #contact__section h2 {
+    font-size: 70px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    h4 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__section
+    .contact__container
+    .contact__child
+    .contact__address
+    p {
+    width: 185px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text {
+    padding-bottom: 50px;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text h4 {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .wrapper #content .content__wrapper #contact__section .contact__text p {
+    font-size: 18px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.wrapper #content .content__wrapper #contact__us__section {
+  margin: 0;
+  float: initial;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form h4 {
+  font-size: 24px;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__left {
+  margin: 0 0 30px;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__right .contact__text__left {
+  margin-right: 0;
+    margin-left: 0;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__left .text__group {
+  margin-bottom: 30px;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__form__text {
+  padding: 40px 0;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__checkbox ul li {
+  display: block;
+  width: 100%;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__checkbox ul li .checkbox__parent .checkbox__child .label {
+  margin: 0 0 15px;
+}
+
+.wrapper #content .content__wrapper #contact__us__section form .contact__submit input {
+  font-size: 13px;
+}
+
 }
 
 @media (max-width: 470px) {
@@ -4284,7 +5103,7 @@
 }
 
 @media (max-width: 420px) {
-  #loader{
+  #loader {
     background-size: 100px;
   }
 
@@ -4367,6 +5186,11 @@
     .pf__nine {
     top: 6700px;
   }
+
+  .wrapper #slider__section2 {
+    height: 65vh;
+  }
+
 }
 
 @media (max-width: 380px) {
