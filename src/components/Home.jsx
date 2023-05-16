@@ -214,37 +214,37 @@ function Home() {
 
                 }}>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/1.png" alt="img" />
+                    <img src="asset/clients/1.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/2.png" alt="img" />
+                    <img src="asset/clients/2.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/3.png" alt="img" />
+                    <img src="asset/clients/3.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/4.png" alt="img" />
+                    <img src="asset/clients/4.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/5.png" alt="img" />
+                    <img src="asset/clients/5.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/6.png" alt="img" />
+                    <img src="asset/clients/6.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/7.png" alt="img" />
+                    <img src="asset/clients/7.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/8.png" alt="img" />
+                    <img src="asset/clients/8.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/9.png" alt="img" />
+                    <img src="asset/clients/9.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/10.png" alt="img" />
+                    <img src="asset/clients/10.png" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/clients/11.png" alt="img" />
+                    <img src="asset/clients/11.png" alt="img" />
                   </div>
                 </OwlCarousel>
               </div>
