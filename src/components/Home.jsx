@@ -260,7 +260,7 @@ function Home() {
 
               <h2 className='looking__title'>Looking for a team to <br />
                 <span ref={el}></span><span className='typed-cursor'>|</span> <br />
-                <a href="/">We can help<span className='green'>.</span></a>
+                <Link to="/services">We can help<span className='green'>.</span></Link>
               </h2>
 
               {/* Looking Paragraph */}
@@ -373,7 +373,7 @@ function Home() {
               </div>
 
               <div className="goodAt__button" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
-                <a href="/">know more</a>
+                <Link to="/services">know more</Link>
               </div>
 
             </div>
@@ -907,15 +907,15 @@ function Home() {
 
               <div className="call__left bg__blue">
                 <div className="call__left__content">
-                  <a href="/" className='text-white'>
+                  <Link to="/portfolio" className='text-white'>
                     Take a look at what <br /> <span>we've made for others.</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
               <div className="call__right bg__green">
                 <div className="call__right__content">
-                  <a href="/">Let’s build something if <br /><span>you are convinced.</span></a>
+                  <Link to="/contact">Let’s build something if <br /><span>you are convinced.</span></Link>
                 </div>
               </div>
 

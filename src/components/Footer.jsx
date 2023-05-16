@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import 'remixicon/fonts/remixicon.css'
 
 
@@ -32,7 +33,7 @@ function Footer() {
             <div className="container">
                 <div className="footer__middle">
                     <h2 className='green'>Great is Just the Beginning</h2>
-                    <a href="/" className='text-white'>Let’s talk business</a>
+                    <Link to="/contact" className='text-white'>Let’s talk business</Link>
                 </div>
             </div>
             <div className="copyright__container">

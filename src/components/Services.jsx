@@ -379,7 +379,9 @@ function Services() {
                         <li>Clear deliverables in accordance to the amount paid</li>
                         <li>No initial setup cost</li>
                       </ul>
-                      <button aria-label='Contact us'>Contact us</button>
+                      <Link to="/contact">
+                        <button aria-label='Contact us'>Contact us</button>
+                      </Link>
                     </div>
                   </div>
 
@@ -395,7 +397,9 @@ function Services() {
                         <li>Better understanding of cost per module / feature</li>
                         <li>Easier to add new tasks at additional costs</li>
                       </ul>
-                      <button aria-label='Contact us'>Contact us</button>
+                      <Link to="/contact">
+                        <button aria-label='Contact us'>Contact us</button>
+                      </Link>
                     </div>
                   </div>
 
@@ -417,7 +421,7 @@ function Services() {
                 <div className="circle__container bg__green">
                   <div className="circle__child">
                     <h2>Let’s get cracking<br />on your project.</h2>
-                    <button aria-label='Contact us' className='bg__black text-white'>Contact us</button>
+                    <Link to="/contact"><button aria-label='Contact us' className='bg__black text-white'>Contact us</button></Link> 
                   </div>
                   <div className='small__circle bg__green'></div>
                   <div className="small__circle2 bg__green"></div>
