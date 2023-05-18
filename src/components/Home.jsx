@@ -133,7 +133,7 @@ function Home() {
           <nav className='side__panel__nav'>
             <ul>
               <li><Link to="/" className='active'>Home</Link></li>
-              <li><Link to="/">Our Story</Link></li>
+              <li><Link to="/story">Our Story</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/">Career</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
@@ -164,7 +164,7 @@ function Home() {
 
         <ul className='nav__menu'>
           <li><Link to='/' className={`nav__link active ${scroll && "black"}`}>home</Link></li>
-          <li><Link to="/" className={`nav__link ${scroll && "black"}`}>our story</Link></li>
+          <li><Link to="/story" className={`nav__link ${scroll && "black"}`}>our story</Link></li>
           <li><Link to="/services" className={`nav__link ${scroll && "black"}`}>services</Link></li>
           <li><Link to="/" className={`nav__link ${scroll && "black"}`}>career</Link></li>
           <li><Link to='/portfolio' className={`nav__link ${scroll && "black"}`}>portfolio</Link></li>
@@ -176,7 +176,7 @@ function Home() {
       {/* ====================== Hero Section ========================== */}
       <section id='hero__section' className='clearfix bg__blue'>
         <div className="hero__right">
-          <h1>Master crafters of digital experiences</h1>
+          <h1 className='letters'>Master crafters of digital experiences</h1>
         </div>
         <div className="hero__left">
           <img loading='lazy' src="asset/unitedmonks-banner-logo.svg" alt="United Monks" />

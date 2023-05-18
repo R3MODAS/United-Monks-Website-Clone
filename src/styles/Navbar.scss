@@ -23,8 +23,9 @@
       color: #000;
       transition: all 0.4s;
       font-weight: 700;
-      letter-spacing: normal !important;
-      font-size: 14px !important;
+      letter-spacing: normal;
+      font-size: 14px;
+      font-family: 'Raleway', sans-serif;
 
       &:hover,
       :active {

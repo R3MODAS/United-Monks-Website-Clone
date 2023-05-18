@@ -97,7 +97,7 @@ function Services() {
           <nav className='side__panel__nav'>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Our Story</Link></li>
+              <li><Link to="/story">Our Story</Link></li>
               <li><Link to="/services" className='active'>Services</Link></li>
               <li><Link to="/">Career</Link></li>
               <li><Link to="/portfolio" >Portfolio</Link></li>
@@ -128,7 +128,7 @@ function Services() {
 
         <ul className='header__ul'>
           <li><Link to='/' className='header__link' >home</Link></li>
-          <li><Link to='/' className='header__link' >our story</Link></li>
+          <li><Link to='/story' className='header__link' >our story</Link></li>
           <li><Link to='/services' className='header__link active' >services</Link></li>
           <li><Link to='/' className='header__link' >career</Link></li>
           <li><Link to='/portfolio' className='header__link' >portfolio</Link></li>
@@ -421,7 +421,7 @@ function Services() {
                 <div className="circle__container bg__green">
                   <div className="circle__child">
                     <h2>Let’s get cracking<br />on your project.</h2>
-                    <Link to="/contact"><button aria-label='Contact us' className='bg__black text-white'>Contact us</button></Link> 
+                    <Link to="/contact"><button aria-label='Contact us' className='bg__black text-white'>Contact us</button></Link>
                   </div>
                   <div className='small__circle bg__green'></div>
                   <div className="small__circle2 bg__green"></div>

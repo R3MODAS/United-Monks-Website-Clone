@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -11,7 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #000;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: left;
   background-color: #fff;
   padding: 0 15px 15px;
@@ -39,11 +41,11 @@ iframe {
 }
 
 .raleway {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 label {
@@ -302,6 +304,22 @@ textarea {
   border-radius: 50%;
 }
 
+.medium__circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dotted__green {
+  background: url("/asset/green-plus-bg.png");
+  background-position: top left;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  border-radius: 50%;
+}
+
 .some__space1 {
   height: 100%;
   position: absolute;
@@ -411,37 +429,70 @@ a img {
   right: 40px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background-color: #17d5a2;
     opacity: 0.8;
   }
-
 }
 
-.fade{
+.fade {
   animation: fade 2s both;
 }
 
-.fadeOut{
+.fadeOut {
   animation: fadeOut 2s both;
 }
 
 @keyframes fade {
-  from{
+  from {
     opacity: 0;
   }
 
-  to{
+  to {
     opacity: 1;
   }
 }
 
-@keyframes fadeOut{
-  from{
+@keyframes fadeOut {
+  from {
     opacity: 1;
   }
 
-  to{
+  to {
     opacity: 0;
+  }
+}
+
+.letters {
+  display: inline-block;
+}
+
+.desktop__visible {
+  display: block;
+}
+
+.tab__visible {
+  display: none;
+}
+
+.mobile__visible {
+  display: none;
+}
+
+@keyframes green {
+  0% {
+    box-shadow: 0 0 0 2px rgba(20, 184, 140, 0.3);
+  }
+  25% {
+    box-shadow: 0 0 0 10px rgba(20, 184, 140, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(20, 184, 140, 0.2);
+  }
+  75% {
+    box-shadow: 0 0 0 18px rgba(20, 184, 140, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(20, 184, 140, 0);
   }
 }

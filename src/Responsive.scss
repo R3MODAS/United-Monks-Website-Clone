@@ -275,6 +275,45 @@
   .wrapper #content .content__wrapper #contact__section .contact__container {
     padding-bottom: 20px;
   }
+
+  .wrapper #slider__section .slider__story {
+    margin-top: -203px;
+    padding-left: 120px;
+}
+
+#slider__section .slider__container .banner__caption {
+  padding-left: 24%;
+  width: 86%;
+  font-size: 22px;
+}
+
+.wrapper #how__it__started__section h2 {
+  font-size: 100px;
+}
+
+.wrapper #our__values__section h2 {
+  font-size: 65px;
+}
+
+.wrapper #our__values__section .parallax .large__circle {
+  bottom: -25%;
+  left: -41%;
+}
+
+.wrapper #our__values__section .parallax .dotted__element {
+  bottom: -40%;
+    left: -32%;
+}
+
+.wrapper .how__we__work__container .how__we__work__left {
+  padding-top: 80px;
+}
+
+.wrapper .how__we__work__container .how__we__work__left h2 {
+  width: 69%;
+  font-size: 65px;
+}
+
 }
 
 @media (max-width: 1440px) {
@@ -4974,49 +5013,96 @@
     font-size: 18px;
     padding-top: 15px;
     width: 100%;
-}
+  }
 
-.wrapper #content .content__wrapper #contact__us__section {
-  margin: 0;
-  float: initial;
-  width: 100%;
-  padding: 40px 20px;
-}
+  .wrapper #content .content__wrapper #contact__us__section {
+    margin: 0;
+    float: initial;
+    width: 100%;
+    padding: 40px 20px;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form h4 {
-  font-size: 24px;
-}
+  .wrapper #content .content__wrapper #contact__us__section form h4 {
+    font-size: 24px;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__left {
-  margin: 0 0 30px;
-}
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__left {
+    margin: 0 0 30px;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__right .contact__text__left {
-  margin-right: 0;
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__right
+    .contact__text__left {
+    margin-right: 0;
     margin-left: 0;
-}
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__form__text .contact__text__left .text__group {
-  margin-bottom: 30px;
-}
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text
+    .contact__text__left
+    .text__group {
+    margin-bottom: 30px;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__form__text {
-  padding: 40px 0;
-}
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__form__text {
+    padding: 40px 0;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__checkbox ul li {
-  display: block;
-  width: 100%;
-}
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li {
+    display: block;
+    width: 100%;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__checkbox ul li .checkbox__parent .checkbox__child .label {
-  margin: 0 0 15px;
-}
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__checkbox
+    ul
+    li
+    .checkbox__parent
+    .checkbox__child
+    .label {
+    margin: 0 0 15px;
+  }
 
-.wrapper #content .content__wrapper #contact__us__section form .contact__submit input {
-  font-size: 13px;
-}
-
+  .wrapper
+    #content
+    .content__wrapper
+    #contact__us__section
+    form
+    .contact__submit
+    input {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 470px) {
@@ -5190,7 +5276,6 @@
   .wrapper #slider__section2 {
     height: 65vh;
   }
-
 }
 
 @media (max-width: 380px) {
