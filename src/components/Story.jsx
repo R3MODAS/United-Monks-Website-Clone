@@ -181,12 +181,14 @@ function Story() {
                                     the best ones<span className="green">.</span>
                                 </span>
                                 <span className="tab__visible">
-                                    Each Service<br /> is a quest for perfection,<br />
-                                    And we deliver<br /> every single time<span className="green">.</span>
+                                We know the value <br /> of great experiences,
+                                    <br />  so we build<br />
+                                    the best ones<span className="green">.</span>
                                 </span>
                                 <span className="mobile__visible">
-                                    Each Service is a quest for perfection,
-                                    And we deliver every single time<span className="green">.</span>
+                                We know the value <br /> of great experiences,
+                                    <br />  so we build<br />
+                                    the best ones<span className="green">.</span>
                                 </span>
                             </h1>
                             <div className="banner__story banner__caption">Simplicity is the mark of a true genius, and of new age digital monks (Meaning us!). Anybody can find complex solutions to complex problems. But it takes exceptional skill to look for the perfection that lies in simplicity. And that’s what our developers, designers, and strategists love to do. </div>
@@ -392,7 +394,7 @@ function Story() {
 
             </div >
 
-            <div className='section'></div>
+            <div className='extrapadding'></div>
 
 
             {/* ==================== Footer Section ====================== */}

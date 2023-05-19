@@ -1,3 +1,15 @@
+.desktop__visible {
+  display: block;
+}
+
+.tab__visible {
+  display: none;
+}
+
+.mobile__visible {
+  display: none;
+}
+
 .wrapper {
   #slider__section {
     .layer4 {
@@ -31,17 +43,7 @@
     }
   }
 
-  .desktop__visible {
-    display: block;
-  }
 
-  .tab__visible {
-    display: none;
-  }
-
-  .mobile__visible {
-    display: none;
-  }
 
   #content {
     position: relative;
