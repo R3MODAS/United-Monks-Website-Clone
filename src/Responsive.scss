@@ -4319,6 +4319,7 @@
     input {
     font-size: 13px;
   }
+  
 
   .wrapper #slider__section .slider__container .parallax .large__circle {
     width: 280px;
@@ -4436,22 +4437,21 @@
 
   .wrapper .how__we__work__container .how__we__work__right .list__item label {
     font-size: 22px;
-}
+  }
 
-.wrapper .how__we__work__container .how__we__work__right .list__item p {
-  font-size: 14px;
-}
+  .wrapper .how__we__work__container .how__we__work__right .list__item p {
+    font-size: 14px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right button {
-  margin-top: 40px;
-  font-size: 13px;
-  padding: 10px 20px;
-}
+  .wrapper .how__we__work__container .how__we__work__right button {
+    margin-top: 40px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
 
-.extrapadding {
-  padding-top: 30px;
-}
-
+  .extrapadding {
+    padding-top: 30px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -5600,119 +5600,126 @@
 
   .wrapper #slider__section .medium__circle {
     display: none;
-}
+  }
 
-.wrapper #slider__section .dotted__green {
-  display: none;
-}
+  .wrapper #slider__section .dotted__green {
+    display: none;
+  }
 
-.wrapper #slider__section .banner__story {
-  font-size: 16px;
+  .wrapper #slider__section .banner__story {
+    font-size: 16px;
     margin-top: 25px;
     float: left;
     width: 96%;
     padding-left: 0;
+  }
+
+  .wrapper #slider__section{
+    height: 68vh;
+  }
+
+  .wrapper #slider__section .slider__story {
+    margin-top: -170px;
 }
 
-.wrapper #how__it__started__section h2 {
-  font-size: 55px;
-}
+  .wrapper #how__it__started__section h2 {
+    font-size: 55px;
+  }
 
-.wrapper #how__it__started__section p {
-  margin: 20px 0 50px;
-  font-size: 15px;
-  width: 100%;
-}
+  .wrapper #how__it__started__section p {
+    margin: 20px 0 50px;
+    font-size: 15px;
+    width: 100%;
+  }
 
-.wrapper #our__values__section {
-  padding: 50px 0;
-}
+  .wrapper #our__values__section {
+    padding: 50px 0;
+  }
 
-.wrapper #our__values__section h2 {
-  font-size: 40px;
-}
+  .wrapper #our__values__section h2 {
+    font-size: 40px;
+  }
 
-.wrapper #our__values__section p {
-  font-size: 15px;
-  width: 100%;
-}
+  .wrapper #our__values__section p {
+    font-size: 15px;
+    width: 100%;
+  }
 
-.wrapper #our__values__section .values__point .value__unit label {
-  font-size: 100px;
-}
+  .wrapper #our__values__section .values__point .value__unit label {
+    font-size: 100px;
+  }
 
-.wrapper #our__values__section .values__point .value__unit p {
-  font-size: 18px;
-}
+  .wrapper #our__values__section .values__point .value__unit p {
+    font-size: 18px;
+  }
 
-.wrapper .how__we__work__container {
-  padding: 0 0 50px;
-}
+  .wrapper .how__we__work__container {
+    padding: 0 0 50px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__left {
-  padding-top: 0;
-}
+  .wrapper .how__we__work__container .how__we__work__left {
+    padding-top: 0;
+  }
 
-.wrapper .how__we__work__container .how__we__work__left p {
-  font-size: 15px;
-  width: 100%;
-}
+  .wrapper .how__we__work__container .how__we__work__left p {
+    font-size: 15px;
+    width: 100%;
+  }
 
-.wrapper .how__we__work__container .how__we__work__left h2 {
-  font-size: 38px;
-  width: 280px;
-}
+  .wrapper .how__we__work__container .how__we__work__left h2 {
+    font-size: 38px;
+    width: 280px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__left button {
-  font-size: 13px;
-  padding: 10px 20px;
-}
+  .wrapper .how__we__work__container .how__we__work__left button {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__img {
-  display: none;
-}
+  .wrapper .how__we__work__container .how__we__work__img {
+    display: none;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right {
-  padding-top: 25px;
-  margin-left: 0;
-}
+  .wrapper .how__we__work__container .how__we__work__right {
+    padding-top: 25px;
+    margin-left: 0;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right::before{
-      content: "";
+  .wrapper .how__we__work__container .how__we__work__right::before {
+    content: "";
     display: block;
     border-left: 5px dashed #000;
     position: absolute;
     top: 35%;
     left: 25px;
     height: 52%;
-}
+  }
 
-.wrapper .how__we__work__container .how__we__work__right .list__item::before {
-  width: 15px;
-  height: 15px;
-  top: 12px;
-  left: 0;
-}
+  .wrapper .how__we__work__container .how__we__work__right .list__item::before {
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    left: 0;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right .list__item label {
-  font-size: 22px;
-}
+  .wrapper .how__we__work__container .how__we__work__right .list__item label {
+    font-size: 22px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right .list__item p {
-  font-size: 14px;
-}
+  .wrapper .how__we__work__container .how__we__work__right .list__item p {
+    font-size: 14px;
+  }
 
-.wrapper .how__we__work__container .how__we__work__right button {
-  margin-top: 40px;
-  font-size: 13px;
-  padding: 10px 20px;
-}
+  .wrapper .how__we__work__container .how__we__work__right button {
+    margin-top: 40px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
 
-.extrapadding {
-  padding-top: 20px;
-  position: relative;
-}
-
+  .extrapadding {
+    padding-top: 20px;
+    position: relative;
+  }
 }
 
 @media (max-width: 470px) {
