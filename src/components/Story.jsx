@@ -73,11 +73,13 @@ function Story() {
         window.addEventListener("scroll", toggleVisible);
         const wrapper = document.querySelector(".wrapper");
         wrapper.addEventListener("mousemove", MouseMove);
-        window.addEventListener("scroll", scrollBehaviour)
+        window.addEventListener("scroll", scrollBehaviour);
         AOS.init();
 
         return () => {
             window.removeEventListener("scroll", toggleVisible);
+            wrapper.removeEventListener("mousemove", MouseMove);
+            window.removeEventListener("scroll", scrollBehaviour);
         }
     }, [])
 
@@ -105,7 +107,7 @@ function Story() {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/story" className='active'>Our Story</Link></li>
                             <li><Link to="/services">Services</Link></li>
-                            <li><Link to="/">Career</Link></li>
+                            <li><Link to="/career">Career</Link></li>
                             <li><Link to="/portfolio">Portfolio</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
@@ -134,9 +136,9 @@ function Story() {
 
                 <ul className='header__ul'>
                     <li><Link to='/' className='header__link' >home</Link></li>
-                    <li><Link to='/' className='header__link active' >our story</Link></li>
+                    <li><Link to='/story' className='header__link active' >our story</Link></li>
                     <li><Link to='/services' className='header__link' >services</Link></li>
-                    <li><Link to='/' className='header__link' >career</Link></li>
+                    <li><Link to='/career' className='header__link' >career</Link></li>
                     <li><Link to='/portfolio' className='header__link' >portfolio</Link></li>
                     <li><Link to='/contact' className='header__link' >contact</Link></li>
                 </ul>

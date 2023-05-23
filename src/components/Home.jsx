@@ -100,7 +100,6 @@ function Home() {
     })
 
     const wrapper = document.querySelector(".wrapper");
-
     window.addEventListener('scroll', stickyNav);
     wrapper.addEventListener("mousemove", mouseEvent);
     window.addEventListener("scroll", toggleVisible);
@@ -135,7 +134,7 @@ function Home() {
               <li><Link to="/" className='active'>Home</Link></li>
               <li><Link to="/story">Our Story</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/">Career</Link></li>
+              <li><Link to="/career">Career</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
@@ -166,7 +165,7 @@ function Home() {
           <li><Link to='/' className={`nav__link active ${scroll && "black"}`}>home</Link></li>
           <li><Link to="/story" className={`nav__link ${scroll && "black"}`}>our story</Link></li>
           <li><Link to="/services" className={`nav__link ${scroll && "black"}`}>services</Link></li>
-          <li><Link to="/" className={`nav__link ${scroll && "black"}`}>career</Link></li>
+          <li><Link to="/career" className={`nav__link ${scroll && "black"}`}>career</Link></li>
           <li><Link to='/portfolio' className={`nav__link ${scroll && "black"}`}>portfolio</Link></li>
           <li><Link to="/contact" className={`nav__link ${scroll && "black"}`}>contact</Link></li>
         </ul>
