@@ -81,7 +81,7 @@ function Career() {
     }, [])
 
     return (
-        <div className='wrapper'>
+        <div className='wrapper overflow'>
             <div className="left__border"></div>
             <div className="right__border"></div>
 

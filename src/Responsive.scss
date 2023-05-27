@@ -313,6 +313,35 @@
     width: 69%;
     font-size: 65px;
   }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 82%;
+    font-size: 65px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 68%;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 250px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    width: 455px;
+    height: 455px;
+    right: -20%;
+    top: 35%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    width: 450px;
+    height: 450px;
+  }
+
+  .wrapper #career__section .career__form__container {
+    padding-top: 15px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -686,6 +715,39 @@
     width: 340px;
     height: 340px;
   }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 75%;
+    font-size: 60px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 64%;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .large__circle {
+    width: 580px;
+    height: 580px;
+    top: 15%;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 225px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    width: 360px;
+    height: 360px;
+    right: -16%;
+    top: 50%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    width: 380px;
+    height: 380px;
+    right: -12%;
+    top: 41%;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -1005,6 +1067,42 @@
   .wrapper .how__we__work__container .how__we__work__right .list__item label {
     font-size: 26px;
   }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 70%;
+    font-size: 55px;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .large__circle {
+    width: 500px;
+    height: 500px;
+    top: 18%;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    font-size: 18px;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 215px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    width: 360px;
+    height: 360px;
+    right: -18%;
+    top: 50%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    width: 340px;
+    height: 340px;
+    top: 42%;
+  }
+
+  .wrapper #career__section .career__form__container {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1185,6 +1283,14 @@
 
   .wrapper #our__values__section h2 {
     font-size: 55px;
+  }
+
+  .wrapper #slider__section .slider__career h1 {
+    font-size: 55px;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 200px;
   }
 }
 
@@ -2016,6 +2122,75 @@
 
   .wrapper .how__we__work__container .how__we__work__right .list__item p {
     font-size: 14px;
+  }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 71%;
+    font-size: 50px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .dotted__element2 {
+    width: 230px;
+    height: 230px;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .dotted__element {
+    width: 330px;
+    height: 330px;
+    top: 27%;
+    left: -17%;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .large__circle {
+    width: 430px;
+    height: 430px;
+    top: 23%;
+  }
+
+  .wrapper #content {
+    top: 115px;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 163px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    width: 238px;
+    height: 238px;
+    right: -16%;
+    top: 47%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    width: 242px;
+    height: 242px;
+  }
+
+  .wrapper #career__section .career__form__container h4 {
+    margin: -36px 0 0;
+  }
+
+  .wrapper #career__section .career__form__container p {
+    width: 56%;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    .label {
+    font-size: 15px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form .submit {
+    font-size: 15px;
   }
 }
 
@@ -3105,6 +3280,80 @@
     width: 460px;
     height: 460px;
     left: -20%;
+  }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 87%;
+    font-size: 45px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 86%;
+    margin-top: 20px;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .large__circle {
+    width: 390px;
+    height: 390px;
+    top: 27%;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .dotted__element {
+    width: 300px;
+    height: 300px;
+    top: 32%;
+    left: -30%;
+  }
+
+  .small__circle2 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dotted__element2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 120px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    top: 30%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    display: none;
+  }
+
+  .wrapper #career__section .career__form__container h4 {
+    margin: -30px 0 0;
+  }
+
+  .wrapper #career__section .career__form__container p {
+    width: 73%;
+  }
+
+  .wrapper #career__section .career__form__container #career__form h5 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    .label {
+    font-size: 17px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form .submit {
+    font-size: 13px;
+  }
+
+  .extraextrapadding {
+    padding-top: 0;
   }
 }
 
@@ -4319,7 +4568,6 @@
     input {
     font-size: 13px;
   }
-  
 
   .wrapper #slider__section .slider__container .parallax .large__circle {
     width: 280px;
@@ -4451,6 +4699,155 @@
 
   .extrapadding {
     padding-top: 30px;
+  }
+
+  .wrapper #slider__section .slider__career h1 {
+    width: 86%;
+    font-size: 35px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .dotted__element2 {
+    display: none;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 100px;
+  }
+
+  .wrapper #career__section .parallax .large__circle {
+    width: 270px;
+    height: 270px;
+    right: -46%;
+  }
+
+  .wrapper #career__section .parallax .dotted__element {
+    display: none;
+  }
+
+  .wrapper #career__section .career__form__container {
+    padding-top: 0;
+  }
+
+  .wrapper #career__section .career__form__container h4 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .wrapper #career__section .career__form__container p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form {
+    padding-top: 40px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form h5 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox {
+    padding-top: 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .career__textbox__left {
+    margin: 0 10px 0 0;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .form__group {
+    margin-bottom: 30px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .career__textbox__right
+    .career__textbox__left {
+    margin: 0 0 0 10px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    h5 {
+    padding-top: 20px;
+  }
+
+  .production__total {
+    width: 50%;
+    float: left;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    h6 {
+    padding: 30px 0 10px;
+  }
+
+  .career__checkbox__parent {
+    padding-top: 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    .label {
+    margin: 0 0 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__description {
+    padding-top: 0;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__description
+    .textarea__input {
+    height: 100px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form .submit {
+    margin: 45px 0;
+    padding: 15px 50px;
+    font-size: 13px;
+  }
+
+  .extraextrapadding {
+    padding-top: 0;
   }
 }
 
@@ -5614,13 +6011,13 @@
     padding-left: 0;
   }
 
-  .wrapper #slider__section{
+  .wrapper #slider__section {
     height: 68vh;
   }
 
   .wrapper #slider__section .slider__story {
     margin-top: -170px;
-}
+  }
 
   .wrapper #how__it__started__section h2 {
     font-size: 55px;
@@ -5720,6 +6117,112 @@
     padding-top: 20px;
     position: relative;
   }
+
+  .wrapper #slider__section .slider__career h1 {
+    font-size: 27px;
+  }
+
+  .wrapper #slider__section .slider__career .banner__career {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+    padding-right: 20px;
+  }
+
+  .wrapper #slider__section .slider__container .parallax .large__circle {
+    width: 290px;
+    height: 290px;
+    top: 3%;
+    left: -24%;
+  }
+
+  .dotted__element2 {
+    display: none;
+  }
+
+  .small__circle2 {
+    bottom: 25%;
+    width: 40px;
+    height: 40px;
+}
+
+.wrapper #career__section h2 {
+  font-size: 70px;
+}
+
+.wrapper #career__section .career__form__container {
+  padding-top: 0px;
+}
+
+.wrapper #career__section .career__form__container h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.wrapper #career__section .career__form__container p {
+  width: 100%;
+  font-size: 18px;
+}
+
+.wrapper #career__section .career__form__container #career__form {
+  padding-top: 40px;
+}
+
+.wrapper #career__section .career__form__container #career__form h5 {
+  font-size: 24px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__textbox {
+  padding-top: 15px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__textbox .career__textbox__left {
+  margin: 0;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__textbox .form__group {
+  margin-bottom: 30px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__textbox .career__textbox__right .career__textbox__left {
+  margin: 0;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__checkbox__total h5 {
+  padding-top: 20px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__checkbox__total h6 {
+  padding: 30px 0 10px;
+}
+
+.career__checkbox__parent{
+  padding-top: 15px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__checkbox__total .label {
+  margin: 0 0 15px;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__description {
+  padding-top: 0;
+}
+
+.wrapper #career__section .career__form__container #career__form .career__description .textarea__input {
+  height: 100px;
+}
+
+.wrapper #career__section .career__form__container #career__form .submit {
+  margin: 45px 0;
+  padding: 15px 50px;
+  font-size: 13px;
+}
+
+.extraextrapadding {
+ padding-top: 0;
+}
+
+
 }
 
 @media (max-width: 470px) {
