@@ -213,37 +213,37 @@ function Home() {
 
                 }}>
                   <div className="item">
-                    <img src="asset/clients/1.png" alt="img" />
+                    <img src="asset/clients/1.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/2.png" alt="img" />
+                    <img src="asset/clients/2.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/3.png" alt="img" />
+                    <img src="asset/clients/3.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/4.png" alt="img" />
+                    <img src="asset/clients/4.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/5.png" alt="img" />
+                    <img src="asset/clients/5.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/6.png" alt="img" />
+                    <img src="asset/clients/6.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/7.png" alt="img" />
+                    <img src="asset/clients/7.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/8.png" alt="img" />
+                    <img src="asset/clients/8.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/9.png" alt="img" />
+                    <img src="asset/clients/9.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/10.png" alt="img" />
+                    <img src="asset/clients/10.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img src="asset/clients/11.png" alt="img" />
+                    <img src="asset/clients/11.webp" alt="img" />
                   </div>
                 </OwlCarousel>
               </div>
@@ -405,70 +405,70 @@ function Home() {
 
                 }}>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/1.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/1.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/2.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/2.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/3.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/3.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/4.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/4.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/5.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/5.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/6.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/6.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/7.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/7.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/8.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/8.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/9.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/9.webp" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/10.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/10webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/11.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/11webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/12.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/12webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/13.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/13webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/14.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/14webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/15.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/15webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/16.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/16webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/17.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/17webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/18.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/18webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/19.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/19webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/20.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/20webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/21.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/21webpg" alt="img" />
                   </div>
                   <div className="item">
-                    <img loading='lazy' src="asset/technology/22.png" alt="img" />
+                    <img loading='lazy' src="asset/technology/22webpg" alt="img" />
                   </div>
                 </OwlCarousel>
               </div>
