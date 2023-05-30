@@ -517,11 +517,14 @@ a img {
   }
 }
 
+.green__animation{
+  animation: green 0.6s linear 0s;
+}
+
 .extrapadding {
   padding-top: 80px;
   position: relative;
 }
-
 
 .extraextrapadding{
   padding-top: 100px;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Footer from "./Footer";
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 function Portfolio() {

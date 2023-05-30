@@ -3,7 +3,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Typed from 'typed.js';
-import Footer from "./Footer";
+import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
@@ -316,10 +316,10 @@ function Home() {
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                   <div className="goodAt__left">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
-                      <a href="/">
+                      <Link to="/ui-ux">
                         <img loading='lazy' src="asset/desc/1.png" alt="desc-img" />
                         <span className='text-white'>UI/UX</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="250">
                       <a href="/">
