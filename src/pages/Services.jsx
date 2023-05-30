@@ -36,7 +36,7 @@ function Services() {
     const sliderText = document.querySelector(".slider__text__container");
     const sliderBanner = document.querySelector(".banner__caption");
     let value = window.scrollY;
-    let pos1 = -(value * 35 / 100)
+    let pos1 = -(value * 35 / 100);
 
     sliderContainer.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
     sliderText.style.opacity = (1 - value / 700);

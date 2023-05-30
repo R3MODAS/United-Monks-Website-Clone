@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import Carousel from '../components/Carousel';
 
 
 function Home() {
@@ -186,70 +187,9 @@ function Home() {
         </div>
       </section>
 
-      <section id="main__content">
+      <div id="main__content">
         {/* =================== Carousel Section 1 ====================== */}
-        <section id='carousel__section' className='bg__gray'>
-          <div className="row clearfix">
-            <div className="col-xl-3 col-lg-2 col-md-3 nopadding">
-              <div className="carousel__text">
-                <h2>Trusted by<span className='raleway green'>.</span></h2>
-              </div>
-            </div>
-            <div className="col-xl-9 col-lg-10 col-md-9 nopadding">
-              <div className="carousel trusted__carousel">
-                <OwlCarousel className="owl-theme" loop={true} nav={false} margin={20} dots={false} items={5} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} responsive={{
-                  0: {
-                    items: 1
-                  },
-                  766: {
-                    items: 3
-                  },
-                  1000: {
-                    items: 4
-                  },
-                  1200: {
-                    items: 5
-                  }
-
-                }}>
-                  <div className="item">
-                    <img src="asset/clients/1.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/2.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/3.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/4.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/5.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/6.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/7.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/8.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/9.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/10.webp" alt="img" />
-                  </div>
-                  <div className="item">
-                    <img src="asset/clients/11.webp" alt="img" />
-                  </div>
-                </OwlCarousel>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Carousel />
 
         {/* ====================== Looking for Team Section ========================== */}
         <section id='looking__section' className='section'>
@@ -923,7 +863,7 @@ function Home() {
 
         </section>
 
-      </section>
+      </div>
 
       {/* ==================== Footer Section ====================== */}
       <Footer />

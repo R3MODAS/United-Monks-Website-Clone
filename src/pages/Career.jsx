@@ -173,7 +173,7 @@ function Career() {
                     <div className="container clearfix">
                         <div className="slider__career slider__text__container">
 
-                            <h1>Dear rule-breakers, curious backbenchers &amp; straight-A students - <br />We want you all<span class="green">.</span></h1>
+                            <h1>Dear rule-breakers, curious backbenchers &amp; straight-A students - <br />We want you all<span className="green">.</span></h1>
 
                             <div className="banner__career banner__caption">We’re hiring people who share our values and passion. You might be just starting out or have years of experience—either way, we’d like to hear from you and see the projects you’re proud of.</div>
                         </div>
@@ -340,7 +340,7 @@ function Career() {
                                     </div>
                                     <div className="career__description">
                                         <h5>Last few months what kept you busy?</h5>
-                                        <textarea class="textarea__input raleway" name="text"></textarea>
+                                        <textarea className="textarea__input raleway" name="text"></textarea>
                                     </div>
                                     <div className="career__submit">
                                         <input type="submit" value="Submit" className='submit bg__black text-white' />

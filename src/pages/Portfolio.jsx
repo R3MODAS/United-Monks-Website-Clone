@@ -133,7 +133,7 @@ function Portfolio() {
             </header>
 
             {/* ======================= Content Section ===================== */}
-            <section id='content'>
+            <div id='content'>
                 <div className="content__wrapper nopadding">
 
                     <div className="banner__container">
@@ -476,7 +476,7 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <Footer />
 
