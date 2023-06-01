@@ -12,6 +12,12 @@ function Ui() {
     const [visible, setVisible] = useState(false);
     const layer1 = useRef(null);
     const layer2 = useRef(null);
+    const layer3 = useRef(null);
+    const layer4 = useRef(null);
+    const layer5 = useRef(null);
+    const layer6 = useRef(null);
+    const layer7 = useRef(null);
+    const layer8 = useRef(null);
     const SliderContainer = useRef(null);
     const SliderText = useRef(null);
 
@@ -46,8 +52,19 @@ function Ui() {
         let xPos2 = event.clientX * 0.09 + "px";
         let yPos2 = event.clientY * 0.09 + "px";
 
+        let xPos3 = event.clientX * 0.05 + "px";
+        let yPos3 = event.clientY * 0.05 + "px";
+
+
+
         layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
         layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
+        layer3.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer4.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer5.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer6.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer7.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer8.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
     }
 
     const scrollBehaviour = () => {
@@ -348,6 +365,7 @@ function Ui() {
                     <div className="container">
                         <h2>Our UI/UX Process</h2>
                         <div className="ui_ux_steps__container">
+
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="ui_ux__info">
@@ -373,10 +391,261 @@ function Ui() {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6"></div>
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={false} nav={false} margin={0} dots={false} items={1} autoplay={true} autoplayTimeout={5000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step1.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
 
-                                <div className="parallax"></div>
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer3}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div className="row step__reverse">
+                                <div className="col-lg-6">
+                                    <div className="ui_ux__info">
+                                        <p className='number__bg'>02</p>
+                                        <div className="info__top">
+                                            <h3 className='info__title'>Conducting UX Research</h3>
+                                            <p className='info__subtitle'>In this phase, our UX researcher employs a range of different discovery activities which brings more clarity to the project</p>
+                                            <ul className='info__list'>
+                                                <li className="info__item">
+                                                    <p>Interview platform users</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Create User Personas</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p> Record research findings and user pain points</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Conduct UX audit</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={true} nav={false} margin={0} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step2.png" alt="vector" />
+                                            </div>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step3.png" alt="vector" />
+                                            </div>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step4.png" alt="vector" />
+                                            </div>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step10.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
+
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer4}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="ui_ux__info">
+                                        <p className='number__bg'>03</p>
+                                        <div className="info__top">
+                                            <h3 className='info__title'>Finalizing Content Architecture</h3>
+                                            <p className='info__subtitle'>Our strategist find out what stakeholders are trying to achieve with the content and analyze what content, competitors are producing, and after going through various editing and review processes the website copy is finalized</p>
+                                            <ul className='info__list'>
+                                                <li className="info__item">
+                                                    <p>Content audit</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Competitor analysis</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Content creation</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Logical grouping and structuring of content</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={true} nav={false} margin={0} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step5.png" alt="vector" />
+                                            </div>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step6.png" alt="vector" />
+                                            </div>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step7.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
+
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer5}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row step__reverse">
+                                <div className="col-lg-6">
+                                    <div className="ui_ux__info">
+                                        <p className='number__bg'>04</p>
+                                        <div className="info__top">
+                                            <h3 className='info__title'>Creating High and Low Fidelity Wireframes</h3>
+                                            <p className='info__subtitle'>In the initial step, multiple ideas are generated so our designers start UX sketching by creating wireframes to consider different approaches and to decide which is the most efficient user journey to acheive the project goal.</p>
+                                            <ul className='info__list'>
+                                                <li className="info__item">
+                                                    <p>UX Sketching</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>User Journey</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={false} nav={false} margin={0} dots={false} items={1} autoplay={true} autoplayTimeout={5000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step8.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
+
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer6}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="ui_ux__info">
+                                        <p className='number__bg'>05</p>
+                                        <div className="info__top">
+                                            <h3 className='info__title'>Designing User Interface or Visual Designs</h3>
+                                            <p className='info__subtitle'>We now create visual designs, focusing on the design aesthetics of the site and its related materials.</p>
+                                            <ul className='info__list'>
+                                                <li className="info__item">
+                                                    <p>Lines</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Shapes</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Color</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Texture</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Typography</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Forms</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={false} nav={false} margin={0} dots={false} items={1} autoplay={true} autoplayTimeout={5000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step9.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
+
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer7}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="row step__reverse">
+                                <div className="col-lg-6">
+                                    <div className="ui_ux__info">
+                                        <p className='number__bg'>06</p>
+                                        <div className="info__top">
+                                            <h3 className='info__title'>Interactive Proof Of Concept or IPoC</h3>
+                                            <p className='info__subtitle'>This is our bread and butter. At the end of this phase, we will</p>
+                                            <ul className='info__list'>
+                                                <li className="info__item">
+                                                    <p>Have interactive prototypes</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Bring the user interface design to life</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Allow users to provide valuable feedback on how well the design provides the solution to the project goal</p>
+                                                </li>
+                                                <li className="info__item">
+                                                    <p>Have final designs, ready for developers</p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6">
+                                    <div className="step__slider">
+                                        <OwlCarousel className="owl-theme" loop={false} nav={false} margin={0} dots={false} items={1} autoplay={true} autoplayTimeout={5000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                            <div className="item">
+                                                <img src="/asset/ui-ux/step12.png" alt="vector" />
+                                            </div>
+                                        </OwlCarousel>
+                                    </div>
+                                </div>
+
+                                <div className="parallax">
+                                    <div className="layer layer3" ref={layer8}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
