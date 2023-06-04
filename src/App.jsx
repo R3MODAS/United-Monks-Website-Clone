@@ -10,6 +10,7 @@ import "./styles/Portfolio.scss";
 import "./styles/Contact.scss";
 import "./styles/Footer.scss";
 import "./styles/Ui.scss";
+import "./styles/Frontend.scss";
 
 function App() {
 

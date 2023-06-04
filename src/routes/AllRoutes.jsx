@@ -9,6 +9,7 @@ const Career = lazy(() => import("../pages/Career"));
 const Contact = lazy(() => import("../pages/Contact"));
 const Portfolio = lazy(() => import("../pages/Portfolio"));
 const Ui = lazy(() => import("../pages/Ui"));
+const Frontend = lazy(() => import('../pages/Frontend'));
 
 function AllRoutes() {
   return (
@@ -21,6 +22,7 @@ function AllRoutes() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/ui-ux" element={<Ui />} />
+          <Route path="/frontend" element={<Frontend />} />
         </Routes>
     </>
   )

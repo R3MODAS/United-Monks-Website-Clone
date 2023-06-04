@@ -5,6 +5,8 @@ import Carousel from '../components/Carousel';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import ServicesWork from "../components/ServicesWork"
+import Testimonial from '../components/Testimonial';
 
 function Ui() {
 
@@ -18,6 +20,7 @@ function Ui() {
     const layer6 = useRef(null);
     const layer7 = useRef(null);
     const layer8 = useRef(null);
+    const layer9 = useRef(null);
     const SliderContainer = useRef(null);
     const SliderText = useRef(null);
 
@@ -56,7 +59,6 @@ function Ui() {
         let yPos3 = event.clientY * 0.05 + "px";
 
 
-
         layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
         layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
         layer3.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
@@ -65,6 +67,8 @@ function Ui() {
         layer6.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
         layer7.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
         layer8.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+        layer9.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+
     }
 
     const scrollBehaviour = () => {
@@ -360,7 +364,7 @@ function Ui() {
                     </div>
                 </section>
 
-                {/* =================== UI/UX Process =============== */}
+                {/* =================== UI/UX Process Section =============== */}
                 <section id='ui_ui_process__section'>
                     <div className="container">
                         <h2>Our UI/UX Process</h2>
@@ -649,6 +653,247 @@ function Ui() {
                         </div>
                     </div>
                 </section>
+
+                {/* ================== Why Choose us Section =============== */}
+                <section id='why_chose_us__section'>
+                    <div className="container">
+                        <h2>Why should you choose our UI/UX Designers</h2>
+                        <p>We work exactly like an in-house UX team providing guarantee of on-time and perfect output. Our team includes professionals with multiple skill sets like researchers, analysts, UX designers and visual designers.</p>
+                        <ul className='text-white'>
+                            <li>Seasoned UX professionals with design thinking expertise </li>
+
+                            <li>Business acumen and industry knowledge across Education, Finance, Health and Technology domains</li>
+
+                            <li>Lean and Agile approach in product design to optimize cost and faster delivery</li>
+
+                            <li>Experience in designing and managing large enterprise products</li>
+
+                            <li>Avail great offers on hiring a complete team</li>
+
+                            <li>You can start with just a two month retainer contract</li>
+                        </ul>
+                    </div>
+                    <div className="why_us_absolute">
+                        <div className="row">
+                            <div className="col-sm-6 col-md-4 col-lg-3">
+                                <div className="why_container">
+                                    <img src="/asset/ui-ux/contract.png" alt="vector" />
+                                    <h2 className="why_heading">No Rigid <br /> Contract</h2>
+                                    <p>No lock-in terms, no risk to your business. Just give one month's notice to terminate the work agreement. </p>
+                                </div>
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-3">
+                                <div className="why_container">
+                                    <img src="/asset/ui-ux/artistic.png" alt="vector" />
+                                    <h2 className="why_heading">Artistic <br /> Execution</h2>
+                                    <p>We do it right the first time. Our designs don't just stand out but are innovative and engaging.</p>
+                                </div>
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-3">
+                                <div className="why_container">
+                                    <img src="/asset/ui-ux/nda.png" alt="vector" />
+                                    <h2 className="why_heading">Ironclad <br /> NDA</h2>
+                                    <p>We understand the privacy and confidentiality you would like us to maintain.</p>
+                                </div>
+                            </div>
+                            <div className="col-sm-6 col-md-4 col-lg-3">
+                                <div className="why_container">
+                                    <img src="/asset/ui-ux/support.png" alt="vector" />
+                                    <h2 className="why_heading">Dedicated <br /> Support</h2>
+                                    <p>As a team, we aim to exceed your expectations with our dedicated support which is available 24x7.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* =================== Project Section ================ */}
+                <section id='project__portfolio__section'>
+                    <div className="project__container">
+                        <h2>Projects</h2>
+                        <div className="container">
+                            <div className="portfolio__carousel">
+                                <div className="parallax">
+                                    <div className="layer" ref={layer9}>
+                                        <div className="some__space2">
+                                            <div className="large__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <OwlCarousel className="owl-theme" loop={true} nav={true} margin={20} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]}>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/1.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>Quid Tutor</h5>
+                                                    <p>Quid Tutor is an online teaching platform which covers 45 minutes of Tutoring at just £1
+                                                    </p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <span>Product Development</span>
+                                                    <div className="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/2.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>FPV Lifestyle</h5>
+                                                    <p>FPV Lifestyle is an e-Commerce platform for customized drone. </p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <span>Product Development</span>
+                                                    <div className="clear"></div>
+                                                    <a href="https://www.fpvlifestyle.com/" target='_blank'>Visit Website</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/3.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>Engage</h5>
+                                                    <p>Engage is a FinTech platform that leverages financial institutions for tracking,
+                                                        monitoring and generating report for all international payment transfers done around the world via their startup. </p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <span>Product Development</span>
+                                                    <div className="clear"></div>
+                                                    <a href="https://www.unitedmonks.com/engage.php" target='_blank'>View Case Study</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/4.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>MyProGamer</h5>
+                                                    <p>MyProGamer is an online gaming platform for players who want to improve their gaming skills.</p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <span>Product Development</span>
+                                                    <div className="clear"></div>
+                                                    <a href="https://www.unitedmonks.com/mpg.php" target='_blank'>View Case Study</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/5.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>HealthSetGo</h5>
+                                                    <p>HealthSetGo is India’s largest healthcare organization for schools with the mission to nurture the world’s largest network of health promoting schools. </p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <div className="clear"></div>
+                                                    <a href="https://www.healthsetgo.com/" target='_blank'>VIEW WEBSITE</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="portfolio__item row">
+                                            <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                                                <div className="portfolio__item__img">
+                                                    <img src="/asset/tab-frame.png" alt="macbook" />
+                                                    <div className="portfolio__item__parent">
+                                                        <div className="blockside"><div className="blocker"></div></div>
+                                                        <div className="reveal__content">
+                                                            <img loading='lazy' src="asset/portfolio__tab/6.jpg" alt="img" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                                                <div className="portfolio__item__text">
+                                                    <h5>Adfluencehub</h5>
+                                                    <p>A new-age platform for brands and influencers to collaborate and create magic.</p>
+                                                    <span>UI/UX</span>
+                                                    <span>FrontEnd Development</span>
+                                                    <span>Product Development</span>
+                                                    <div className="clear"></div>
+                                                    <a href="https://www.behance.net/gallery/97762167/Adfluence" target='_blank'>VIEW CASE STUDY</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </OwlCarousel>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <ServicesWork />
+
+                {/* =================== Testimonial Section ===================== */}
+                <Testimonial />
 
             </div>
 

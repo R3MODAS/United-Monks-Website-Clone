@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
+import Testimonial from '../components/Testimonial';
 
 
 function Home() {
@@ -55,7 +56,6 @@ function Home() {
     const layer1 = document.querySelector(".layer1");
     const layer2 = document.querySelector(".layer2");
     const layer3 = document.querySelector(".layer3");
-    const layer4 = document.querySelector(".layer4");
     const layer5 = document.querySelector(".layer5");
     const layer6 = document.querySelector(".layer6");
 
@@ -71,7 +71,6 @@ function Home() {
     layer1.style.transform = "translate3d(" + xPos1 + ", " + yPos1 + ", 0)";
     layer2.style.transform = "translate3d(" + xPos2 + ", " + yPos2 + ", 0)";
     layer3.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
-    layer4.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
     layer5.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
     layer6.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
   }
@@ -284,10 +283,10 @@ function Home() {
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                   <div className="goodAt__right">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
-                      <a href="/">
+                      <Link to="/frontend">
                         <img loading='lazy' src="asset/desc/5.png" alt="desc-img" />
                         <span className='text-white'>Front End <br /> Development</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                       <a href="/">
@@ -417,63 +416,7 @@ function Home() {
         </section>
 
         {/* =================== Testimonial Section ===================== */}
-        <section id='testimonial__section'>
-          <h3>Testimonial</h3>
-          <div className="container">
-            <span className='green top__text'>a word from our clients</span>
-            <div className="testimonial__container">
-
-              <div className="testimonial__carousel">
-
-                <div className="parallax">
-                  <div className="layer layer4">
-                    <div className="some__space1">
-                      <div className="small__circle bg__green"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <OwlCarousel className="owl-theme testi__carousel" loop={true} nav={false} margin={20} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
-                  <div className="item">
-                    <div className="testimonial__item">
-                      <p>They are a nice bunch of young talents,
-                        always aspiring to deliver the best. They possess good aesthetic sense, will recommend them for all operations related to brand/company website.</p>
-                      <span className='green'>Alok Kumar</span>
-                      <ul>
-                        <li>GM Marketing</li>
-                        <li>Karbonn Mobiles</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="item">
-                    <div className="testimonial__item">
-                      <p>I had a great experience working with United Monks.
-                        Professional,  friendly, responded in a timely manner and did a great job. Built and designed a website for us with a great UX/UI. Highly recommend.</p>
-                      <span className='green'>Shaun Marriner</span>
-                      <ul>
-                        <li>Director of Operations</li>
-                        <li>Channel Mobile</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="item">
-                    <div className="testimonial__item">
-                      <p>Great experience working with them. They have been very interactive and always open to suggestions.</p>
-                      <span className='green'>Pankaj Raghbeer</span>
-                      <ul>
-                        <li>Chairman &amp; Managing Director</li>
-                        <li>Panalfa Group</li>
-                      </ul>
-                    </div>
-                  </div>
-                </OwlCarousel>
-
-              </div>
-            </div>
-          </div>
-        </section>
+        <Testimonial />
 
         {/* ================= Work with us Feature Section =================== */}
         <section id='work_feature__section' className='bg__green'>
