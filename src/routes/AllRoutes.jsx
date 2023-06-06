@@ -10,20 +10,24 @@ const Contact = lazy(() => import("../pages/Contact"));
 const Portfolio = lazy(() => import("../pages/Portfolio"));
 const Ui = lazy(() => import("../pages/Ui"));
 const Frontend = lazy(() => import('../pages/Frontend'));
+const Product = lazy(() => import('../pages/Product'));
+const Mobile = lazy(() => import('../pages/Mobile'));
 
 function AllRoutes() {
   return (
     <>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/story" element={<Story />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/ui-ux" element={<Ui />} />
-          <Route path="/frontend" element={<Frontend />} />
-        </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/story" element={<Story />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/ui-ux" element={<Ui />} />
+        <Route path="/frontend" element={<Frontend />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/mobile" element={<Mobile />} />
+      </Routes>
     </>
   )
 }

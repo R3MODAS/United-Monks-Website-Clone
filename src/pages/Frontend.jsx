@@ -18,10 +18,6 @@ function Frontend() {
   const layer3 = useRef(null);
   const layer4 = useRef(null);
   const layer5 = useRef(null);
-  const layer6 = useRef(null);
-  const layer7 = useRef(null);
-  const layer8 = useRef(null);
-  const layer9 = useRef(null);
   const SliderContainer = useRef(null);
   const SliderText = useRef(null);
 
@@ -56,11 +52,15 @@ function Frontend() {
     let xPos2 = event.clientX * 0.09 + "px";
     let yPos2 = event.clientY * 0.09 + "px";
 
+    let xPos3 = 1 - event.clientX * 0.05 + "px";
+    let yPos3 = 1 - event.clientY * 0.05 + "px";
+
 
     layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer3.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer4.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
+    layer5.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
 
   }
 
@@ -73,7 +73,7 @@ function Frontend() {
 
   useEffect(() => {
     AOS.init();
-    document.title = "UI/UX";
+    document.title = "Frontend";
     window.addEventListener("scroll", toggleVisible);
     window.addEventListener("mousemove", Mousemove);
     window.addEventListener("scroll", scrollBehaviour);
@@ -97,11 +97,9 @@ function Frontend() {
       <div id="side__panel" onClick={() => setToggle(false)} className={`${toggle && "show__panel"}`}>
 
         <div className="side__panel__wrap">
-
           <span id='close__menu'>
             <i className="ri-close-circle-fill"></i>
           </span>
-
           <div className="mobile__logo">
             <a href="/" className='retina__logo'>
               <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
@@ -118,7 +116,6 @@ function Frontend() {
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
-
         </div>
 
       </div>
@@ -417,7 +414,7 @@ function Frontend() {
             <div className="container">
               <div className="portfolio__carousel">
                 <div className="parallax">
-                  <div className="layer" ref={layer9}>
+                  <div className="layer" ref={layer5}>
                     <div className="some__space2">
                       <div className="large__circle bg__green"></div>
                     </div>
@@ -498,8 +495,8 @@ function Frontend() {
                       <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
                         <div className="portfolio__item__text">
                           <h5>Karbonn Mobiles</h5>
-                          <p>This brand needs no introduction. Nevertheless, Karbonn Mobiles is one of the frontliners of 
-														the Indian mobile industry with a presence in 40 countries. </p>
+                          <p>This brand needs no introduction. Nevertheless, Karbonn Mobiles is one of the frontliners of
+                            the Indian mobile industry with a presence in 40 countries. </p>
                           <span>UI/UX</span>
                           <span>FrontEnd Development</span>
                           <div className="clear"></div>
@@ -626,10 +623,7 @@ function Frontend() {
 
         <ServicesWork />
 
-
-
       </div>
-
 
       <Footer />
 

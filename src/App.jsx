@@ -11,6 +11,8 @@ import "./styles/Contact.scss";
 import "./styles/Footer.scss";
 import "./styles/Ui.scss";
 import "./styles/Frontend.scss";
+import "./styles/Product.scss";
+import "./styles/Mobile.scss";
 
 function App() {
 

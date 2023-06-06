@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -188,7 +188,6 @@ h6 {
   padding: 0 !important;
 }
 
-
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
@@ -222,6 +221,16 @@ textarea {
   .container {
     max-width: 750px;
   }
+
+  .offset-md-6 {
+    margin-left: 50%;
+}
+
+.col-md-6{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 }
 
 @media (min-width: 992px) {
@@ -404,7 +413,6 @@ a img {
   }
 }
 
-
 // ==================== Borders =========================
 
 .left__border {
@@ -491,8 +499,6 @@ a img {
   }
 }
 
-
-
 // ===================== Visibility for Devices =========================
 
 .desktop__visible {
@@ -546,4 +552,60 @@ a img {
 .extraextrapadding {
   padding-top: 100px;
   position: relative;
+}
+
+// ====================== Common Class ============================
+.ecommerce_solution_content {
+  padding-left: 170px;
+  padding-bottom: 80px;
+
+  h2 {
+    width: 950px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 0;
+
+    a {
+      position: relative;
+      padding: 0 20px;
+      margin: 0 -20px;
+      display: inline-block;
+      z-index: 2;
+      transition: all ease 0.4s;
+
+      &::after {
+        content: "";
+        display: block;
+        background: #14b88c;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        bottom: -15px;
+        z-index: -1;
+        transition: all 0.4s cubic-bezier(0.2, 0, 0, 1);
+      }
+
+      &:hover::after {
+        height: 120%;
+        left: 0;
+        right: 0;
+      }
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  p {
+    width: 675px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6 !important;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
 }

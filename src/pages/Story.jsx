@@ -183,12 +183,12 @@ function Story() {
                                     the best ones<span className="green">.</span>
                                 </span>
                                 <span className="tab__visible">
-                                We know the value <br /> of great experiences,
+                                    We know the value <br /> of great experiences,
                                     <br />  so we build<br />
                                     the best ones<span className="green">.</span>
                                 </span>
                                 <span className="mobile__visible">
-                                We know the value <br /> of great experiences,
+                                    We know the value <br /> of great experiences,
                                     <br />  so we build<br />
                                     the best ones<span className="green">.</span>
                                 </span>
