@@ -18,6 +18,7 @@ function Product() {
   const layer4 = useRef(null);
   const layer5 = useRef(null);
   const layer6 = useRef(null);
+  const layer7 = useRef(null);
   const SliderContainer = useRef(null);
   const SliderText = useRef(null);
 
@@ -55,12 +56,16 @@ function Product() {
     let xPos3 = 1 - event.clientX * 0.03 + "px";
     let yPos3 = 1 - event.clientY * 0.03 + "px";
 
+    let xPos4 = event.clientX * 0.05 + "px";
+    let yPos4 = event.clientY * 0.05 + "px";
+
     layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer3.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer4.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer5.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer6.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
+    layer7.current.style.transform = `translate3d(${xPos4},${yPos4},0)`;
 
   }
 
@@ -416,7 +421,7 @@ function Product() {
             <div className="portfolio__carousel">
 
               <div className="parallax">
-                <div className="layer layer6">
+                <div className="layer layer6" ref={layer7}>
                   <div className="some__space2">
                     <div className="large__circle bg__green"></div>
                   </div>

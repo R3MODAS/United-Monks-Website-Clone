@@ -57,6 +57,7 @@ function Home() {
     const layer3 = document.querySelector(".layer3");
     const layer4 = document.querySelector(".layer4");
     const layer5 = document.querySelector(".layer5");
+    const layer6 = document.querySelector(".layer6");
 
     let xPos1 = 1 - event.x * 0.015 + "px";
     let yPos1 = 1 - event.y * 0.015 + "px";
@@ -67,11 +68,15 @@ function Home() {
     let xPos3 = 1 - event.x * 0.03 + "px";
     let yPos3 = 1 - event.y * 0.03 + "px";
 
+    let xPos4 = event.clientX * 0.05 + "px";
+    let yPos4 = event.clientY * 0.05 + "px";
+
     layer1.style.transform = "translate3d(" + xPos1 + ", " + yPos1 + ", 0)";
     layer2.style.transform = "translate3d(" + xPos2 + ", " + yPos2 + ", 0)";
     layer3.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
     layer4.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
     layer5.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
+    layer6.style.transform = "translate3d(" + xPos4 + ", " + yPos4 + ", 0)";
   }
 
   useEffect(() => {
