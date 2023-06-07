@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import ServicesWork from "../components/ServicesWork"
-import Testimonial from '../components/Testimonial';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -13,6 +12,7 @@ function Graphics() {
     const [visible, setVisible] = useState(false);
     const layer1 = useRef(null);
     const layer2 = useRef(null);
+    const layer3 = useRef(null);
     const SliderContainer = useRef(null);
     const SliderText = useRef(null);
 
@@ -47,15 +47,19 @@ function Graphics() {
         let xPos2 = event.clientX * 0.09 + "px";
         let yPos2 = event.clientY * 0.09 + "px";
 
+        let xPos3 = 1 - event.clientX * 0.03 + "px";
+        let yPos3 = 1 - event.clientY * 0.03 + "px";
+
         layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
         layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
+        layer3.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
 
     }
 
     const scrollBehaviour = () => {
         let value = window.scrollY;
         let pos1 = -(value * 35 / 100);
-        SliderContainer.current.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
+        SliderContainer.current.style.transform = `translate3d(0px, ${pos1}px, 0px)`;
         SliderText.current.style.opacity = (1 - value / 700);
     }
 
@@ -293,17 +297,17 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/resturant-menu.png" alt="img" />
-                                    <span>Restaurant <br/>Menu</span>
+                                    <span>Restaurant <br />Menu</span>
                                     <p>For mouthwatering menus with tasty descriptions, crisp fonts, and design panache, give us a call</p>
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
                             <div className="hire_us_child_content first_child">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/packaging-icon.png" alt="img" />
-                                    <span>Packaging <br/>Design</span>
+                                    <span>Packaging <br />Design</span>
                                     <p>Packaging design so fine, your customers are going to fall over themselves ordering for your products.</p>
                                 </a>
                             </div>
@@ -313,7 +317,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/tshirt.png" alt="img" />
-                                    <span>Tshirt <br/>Design</span>
+                                    <span>Tshirt <br />Design</span>
                                     <p>Fancy some customized T-shirt designs? We got you!</p>
                                 </a>
                             </div>
@@ -323,7 +327,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_right">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/social-media-banner.png" alt="img" />
-                                    <span>Social Media <br/>Banner</span>
+                                    <span>Social Media <br />Banner</span>
                                     <p>Banners are what captures your audience hook, line and sinker, so say yay to captivating banners with us!</p>
                                 </a>
                             </div>
@@ -333,7 +337,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/email-newsletter.png" alt="img" />
-                                    <span>Email <br/>Newsletter</span>
+                                    <span>Email <br />Newsletter</span>
                                     <p>Live that high click rate life with persuasive and creative newsletters that your customers will love.</p>
                                 </a>
                             </div>
@@ -343,7 +347,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_top_none border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/powerpoint-presentation.png" alt="img" />
-                                    <span>PowerPoint <br/>Presentation</span>
+                                    <span>PowerPoint <br />Presentation</span>
                                     <p>Well structured, well-designed and absorbing in every way possible, your presentation will grab everyone’s attention in no time at all.</p>
                                 </a>
                             </div>
@@ -353,7 +357,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_top_none border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/word-template.png" alt="img" />
-                                    <span>Word <br/>Template</span>
+                                    <span>Word <br />Template</span>
                                     <p>With templates so tasteful, even the humble MS Word will become a captivating ally in your work planning.</p>
                                 </a>
                             </div>
@@ -363,7 +367,7 @@ function Graphics() {
                             <div className="hire_us_child_content first_child border_top_none border_right border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/website-banner.png" alt="img" />
-                                    <span>Website <br/>Banners</span>
+                                    <span>Website <br />Banners</span>
                                     <p>Is your dream banner made of all things eye-catching and traffic generating? Let’s talk!</p>
                                 </a>
                             </div>
@@ -374,7 +378,63 @@ function Graphics() {
                 </section>
 
                 {/* =================== Testimonial Section ===================== */}
-                <Testimonial />
+                <section id='testimonial__section'>
+                    <h3>Testimonial</h3>
+                    <div className="container">
+                        <span className='green top__text'>a word from our clients</span>
+                        <div className="testimonial__container">
+
+                            <div className="testimonial__carousel">
+
+                                <div className="parallax">
+                                    <div className="layer layer4" ref={layer3} style={{ position: "relative" }}>
+                                        <div className="some__space1">
+                                            <div className="small__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <OwlCarousel className="owl-theme testi__carousel" loop={true} nav={false} margin={20} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>They are a nice bunch of young talents,
+                                                always aspiring to deliver the best. They possess good aesthetic sense, will recommend them for all operations related to brand/company website.</p>
+                                            <span className='green'>Alok Kumar</span>
+                                            <ul>
+                                                <li>GM Marketing</li>
+                                                <li>Karbonn Mobiles</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>I had a great experience working with United Monks.
+                                                Professional,  friendly, responded in a timely manner and did a great job. Built and designed a website for us with a great UX/UI. Highly recommend.</p>
+                                            <span className='green'>Shaun Marriner</span>
+                                            <ul>
+                                                <li>Director of Operations</li>
+                                                <li>Channel Mobile</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>Great experience working with them. They have been very interactive and always open to suggestions.</p>
+                                            <span className='green'>Pankaj Raghbeer</span>
+                                            <ul>
+                                                <li>Chairman &amp; Managing Director</li>
+                                                <li>Panalfa Group</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </OwlCarousel>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <ServicesWork />
 

@@ -2,11 +2,12 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
-import Project from "../components/Project";
 import ServicesWork from "../components/ServicesWork"
-import Testimonial from '../components/Testimonial';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function Product() {
   const [toggle, setToggle] = useState(false);
@@ -16,6 +17,7 @@ function Product() {
   const layer3 = useRef(null);
   const layer4 = useRef(null);
   const layer5 = useRef(null);
+  const layer6 = useRef(null);
   const SliderContainer = useRef(null);
   const SliderText = useRef(null);
 
@@ -50,19 +52,22 @@ function Product() {
     let xPos2 = event.clientX * 0.09 + "px";
     let yPos2 = event.clientY * 0.09 + "px";
 
+    let xPos3 = 1 - event.clientX * 0.03 + "px";
+    let yPos3 = 1 - event.clientY * 0.03 + "px";
 
     layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer3.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
     layer4.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
     layer5.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
+    layer6.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
 
   }
 
   const scrollBehaviour = () => {
     let value = window.scrollY;
     let pos1 = -(value * 35 / 100);
-    SliderContainer.current.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
+    SliderContainer.current.style.transform = `translate3d(0px, ${pos1}px, 0px)`;
     SliderText.current.style.opacity = (1 - value / 700);
   }
 
@@ -357,7 +362,7 @@ function Product() {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 nopadding">
                 <div className="value__unit">
                   <label className="montserrat">02</label>
-                  <p className="text-white">Ironclad <br/>NDA’s</p>
+                  <p className="text-white">Ironclad <br />NDA’s</p>
                   <span className="text-white">We understand the privacy and confidentiality you would like to maintain.</span>
                 </div>
               </div>
@@ -365,7 +370,7 @@ function Product() {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 nopadding">
                 <div className="value__unit">
                   <label className="montserrat">03</label>
-                  <p className="text-white">Top-grade <br/>Services</p>
+                  <p className="text-white">Top-grade <br />Services</p>
                   <span className="text-white">Our services are designed to help you and your business grow.</span>
                 </div>
               </div>
@@ -377,7 +382,7 @@ function Product() {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 nopadding">
                 <div className="value__unit">
                   <label className="montserrat">04</label>
-                  <p className="text-white">No Setup <br/>fees</p>
+                  <p className="text-white">No Setup <br />fees</p>
                   <span className="text-white">Because you trust us, installation and set-up cost is on the house.</span>
                 </div>
               </div>
@@ -404,12 +409,261 @@ function Product() {
         </section>
 
         {/* =================== Project Section ================ */}
-        <Project heading='Projects' />
+        <section id='portfolio__section'>
+          <h2>Projects</h2>
+          <div className="container">
+
+            <div className="portfolio__carousel">
+
+              <div className="parallax">
+                <div className="layer layer6">
+                  <div className="some__space2">
+                    <div className="large__circle bg__green"></div>
+                  </div>
+                </div>
+              </div>
+
+              <OwlCarousel className="owl-theme carousel" loop={true} nav={true} margin={25} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]}>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/1.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Quid Tutor</h4>
+                        <p>Quid Tutor is an online teaching platform which covers 45 minutes of Tutoring at just £1</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/2.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>FPV Lifestyle</h4>
+                        <p>FPV Lifestyle is an e-Commerce platform for customized drone.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW WEBSITE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/3.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Engage</h4>
+                        <p>Engage is a FinTech platform that leverages financial institutions for tracking,
+                          monitoring and generating report for all international payment transfers done around the world via their startup.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/4.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>MyProGamer</h4>
+                        <p>MyProGamer is an online gaming platform for players who want to improve their gaming skills.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/5.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Adfluencehub</h4>
+                        <p>A new-age platform for brands and influencers to collaborate and create magic.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/6.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>HealthSetGO</h4>
+                        <p>HealthSetGo is India’s largest healthcare organization for schools with the mission to nurture the world’s largest network of health promoting schools. </p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VISIT WEBSITE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </OwlCarousel>
+
+            </div>
+          </div>
+        </section>
 
         <div className="extraextrapadding"></div>
 
         {/* =================== Testimonial Section ===================== */}
-        <Testimonial />
+        <section id='testimonial__section'>
+          <h3>Testimonial</h3>
+          <div className="container">
+            <span className='green top__text'>a word from our clients</span>
+            <div className="testimonial__container">
+
+              <div className="testimonial__carousel">
+
+                <div className="parallax">
+                  <div className="layer layer4" ref={layer6} style={{ position: "relative" }}>
+                    <div className="some__space1">
+                      <div className="small__circle bg__green"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <OwlCarousel className="owl-theme testi__carousel" loop={true} nav={false} margin={20} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>They are a nice bunch of young talents,
+                        always aspiring to deliver the best. They possess good aesthetic sense, will recommend them for all operations related to brand/company website.</p>
+                      <span className='green'>Alok Kumar</span>
+                      <ul>
+                        <li>GM Marketing</li>
+                        <li>Karbonn Mobiles</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>I had a great experience working with United Monks.
+                        Professional,  friendly, responded in a timely manner and did a great job. Built and designed a website for us with a great UX/UI. Highly recommend.</p>
+                      <span className='green'>Shaun Marriner</span>
+                      <ul>
+                        <li>Director of Operations</li>
+                        <li>Channel Mobile</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>Great experience working with them. They have been very interactive and always open to suggestions.</p>
+                      <span className='green'>Pankaj Raghbeer</span>
+                      <ul>
+                        <li>Chairman &amp; Managing Director</li>
+                        <li>Panalfa Group</li>
+                      </ul>
+                    </div>
+                  </div>
+                </OwlCarousel>
+
+              </div>
+            </div>
+          </div>
+        </section>
 
         <ServicesWork />
 

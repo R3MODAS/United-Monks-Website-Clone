@@ -188,6 +188,10 @@ h6 {
   padding: 0 !important;
 }
 
+.notopmargin{
+  margin-top: 0 !important;
+}
+
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
@@ -559,6 +563,14 @@ a img {
 .extraextrapadding {
   padding-top: 100px;
   position: relative;
+}
+
+.bp70{
+  padding-bottom: 70px;
+}
+
+.bm50{
+  margin-bottom: 50px;
 }
 
 // ====================== Common Class ============================

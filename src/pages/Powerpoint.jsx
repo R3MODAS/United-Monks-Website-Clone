@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import ServicesWork from "../components/ServicesWork"
-import Testimonial from '../components/Testimonial';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -13,6 +12,7 @@ function Powerpoint() {
     const [visible, setVisible] = useState(false);
     const layer1 = useRef(null);
     const layer2 = useRef(null);
+    const layer3 = useRef(null);
     const SliderContainer = useRef(null);
     const SliderText = useRef(null);
 
@@ -47,15 +47,19 @@ function Powerpoint() {
         let xPos2 = event.clientX * 0.09 + "px";
         let yPos2 = event.clientY * 0.09 + "px";
 
+        let xPos3 = 1 - event.clientX * 0.03 + "px";
+        let yPos3 = 1 - event.clientY * 0.03 + "px";
+
         layer1.current.style.transform = `translate3d(${xPos1},${yPos1},0)`;
         layer2.current.style.transform = `translate3d(${xPos2},${yPos2},0)`;
+        layer3.current.style.transform = `translate3d(${xPos3},${yPos3},0)`;
 
     }
 
     const scrollBehaviour = () => {
         let value = window.scrollY;
         let pos1 = -(value * 35 / 100);
-        SliderContainer.current.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
+        SliderContainer.current.style.transform = `translate3d(0px, ${pos1}px, 0px)`;
         SliderText.current.style.opacity = (1 - value / 700);
     }
 
@@ -421,7 +425,63 @@ function Powerpoint() {
                 </section>
 
                 {/* =================== Testimonial Section ===================== */}
-                <Testimonial />
+                <section id='testimonial__section'>
+                    <h3>Testimonial</h3>
+                    <div className="container">
+                        <span className='green top__text'>a word from our clients</span>
+                        <div className="testimonial__container">
+
+                            <div className="testimonial__carousel">
+
+                                <div className="parallax">
+                                    <div className="layer layer4" ref={layer3} style={{ position: "relative" }}>
+                                        <div className="some__space1">
+                                            <div className="small__circle bg__green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <OwlCarousel className="owl-theme testi__carousel" loop={true} nav={false} margin={20} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>They are a nice bunch of young talents,
+                                                always aspiring to deliver the best. They possess good aesthetic sense, will recommend them for all operations related to brand/company website.</p>
+                                            <span className='green'>Alok Kumar</span>
+                                            <ul>
+                                                <li>GM Marketing</li>
+                                                <li>Karbonn Mobiles</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>I had a great experience working with United Monks.
+                                                Professional,  friendly, responded in a timely manner and did a great job. Built and designed a website for us with a great UX/UI. Highly recommend.</p>
+                                            <span className='green'>Shaun Marriner</span>
+                                            <ul>
+                                                <li>Director of Operations</li>
+                                                <li>Channel Mobile</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div className="item">
+                                        <div className="testimonial__item">
+                                            <p>Great experience working with them. They have been very interactive and always open to suggestions.</p>
+                                            <span className='green'>Pankaj Raghbeer</span>
+                                            <ul>
+                                                <li>Chairman &amp; Managing Director</li>
+                                                <li>Panalfa Group</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </OwlCarousel>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <ServicesWork />
 

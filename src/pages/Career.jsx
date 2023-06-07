@@ -350,8 +350,6 @@ function Career() {
                         </div>
                     </section>
 
-
-
                 </div>
             </div>
 

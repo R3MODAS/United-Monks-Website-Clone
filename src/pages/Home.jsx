@@ -8,8 +8,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
-import Testimonial from '../components/Testimonial';
-import Project from '../components/Project';
 
 
 function Home() {
@@ -57,6 +55,7 @@ function Home() {
     const layer1 = document.querySelector(".layer1");
     const layer2 = document.querySelector(".layer2");
     const layer3 = document.querySelector(".layer3");
+    const layer4 = document.querySelector(".layer4");
     const layer5 = document.querySelector(".layer5");
 
     let xPos1 = 1 - event.x * 0.015 + "px";
@@ -71,6 +70,7 @@ function Home() {
     layer1.style.transform = "translate3d(" + xPos1 + ", " + yPos1 + ", 0)";
     layer2.style.transform = "translate3d(" + xPos2 + ", " + yPos2 + ", 0)";
     layer3.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
+    layer4.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
     layer5.style.transform = "translate3d(" + xPos3 + ", " + yPos3 + ", 0)";
   }
 
@@ -309,7 +309,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                
+
               </div>
 
               <div className="goodAt__button" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
@@ -418,7 +418,63 @@ function Home() {
         </section>
 
         {/* =================== Testimonial Section ===================== */}
-        <Testimonial />
+        <section id='testimonial__section'>
+          <h3>Testimonial</h3>
+          <div className="container">
+            <span className='green top__text'>a word from our clients</span>
+            <div className="testimonial__container">
+
+              <div className="testimonial__carousel">
+
+                <div className="parallax">
+                  <div className="layer layer4" style={{ position: "relative" }}>
+                    <div className="some__space1">
+                      <div className="small__circle bg__green"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <OwlCarousel className="owl-theme testi__carousel" loop={true} nav={false} margin={20} dots={true} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true}>
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>They are a nice bunch of young talents,
+                        always aspiring to deliver the best. They possess good aesthetic sense, will recommend them for all operations related to brand/company website.</p>
+                      <span className='green'>Alok Kumar</span>
+                      <ul>
+                        <li>GM Marketing</li>
+                        <li>Karbonn Mobiles</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>I had a great experience working with United Monks.
+                        Professional,  friendly, responded in a timely manner and did a great job. Built and designed a website for us with a great UX/UI. Highly recommend.</p>
+                      <span className='green'>Shaun Marriner</span>
+                      <ul>
+                        <li>Director of Operations</li>
+                        <li>Channel Mobile</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="item">
+                    <div className="testimonial__item">
+                      <p>Great experience working with them. They have been very interactive and always open to suggestions.</p>
+                      <span className='green'>Pankaj Raghbeer</span>
+                      <ul>
+                        <li>Chairman &amp; Managing Director</li>
+                        <li>Panalfa Group</li>
+                      </ul>
+                    </div>
+                  </div>
+                </OwlCarousel>
+
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ================= Work with us Feature Section =================== */}
         <section id='work_feature__section' className='bg__green'>
@@ -589,7 +645,200 @@ function Home() {
         </section>
 
         {/* ==================== Portfolio Section ==================== */}
-        <Project heading="Portfolio" />
+        <section id='portfolio__section'>
+          <h2>Portfolio</h2>
+          <div className="container">
+
+            <div className="portfolio__carousel">
+
+              <div className="parallax">
+                <div className="layer layer6">
+                  <div className="some__space2">
+                    <div className="large__circle bg__green"></div>
+                  </div>
+                </div>
+              </div>
+
+              <OwlCarousel className="owl-theme carousel" loop={true} nav={true} margin={25} dots={false} items={1} autoplay={true} autoplayTimeout={3000} animateIn="fadeIn" animateOut="fadeOut" autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]}>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/1.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Quid Tutor</h4>
+                        <p>Quid Tutor is an online teaching platform which covers 45 minutes of Tutoring at just £1</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/2.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>FPV Lifestyle</h4>
+                        <p>FPV Lifestyle is an e-Commerce platform for customized drone.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW WEBSITE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/3.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Engage</h4>
+                        <p>Engage is a FinTech platform that leverages financial institutions for tracking,
+                          monitoring and generating report for all international payment transfers done around the world via their startup.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/4.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>MyProGamer</h4>
+                        <p>MyProGamer is an online gaming platform for players who want to improve their gaming skills.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/5.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>Adfluencehub</h4>
+                        <p>A new-age platform for brands and influencers to collaborate and create magic.</p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <span>Product Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VIEW CASE STUDY</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="item">
+                  <div className="carousel__item__container row">
+                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
+                      <div className="portfolio__item__img">
+                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+
+                        <div className="portfolio__item__parent">
+                          <div className="blockside"><div className="blocker"></div></div>
+                          <div className="reveal__content">
+                            <img loading='lazy' src="asset/portfolio/6.jpg" alt="img" />
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
+                      <div className="portfolio__text">
+                        <h4>HealthSetGO</h4>
+                        <p>HealthSetGo is India’s largest healthcare organization for schools with the mission to nurture the world’s largest network of health promoting schools. </p>
+                        <span>UI/UX</span>
+                        <span>Front End Development</span>
+                        <div className="clear"></div>
+                        <a href="/">VISIT WEBSITE</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </OwlCarousel>
+
+            </div>
+          </div>
+        </section>
 
         {/* =================== Call to Action Section ====================== */}
         <section id='call_to_action__section' className='section'>
