@@ -13,6 +13,10 @@ import "./styles/Ui.scss";
 import "./styles/Frontend.scss";
 import "./styles/Product.scss";
 import "./styles/Mobile.scss";
+import "./styles/Ecommerce.scss";
+import "./styles/Powerpoint.scss";
+import "./styles/Graphics.scss";
+import "./styles/Cyber.scss";
 
 function App() {
 

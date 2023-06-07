@@ -1,0 +1,357 @@
+.cyber__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0;
+
+  #slider__section {
+    margin-bottom: 0;
+    .slider__container {
+      background-image: url("/asset/graphic-banner.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .ui__banner {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: -138.75px;
+      padding-left: 60px;
+
+      label {
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        text-transform: capitalize;
+        cursor: text;
+        display: block;
+      }
+
+      h1 {
+        font-size: 80px;
+        line-height: 1.1;
+      }
+
+      span.last__child {
+        display: inline-block;
+        position: relative;
+
+        &::after {
+          display: block;
+          height: 10px;
+          bottom: -15px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          content: "";
+          background: #14b88c;
+        }
+      }
+
+      a {
+        margin-top: 90px;
+        display: inline-block;
+        border: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+          animation: green 0.6s linear 0s;
+        }
+      }
+    }
+  }
+
+  #graphic_design__section {
+    position: relative;
+
+    .parallax {
+      .layer3 {
+        position: relative;
+      }
+
+      .layer4 {
+        position: absolute;
+      }
+
+      .large__circle {
+        bottom: -15%;
+        left: -6%;
+        width: 350px;
+        height: 350px;
+      }
+
+      .small__circle {
+        bottom: 0;
+        right: 2%;
+      }
+    }
+
+    .ecommerce_solution_content {
+      h2 {
+        width: 810px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        width: 829px;
+        line-height: 1.6 !important;
+      }
+    }
+  }
+
+  #work__section {
+    .work__text {
+      text-align: center;
+      h2 {
+        font-size: 80px;
+        line-height: 1.1;
+        font-weight: 800;
+        margin: 0;
+      }
+
+      p {
+        width: 60%;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 20px auto 0;
+      }
+    }
+
+    .work__list {
+      padding: 70px 0 80px;
+      position: relative;
+
+      .work__model__one {
+        margin-right: -80px;
+        position: relative;
+        z-index: 2;
+        padding: 60px 50px;
+        box-shadow: -5px 0 30px 0 rgba(0, 0, 0, 0.5);
+
+        img {
+          position: absolute;
+          right: -10px;
+          top: -10px;
+        }
+
+        span {
+          font-size: 16px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 1;
+          text-transform: capitalize;
+          width: 50%;
+          margin: 35px 0 40px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5 !important;
+          margin: 0;
+        }
+
+        ul {
+          padding: 0;
+          margin: 40px 0 50px;
+          list-style-type: none;
+          position: relative;
+
+          li {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 10px;
+            position: relative;
+            padding-left: 35px;
+            margin: 0;
+
+            &::before {
+              content: url("/asset/common-bullet.png");
+              display: block;
+              position: absolute;
+              top: 2px;
+              left: 0;
+            }
+          }
+        }
+
+        button {
+          border: none;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 10px 30px;
+          border-radius: 30px;
+          background: #000;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      .work__model__two {
+        position: relative;
+        z-index: 1;
+        padding: 60px 50px 60px 130px;
+        margin-top: 100px;
+
+        span {
+          font-size: 16px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 1;
+          text-transform: capitalize;
+          width: 50%;
+          margin: 35px 0 40px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.5;
+          margin: 0;
+        }
+
+        ul {
+          padding: 0;
+          margin: 40px 0;
+          list-style-type: none;
+          position: relative;
+
+          li {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 10px;
+            position: relative;
+            padding-left: 35px;
+            margin: 0;
+
+            &::before {
+              content: url("/asset/common-bullet.png");
+              display: block;
+              position: absolute;
+              top: 2px;
+              left: 0;
+            }
+          }
+        }
+
+        button {
+          border: none;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 10px 30px;
+          border-radius: 30px;
+          background: #000;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .triangle__img {
+      position: absolute;
+      bottom: -7%;
+      left: -33%;
+    }
+  }
+
+  #project__section {
+    .project__container {
+      padding: 70px 0 100px;
+      position: relative;
+
+      .circle__container {
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+
+        .circle__child {
+          z-index: 2;
+          text-align: center;
+
+          h2 {
+            font-size: 50px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 50px;
+          }
+
+          button {
+            border: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+          }
+        }
+
+        .small__circle {
+          position: absolute;
+          top: 5%;
+          left: -40%;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+
+        .small__circle2 {
+          right: -50%;
+          top: 50%;
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .map__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        img {
+          width: 100%;
+          mix-blend-mode: multiply;
+          position: relative;
+        }
+      }
+    }
+  }
+}

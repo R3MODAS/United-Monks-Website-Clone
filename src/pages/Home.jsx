@@ -251,6 +251,7 @@ function Home() {
               </div>
 
               <div className="goodAt__technology row">
+
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                   <div className="goodAt__left">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
@@ -266,19 +267,20 @@ function Home() {
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                      <a href="/">
+                      <Link to="/ecommerce">
                         <img loading='lazy' src="asset/desc/3.png" alt="desc-img" />
                         <span className='text-white'>Ecommerce</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="350">
-                      <a href="/">
+                      <Link to="/graphics">
                         <img loading='lazy' src="asset/desc/4.png" alt="desc-img" />
                         <span className='text-white'>Graphic <br /> Designing</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
+
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                   <div className="goodAt__right">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
@@ -294,19 +296,20 @@ function Home() {
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="450">
-                      <a href="/">
+                      <Link to="/powerpoint">
                         <img loading='lazy' src="asset/desc/7.png" alt="desc-img" />
                         <span className='text-white'>Powerpoint<br /> Presentation</span>
-                      </a>
+                      </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="350">
-                      <a href="/">
+                      <Link to="/cyber">
                         <img loading='lazy' src="asset/desc/8.png" alt="desc-img" />
                         <span className='text-white'>Cyber <br />security</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
+                
               </div>
 
               <div className="goodAt__button" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">

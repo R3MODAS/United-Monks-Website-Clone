@@ -243,6 +243,13 @@ textarea {
   .container {
     max-width: 1170px;
   }
+
+  .col-xl-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
 }
 
 .container-fluid {
@@ -608,4 +615,11 @@ a img {
     margin-bottom: 30px;
     margin-top: 50px;
   }
+}
+
+.owl-carousel{
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }

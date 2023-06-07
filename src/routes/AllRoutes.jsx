@@ -12,6 +12,10 @@ const Ui = lazy(() => import("../pages/Ui"));
 const Frontend = lazy(() => import('../pages/Frontend'));
 const Product = lazy(() => import('../pages/Product'));
 const Mobile = lazy(() => import('../pages/Mobile'));
+const Ecommerce = lazy(() => import('../pages/Ecommerce'));
+const Powerpoint = lazy(() => import('../pages/Powerpoint'));
+const Graphics = lazy(() => import('../pages/Graphics'));
+const Cyber = lazy(() => import('../pages/Cyber'));
 
 function AllRoutes() {
   return (
@@ -27,6 +31,10 @@ function AllRoutes() {
         <Route path="/frontend" element={<Frontend />} />
         <Route path="/product" element={<Product />} />
         <Route path="/mobile" element={<Mobile />} />
+        <Route path="/ecommerce" element={<Ecommerce />} />
+        <Route path="/powerpoint" element={<Powerpoint />} />
+        <Route path="/graphics" element={<Graphics />} />
+        <Route path="/cyber" element={<Cyber />} />
       </Routes>
     </>
   )
