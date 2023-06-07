@@ -17,8 +17,6 @@ function Ecommerce() {
     const layer5 = useRef(null);
     const layer6 = useRef(null);
     const layer7 = useRef(null);
-    const SliderContainer = useRef(null);
-    const SliderText = useRef(null);
 
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
@@ -69,10 +67,12 @@ function Ecommerce() {
     }
 
     const scrollBehaviour = () => {
+        const sliderContainer = document.querySelector(".slider__container");
+        const sliderText = document.querySelector(".ui__banner");
         let value = window.scrollY;
         let pos1 = -(value * 35 / 100);
-        SliderContainer.current.style.transform = `translate3d(0px, ${pos1}px, 0px)`;
-        SliderText.current.style.opacity = (1 - value / 700);
+        sliderContainer.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
+        sliderText.style.opacity = (1 - value / 700);
     }
 
     useEffect(() => {
@@ -153,7 +153,7 @@ function Ecommerce() {
 
             {/* ======================= Slider Section ====================== */}
             <section id="slider__section" >
-                <div className="slider__container" ref={SliderContainer}>
+                <div className="slider__container">
 
                     <div className="parallax">
                         <div className="layer layer1" ref={layer1}>
@@ -170,7 +170,7 @@ function Ecommerce() {
                     </div>
 
                     <div className="container clearfix">
-                        <div className="ui__banner" ref={SliderText}>
+                        <div className="ui__banner">
                             <label className='text-white'>Ecommerce</label>
                             <h1 className="text-white"><span className="green">Build a money-making</span> <span className="white last__child">Ecommerce Website</span></h1>
                             <ul>

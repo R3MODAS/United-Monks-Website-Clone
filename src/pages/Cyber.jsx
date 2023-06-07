@@ -13,8 +13,6 @@ function Cyber() {
     const layer1 = useRef(null);
     const layer2 = useRef(null);
     const layer3 = useRef(null);
-    const SliderContainer = useRef(null);
-    const SliderText = useRef(null);
 
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
@@ -56,10 +54,12 @@ function Cyber() {
     }
 
     const scrollBehaviour = () => {
+        const sliderContainer = document.querySelector(".slider__container");
+        const sliderText = document.querySelector(".ui__banner");
         let value = window.scrollY;
         let pos1 = -(value * 35 / 100);
-        SliderContainer.current.style.transform = `translate3d(0px, ${pos1}px, 0px)`;
-        SliderText.current.style.opacity = (1 - value / 700);
+        sliderContainer.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
+        sliderText.style.opacity = (1 - value / 700);
     }
 
     useEffect(() => {
@@ -140,7 +140,7 @@ function Cyber() {
 
             {/* ======================= Slider Section ====================== */}
             <section id="slider__section" >
-                <div className="slider__container" ref={SliderContainer}>
+                <div className="slider__container">
 
                     <div className="parallax">
                         <div className="layer layer1" ref={layer1}>
@@ -157,7 +157,7 @@ function Cyber() {
                     </div>
 
                     <div className="container clearfix">
-                        <div className="ui__banner" ref={SliderText}>
+                        <div className="ui__banner">
                             <label className='text-white'>Cyber Security</label>
                             <h1 className="text-white"><span className="green">Full Stack</span> <span className="white last__child">Security Assessments</span></h1>
                             <Link to="/contact" className='bg__green'>Get in Touch with us</Link>
