@@ -97,7 +97,7 @@ function Ui() {
     }, [])
 
     return (
-        <div className='ui__wrapper'>
+        <div className='ui__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
@@ -290,13 +290,13 @@ function Ui() {
                             0: {
                                 items: 1
                             },
-                            766: {
+                            768: {
                                 items: 3
                             },
-                            1000: {
+                            1199: {
                                 items: 4
                             },
-                            1200: {
+                            1350: {
                                 items: 5
                             }
 

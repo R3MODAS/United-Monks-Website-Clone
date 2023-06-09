@@ -17,7 +17,7 @@ function Carousel() {
                   0: {
                     items: 1
                   },
-                  766: {
+                  576: {
                     items: 3
                   },
                   1000: {

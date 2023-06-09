@@ -208,10 +208,6 @@ textarea {
   line-height: inherit;
 }
 
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%;
-}
 
 // ======================== Bootstrap Adjustments ===========================
 
@@ -219,6 +215,13 @@ textarea {
   .container {
     max-width: 540px;
   }
+
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -230,9 +233,21 @@ textarea {
     margin-left: 50%;
 }
 
+.col-md-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
 .col-md-6{
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.col-md-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
 }
 
 }
@@ -241,6 +256,19 @@ textarea {
   .container {
     max-width: 970px;
   }
+
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
 }
 
 @media (min-width: 1200px) {
@@ -252,6 +280,18 @@ textarea {
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
     max-width: 25%;
+}
+
+.col-xl-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-xl-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
 }
 
 }
@@ -544,9 +584,6 @@ a img {
   }
 }
 
-.green__animation {
-  animation: green 0.6s linear 0s;
-}
 
 // ======================= Common Padding ============================
 

@@ -211,11 +211,11 @@
     padding-top: 7%;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 65px;
   }
 
-  #content .content__wrapper #work__section .work__list .triangle__img {
+  #work__section .work__list .triangle__img {
     bottom: -4%;
     left: -19%;
     width: 100%;
@@ -341,6 +341,79 @@
 
   .wrapper #career__section .career__form__container {
     padding-top: 15px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 65px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner span.last__child::after {
+    bottom: -20px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    padding-left: 120px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    font-size: 65px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding-bottom: 100px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 65px;
+  }
+
+  .ui__wrapper #ui_ui_process__section {
+    padding: 80px 0 0;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 65px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute {
+    width: 86%;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+    font-size: 250px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 220px 0 0;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .wwl__box {
+    padding-bottom: 30px;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .wwl__img {
+    width: 150px !important;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 65px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+    font-size: 250px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel
+    .parallax
+    .large__circle {
+    width: 535px;
+    height: 535px;
   }
 }
 
@@ -607,16 +680,11 @@
     padding-top: 6%;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 60px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     right: -45%;
   }
 
@@ -747,6 +815,77 @@
     height: 380px;
     right: -12%;
     top: 41%;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    margin-top: -201.75px;
+    padding-left: 200px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container {
+    margin-top: 80px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__title {
+    font-size: 40px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute {
+    width: 90%;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+    font-size: 225px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 340px 0 0;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel
+    .parallax
+    .large__circle {
+    top: 11%;
+    left: -10%;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text
+    h5 {
+    font-size: 30px;
   }
 }
 
@@ -899,55 +1038,35 @@
     padding-top: 4%;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 55px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one h3 {
+  #work__section .work__list .work__model__one h3 {
     margin: 25px 0;
     font-size: 40px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two h3 {
+  #work__section .work__list .work__model__two h3 {
     margin: 25px 0;
     font-size: 40px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container {
+  #project__section .project__container .circle__container {
     width: 550px;
     height: 550px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .circle__child
-    h2 {
+  #project__section .project__container .circle__container .circle__child h2 {
     font-size: 40px;
     margin-bottom: 25px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     right: -30%;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .map__img
-    img {
+  #project__section .project__container .map__img img {
     width: 70%;
   }
 
@@ -1103,6 +1222,93 @@
   .wrapper #career__section .career__form__container {
     padding-top: 20px;
   }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    margin-top: -191.25px;
+  }
+
+  .ui__wrapper #slider__section .parallax .green__circle {
+    width: 460px;
+    height: 460px;
+  }
+
+  .ui__wrapper #slider__section .parallax .medium__circle {
+    width: 290px;
+    height: 290px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img {
+    width: 58%;
+  }
+
+  .extrapadding {
+    padding-top: 60px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding-bottom: 80px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #what_we_love__section p {
+    margin: 22px auto;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .wwl__box {
+    padding-bottom: 22px;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute {
+    width: 92%;
+    bottom: -160px;
+    padding: 60px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text
+    p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 300px 130px 0;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__parent {
+    width: 484px;
+    height: 360px;
+    top: 28px;
+    left: 55px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1245,7 +1451,7 @@
     font-size: 200px;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 55px;
   }
 
@@ -1292,6 +1498,76 @@
   .wrapper #career__section h2 {
     font-size: 200px;
   }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .wwl__box {
+    padding-bottom: 22px;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .wwl__img {
+    width: 140px !important;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider .box__header p {
+    font-size: 20px;
+    margin: 22px auto;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute img {
+    width: 90px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute .why_heading {
+    font-size: 25px;
+    margin: 25px 0;
+  }
+
+  .ui__wrapper #why_chose_us__section {
+    margin-bottom: 180px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute {
+    width: 95%;
+    bottom: -140px;
+    padding: 60px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute p {
+    font-size: 14px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 280px 100px 0;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__parent {
+    width: 516px;
+    height: 385px;
+    top: 30px;
+    left: 59px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .parallax .large__circle {
+    top: 13%;
+    left: -3%;
+    width: 430px;
+    height: 430px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container h2 {
+  font-size: 200px;
+  top: -50px;
+}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1800,20 +2076,20 @@
     top: 2970px;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 50px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one {
+  #work__section .work__list .work__model__one {
     padding: 50px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one h3 {
+  #work__section .work__list .work__model__one h3 {
     margin: 25px 0;
     font-size: 40px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one ul {
+  #work__section .work__list .work__model__one ul {
     margin: 25px 0;
   }
 
@@ -1827,16 +2103,16 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two {
+  #work__section .work__list .work__model__two {
     padding: 50px 50px 50px 130px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two h3 {
+  #work__section .work__list .work__model__two h3 {
     margin: 25px 0;
     font-size: 40px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two ul {
+  #work__section .work__list .work__model__two ul {
     margin: 25px 0;
   }
 
@@ -1850,48 +2126,26 @@
     padding: 10px 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container {
+  #project__section .project__container .circle__container {
     width: 570px;
     height: 570px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle {
+  #project__section .project__container .circle__container .small__circle {
     top: 15%;
     left: -33%;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     right: -33%;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .circle__child
-    h2 {
+  #project__section .project__container .circle__container .circle__child h2 {
     font-size: 40px;
     margin-bottom: 25px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
+  #project__section
     .project__container
     .circle__container
     .circle__child
@@ -1900,12 +2154,7 @@
     padding: 10px 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .map__img
-    img {
+  #project__section .project__container .map__img img {
     width: 87%;
   }
 
@@ -2192,6 +2441,175 @@
   .wrapper #career__section .career__form__container #career__form .submit {
     font-size: 15px;
   }
+
+  .ui__wrapper #slider__section .ui__banner {
+    margin-top: -182.5px;
+    padding-left: 150px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 50px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img {
+    width: 55%;
+  }
+
+  .ui__wrapper #slider__section .parallax .green__circle {
+    right: -20%;
+    width: 380px;
+    height: 380px;
+  }
+
+  .ui__wrapper #slider__section .parallax .medium__circle {
+    left: -12%;
+    width: 260px;
+    height: 260px;
+  }
+
+  .extrapadding {
+    padding-top: 50px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding-left: 85px;
+    padding-bottom: 60px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    width: 543px;
+    font-size: 50px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 50px;
+  }
+
+  .ui__wrapper #what_we_love__section p {
+    margin: 22px auto;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 50px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__subtitle {
+    font-size: 18px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__list
+    .info__item
+    p {
+    font-size: 14px;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 50px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 225px 60px 0;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__parent {
+      top: 25px;
+      left: 49px;
+      width: 435px;
+      height: 325px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text {
+    margin: 25px 0 0 10px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text
+    h5 {
+    font-size: 26px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text
+    p {
+    font-size: 14px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__text
+    a {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .ui__wrapper #project__portfolio__section
+  .project__container .portfolio__item__img{
+    padding-right: 20px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .parallax .large__circle {
+    width: 380px;
+    height: 380px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container h2 {
+  font-size: 163px;
+    top: -40px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev {
+  right: auto;
+  left: -40px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next {
+  left: auto;
+  right: -40px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev img {
+  width: 80%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next img {
+  width: 80%;
+}
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2864,21 +3282,21 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 45px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one {
+  #work__section .work__list .work__model__one {
     padding: 45px 30px;
     margin-right: -70px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one h3 {
+  #work__section .work__list .work__model__one h3 {
     font-size: 35px;
     margin: 25px 0;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one ul {
+  #work__section .work__list .work__model__one ul {
     margin: 25px 0;
   }
 
@@ -2892,16 +3310,16 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two {
+  #work__section .work__list .work__model__two {
     padding: 45px 30px 45px 100px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two h3 {
+  #work__section .work__list .work__model__two h3 {
     font-size: 35px;
     margin: 25px 0;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two ul {
+  #work__section .work__list .work__model__two ul {
     margin: 25px 0;
   }
 
@@ -2915,38 +3333,26 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .triangle__img {
+  #work__section .work__list .triangle__img {
     width: 80%;
     left: -24%;
   }
 
-  #content .content__wrapper #project__section .project__container {
+  #project__section .project__container {
     padding-bottom: 50px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container {
+  #project__section .project__container .circle__container {
     width: 500px;
     height: 500px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .circle__child
-    h2 {
+  #project__section .project__container .circle__container .circle__child h2 {
     font-size: 35px;
     margin-bottom: 25px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
+  #project__section
     .project__container
     .circle__container
     .circle__child
@@ -2955,21 +3361,11 @@
     padding: 10px 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle {
+  #project__section .project__container .circle__container .small__circle {
     left: -19%;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     right: -19%;
     width: 40px;
     height: 40px;
@@ -3355,6 +3751,100 @@
   .extraextrapadding {
     padding-top: 0;
   }
+
+  .ui__wrapper #slider__section .parallax .green__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .parallax .medium__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    margin-top: -185.5px;
+    padding-left: 70px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 45px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner ul li {
+    padding: 0 10px 0 0;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img {
+    width: 55%;
+  }
+
+  .ui__wrapper #slider__section .ui__banner a {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute p {
+    width: 100%;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .parallax .large__circle {
+    top: 13%;
+    left: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container h2 {
+  font-size: 120px;
+  top: -20px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel {
+  padding: 20% 30px 0;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev {
+  right: auto;
+  left: -40px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next {
+  left: auto;
+  right: -40px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev img {
+  width: 80%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next img {
+  width: 80%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text {
+  margin: 0 0 0 29px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text h5 {
+  font-size: 22px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text p {
+  margin: 7px 0 10px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text a {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -3429,6 +3919,166 @@
     top: 0;
     margin-bottom: 0;
   }
+
+  .ui__wrapper #slider__section .ui__banner a {
+    margin-top: 50px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img {
+    width: 55%;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding-left: 85px;
+    padding-bottom: 60px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    width: 543px;
+    font-size: 50px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    width: 495px;
+    font-size: 45px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container a::after {
+    height: 8px;
+    bottom: -10px !important;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .extrapadding {
+    padding-top: 40px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 45px;
+  }
+
+  .ui__wrapper #what_we_love__section p {
+    width: 70%;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 45px;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container {
+    margin-top: 25px;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container .row {
+    padding-bottom: 20px !important;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container .large__circle {
+    top: auto;
+    right: auto;
+    bottom: 7%;
+    left: 20% !important;
+    width: 400px;
+    height: 400px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__reverse
+    .large__circle {
+    top: auto;
+    bottom: 7%;
+    left: 20% !important;
+    width: 400px;
+    height: 400px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__slider
+    img {
+    width: 65% !important;
+    margin: auto;
+  }
+
+  .ui__wrapper #why_chose_us__section {
+    padding: 80px 0 0px;
+    margin-bottom: 90px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute {
+    position: relative;
+    bottom: -80px;
+    width: 100%;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 45px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__parent {
+    width: 345px;
+    top: 21px;
+    left: 40px;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__carousel {
+    padding: 175px 0 0;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  .ui__wrapper
+    #project__portfolio__section
+    .project__container
+    .portfolio__item__parent {
+    width: 320px;
+    height: 239px;
+    top: 18px;
+    left: 36px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+    top: -20px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container .portfolio__item__text {
+    margin: 0px 0 0 15px;
+  }
+
+  .ui__wrapper #project__portfolio__section {
+    padding-bottom: 60px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text p {
+  margin: 7px 0 10px;
+  line-height: 1.5 !important;
+}
+
+
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -3786,12 +4436,6 @@
 
   #main__content #portfolio__section .portfolio__carousel {
     padding: 50px 0 0;
-  }
-
-  .portfolio__item__img {
-    width: 320px;
-    margin: 28px auto 10px;
-    position: relative;
   }
 
   #main__content
@@ -4245,25 +4889,25 @@
     top: 3795.34px;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 35px;
   }
 
-  #content .content__wrapper #work__section .work__text p {
+  #work__section .work__text p {
     width: 100%;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one {
+  #work__section .work__list .work__model__one {
     margin-right: 0;
     padding: 40px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one h3 {
+  #work__section .work__list .work__model__one h3 {
     font-size: 30px;
     margin: 20px 0;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one ul {
+  #work__section .work__list .work__model__one ul {
     margin: 30px 0;
   }
 
@@ -4277,12 +4921,12 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two {
+  #work__section .work__list .work__model__two {
     padding: 40px;
     margin-top: 60px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two h3 {
+  #work__section .work__list .work__model__two h3 {
     font-size: 30px;
     margin: 20px 0;
   }
@@ -4297,38 +4941,26 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .triangle__img {
+  #work__section .work__list .triangle__img {
     bottom: -2%;
     width: 60%;
   }
 
-  #content .content__wrapper #project__section .project__container {
+  #project__section .project__container {
     padding: 60px 0;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container {
+  #project__section .project__container .circle__container {
     width: 400px;
     height: 400px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .circle__child
-    h2 {
+  #project__section .project__container .circle__container .circle__child h2 {
     font-size: 30px;
     margin-bottom: 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
+  #project__section
     .project__container
     .circle__container
     .circle__child
@@ -4337,28 +4969,18 @@
     padding: 10px 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle {
+  #project__section .project__container .circle__container .small__circle {
     left: -18%;
     display: block;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     right: -21%;
     width: 40px;
     height: 40px;
   }
 
-  #content .content__wrapper #project__section .project__container .map__img {
+  #project__section .project__container .map__img {
     display: none;
   }
 
@@ -4849,6 +5471,224 @@
   .extraextrapadding {
     padding-top: 0;
   }
+
+  .ui__wrapper #slider__section .parallax .green__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .parallax .medium__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    position: relative;
+    top: 0px;
+    width: auto;
+    margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 10px !important;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .ui__wrapper #slider__section .ui__banner label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 25px;
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 span {
+    display: block;
+  }
+
+  .ui__wrapper #slider__section .ui__banner span.last__child::after {
+    height: 5px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner ul li {
+    padding: 14px;
+    width: 18%;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img {
+    width: 55%;
+  }
+
+  .ui__wrapper #slider__section .ui__banner a {
+    margin: 40px 0;
+  }
+
+  .extrapadding {
+    padding-top: 50px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding: 0;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    width: 290px;
+    font-size: 27px;
+    margin-bottom: 30px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 27px;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider {
+    padding: 0 70px;
+    margin-bottom: 50px;
+  }
+
+  .ui__wrapper #ui_ui_process__section {
+    padding: 60px 0 0;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 27px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .number__bg {
+    font-size: 100px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top {
+    padding-top: 60px;
+    padding-left: 0px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__title {
+    font-size: 30px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__subtitle {
+    font-size: 18px;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container .large__circle {
+    display: block;
+    bottom: 3%;
+    left: 12% !important;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__reverse
+    .large__circle {
+    display: block;
+    bottom: 3%;
+    left: 12% !important;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__slider
+    img {
+    width: 75% !important;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 27px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+      font-size: 100px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container .portfolio__carousel {
+    padding: 120px 20px 0;
+    width: 560px;
+}
+
+.portfolio__item__img {
+  width: 320px;
+  margin: 28px auto 10px;
+  position: relative;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__parent {
+  width: 262px;
+  height: 196px;
+  top: 15px;
+  left: 30px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev {
+  right: auto;
+  left: -30px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next {
+  left: auto;
+  right: -30px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev img {
+  width: 70%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next img {
+  width: 70%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text {
+  margin: 25px 20px 0;
+  text-align: center;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text h5 {
+  font-size: 25px;
+  padding-top: 10px;
+  display: block;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text p {
+  width: 100%;
+  font-size: 14px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text a {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
 }
 
 @media (max-width: 575px) {
@@ -4916,8 +5756,7 @@
     font-size: 24px;
   }
 
-  .trusted__carousel .owl-item img {
-    display: block;
+  .trusted__carousel .owl-carousel .owl-item img {
     margin: 0 auto;
     width: 50%;
   }
@@ -5217,11 +6056,6 @@
     padding: 15px 0 0;
   }
 
-  .portfolio__item__img {
-    width: 240px;
-    margin: 35px auto 10px;
-    position: relative;
-  }
 
   #main__content
     #portfolio__section
@@ -5692,20 +6526,20 @@
     top: 4907.11px;
   }
 
-  #content .content__wrapper #work__section .work__text h2 {
+  #work__section .work__text h2 {
     font-size: 27px;
   }
 
-  #content .content__wrapper #work__section .work__text p {
+  #work__section .work__text p {
     width: 100%;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one {
+  #work__section .work__list .work__model__one {
     padding: 25px 15px;
     margin-right: 0;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__one h3 {
+  #work__section .work__list .work__model__one h3 {
     font-size: 36px;
     z-index: 2;
     position: relative;
@@ -5721,12 +6555,12 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two {
+  #work__section .work__list .work__model__two {
     padding: 25px 15px;
     margin-top: 60px;
   }
 
-  #content .content__wrapper #work__section .work__list .work__model__two h3 {
+  #work__section .work__list .work__model__two h3 {
     font-size: 36px;
     z-index: 2;
     position: relative;
@@ -5742,39 +6576,27 @@
     padding: 10px 20px;
   }
 
-  #content .content__wrapper #work__section .work__list .triangle__img {
+  #work__section .work__list .triangle__img {
     bottom: -1%;
     width: 100%;
     left: -31%;
   }
 
-  #content .content__wrapper #project__section .project__container {
+  #project__section .project__container {
     padding: 30px 0 40px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container {
+  #project__section .project__container .circle__container {
     width: 280px;
     height: 280px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .circle__child
-    h2 {
+  #project__section .project__container .circle__container .circle__child h2 {
     font-size: 22px;
     margin-bottom: 11px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
+  #project__section
     .project__container
     .circle__container
     .circle__child
@@ -5783,25 +6605,15 @@
     padding: 10px 20px;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle {
+  #project__section .project__container .circle__container .small__circle {
     display: none;
   }
 
-  #content
-    .content__wrapper
-    #project__section
-    .project__container
-    .circle__container
-    .small__circle2 {
+  #project__section .project__container .circle__container .small__circle2 {
     display: none;
   }
 
-  #content .content__wrapper #project__section .project__container .map__img {
+  #project__section .project__container .map__img {
     display: none;
   }
 
@@ -6144,84 +6956,358 @@
     bottom: 25%;
     width: 40px;
     height: 40px;
+  }
+
+  .wrapper #career__section h2 {
+    font-size: 70px;
+  }
+
+  .wrapper #career__section .career__form__container {
+    padding-top: 0px;
+  }
+
+  .wrapper #career__section .career__form__container h4 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .wrapper #career__section .career__form__container p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form {
+    padding-top: 40px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form h5 {
+    font-size: 24px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox {
+    padding-top: 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .career__textbox__left {
+    margin: 0;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .form__group {
+    margin-bottom: 30px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__textbox
+    .career__textbox__right
+    .career__textbox__left {
+    margin: 0;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    h5 {
+    padding-top: 20px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    h6 {
+    padding: 30px 0 10px;
+  }
+
+  .career__checkbox__parent {
+    padding-top: 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__checkbox__total
+    .label {
+    margin: 0 0 15px;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__description {
+    padding-top: 0;
+  }
+
+  .wrapper
+    #career__section
+    .career__form__container
+    #career__form
+    .career__description
+    .textarea__input {
+    height: 100px;
+  }
+
+  .wrapper #career__section .career__form__container #career__form .submit {
+    margin: 45px 0;
+    padding: 15px 50px;
+    font-size: 13px;
+  }
+
+  .extraextrapadding {
+    padding-top: 0;
+  }
+
+  .ui__wrapper #slider__section .parallax .green__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .parallax .medium__circle {
+    display: none;
+  }
+
+  .ui__wrapper #slider__section .ui__banner {
+    position: relative;
+    top: 0px;
+    width: auto;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 10px !important;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .ui__wrapper #slider__section .ui__banner label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .ui__wrapper #slider__section .ui__banner h1 span {
+    display: block;
+  }
+
+  .ui__wrapper #slider__section .ui__banner span.last__child::after {
+    height: 5px;
+  }
+
+  .ui__wrapper #slider__section .ui__banner ul li {
+    padding: 0 5px 5px 0;
+    display: inline-block;
+  }
+
+  .ui__wrapper #slider__section {
+    height: 80vh;
+  }
+
+  .ui__wrapper #slider__section .slider__container {
+    height: 100vh;
+  }
+
+  .ui__wrapper #slider__section .ui__banner a {
+    margin: 40px 0;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container {
+    padding: 0;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container h2 {
+    width: 255px;
+    font-size: 25px;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container a {
+    padding: 6px 20px 0;
+  }
+
+  .ui__wrapper #ui_ux__section .ui_ux__container p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 {
+    font-size: 25px;
+  }
+
+  .ui__wrapper #what_we_love__section .wwl__slider {
+    margin-bottom: 50px;
+  }
+
+  .ui__wrapper #what_we_love__section h2 img {
+    padding: 0 8px;
+  }
+
+  .ui__wrapper #ui_ui_process__section {
+    padding: 60px 0 0;
+  }
+
+  .ui__wrapper #ui_ui_process__section h2 {
+    font-size: 25px;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .ui_ux__info
+    .info__top
+    .info__subtitle {
+    font-size: 18px;
+  }
+
+  .ui__wrapper .col-lg-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .ui__wrapper #ui_ui_process__section .ui_ux_steps__container .large__circle {
+    display: block;
+    bottom: 3%;
+    left: 12% !important;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__reverse
+    .large__circle {
+    display: block;
+    bottom: 3%;
+    left: 12% !important;
+  }
+
+  .ui__wrapper
+    #ui_ui_process__section
+    .ui_ux_steps__container
+    .step__slider
+    img {
+    width: 90% !important;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 25px;
+  }
+
+  .ui__wrapper #why_chose_us__section .why_us_absolute p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 60px;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 55px;
+  }
+
+  .ui__wrapper #why_chose_us__section .container h2 {
+    font-size: 25px;
+  }
+
+  .ui__wrapper #project__portfolio__section .project__container h2 {
+    top: -10px;
+    font-size: 70px;
 }
 
-.wrapper #career__section h2 {
-  font-size: 70px;
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel {
+  width: auto;
+  padding: 80px 0 0;
 }
 
-.wrapper #career__section .career__form__container {
-  padding-top: 0px;
+.portfolio__item__img {
+  width: 240px;
+  margin: 35px auto 10px;
+  position: relative;
 }
 
-.wrapper #career__section .career__form__container h4 {
-  font-size: 30px;
-  margin: 0;
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__parent {
+  width: 196px;
+  height: 146px;
+  top: 12px;
+  left: 23px;
 }
 
-.wrapper #career__section .career__form__container p {
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev {
+  right: auto;
+  left: -20px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next{
+  left: auto;
+  right: -20px;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-prev img{
+  width: 70%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-next img{
+  width: 70%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__carousel .owl-carousel .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 30%;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text {
+  margin: 25px 20px 0;
+  text-align: center;
+}
+
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text h5 {
+  font-size: 22px;
   width: 100%;
-  font-size: 18px;
 }
 
-.wrapper #career__section .career__form__container #career__form {
-  padding-top: 40px;
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text p {
+  width: 100%;
+  font-size: 14px;
 }
 
-.wrapper #career__section .career__form__container #career__form h5 {
-  font-size: 24px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__textbox {
-  padding-top: 15px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__textbox .career__textbox__left {
-  margin: 0;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__textbox .form__group {
-  margin-bottom: 30px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__textbox .career__textbox__right .career__textbox__left {
-  margin: 0;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__checkbox__total h5 {
-  padding-top: 20px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__checkbox__total h6 {
-  padding: 30px 0 10px;
-}
-
-.career__checkbox__parent{
-  padding-top: 15px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__checkbox__total .label {
-  margin: 0 0 15px;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__description {
-  padding-top: 0;
-}
-
-.wrapper #career__section .career__form__container #career__form .career__description .textarea__input {
-  height: 100px;
-}
-
-.wrapper #career__section .career__form__container #career__form .submit {
-  margin: 45px 0;
-  padding: 15px 50px;
+.ui__wrapper #project__portfolio__section .project__container .portfolio__item__text a {
   font-size: 13px;
+  padding: 10px 20px;
 }
-
-.extraextrapadding {
- padding-top: 0;
-}
-
 
 }
 
@@ -6305,6 +7391,10 @@
     .pf__nine {
     left: 0px;
     top: 5570px;
+  }
+
+  .ui__wrapper #slider__section {
+    height: 90vh;
   }
 }
 
@@ -6396,6 +7486,10 @@
   .wrapper #slider__section2 {
     height: 65vh;
   }
+
+  .ui__wrapper #slider__section {
+    height: 70vh;
+  }
 }
 
 @media (max-width: 380px) {
@@ -6405,5 +7499,9 @@
 
   #hero__section .hero__left .hero__text h2 {
     margin-bottom: 75px;
+  }
+
+  .ui__wrapper #slider__section {
+    height: 85vh;
   }
 }
