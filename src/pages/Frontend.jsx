@@ -92,7 +92,7 @@ function Frontend() {
 
 
   return (
-    <div className='frontend__wrapper'>
+    <div className='frontend__wrapper overflow'>
 
       <div className="left__border"></div>
       <div className="right__border"></div>
