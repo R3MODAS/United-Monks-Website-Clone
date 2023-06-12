@@ -192,6 +192,7 @@ function Services() {
       <div id='content'>
 
         <div className="content__wrapper nopadding">
+
           {/* =================== Services Section =============== */}
           <section id='services__section'>
             <h2>Services</h2>
@@ -215,7 +216,7 @@ function Services() {
                           <li>Interface Design</li>
                           <li>KPI Led Design</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/ui-ux" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -233,7 +234,7 @@ function Services() {
                           <li><img loading='lazy' src="asset/icons/6.png" alt="Angular JS" /> Angular JS</li>
                           <li><img loading='lazy' src="asset/icons/7.png" alt="Vue Js" /> Vue Js</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/frontend" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -249,7 +250,7 @@ function Services() {
                           <li><img loading='lazy' src="asset/icons/11.png" alt="Wordpress" /> Wordpress</li>
                           <li><img loading='lazy' src="asset/icons/12.png" alt="Node.Js" /> Node.Js</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/webapp" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -266,7 +267,7 @@ function Services() {
                           <li>Beta Testing</li>
                           <li>Support &amp; Maintenance</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/product" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -281,7 +282,7 @@ function Services() {
                           <li>PrestaShop</li>
                           <li>Custom Ecommerce Solution</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/ecommerce" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -297,7 +298,7 @@ function Services() {
                           <li><img loading='lazy' src="asset/icons/5.png" alt="React Native" /> React Native</li>
                           <li><img loading='lazy' src="asset/icons/18.png" alt="Ionic" /> Ionic</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/mobile" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -314,7 +315,7 @@ function Services() {
                           <li>Ad Design</li>
                           <li>Corporate Identity</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/graphics" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -329,7 +330,7 @@ function Services() {
                           <li>Sales Presentations</li>
                           <li>Education Presentations</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/powerpoint" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 
@@ -343,7 +344,7 @@ function Services() {
                           <li>Code Review</li>
                           <li>Reverse Engineering</li>
                         </ul>
-                        <a href="/" className='bg__green'>Read More</a>
+                        <Link to="/cyber" className='bg__green'>Read More</Link>
                       </div>
                     </article>
 

@@ -1,0 +1,313 @@
+.webapp__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 0;
+
+  #slider__section {
+    margin-bottom: 0;
+    .slider__container {
+      background-image: url("/asset/web-app-banner.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .parallax {
+      .layer1 {
+        position: relative;
+      }
+
+      .green__circle {
+        top: 18%;
+        position: absolute;
+        right: -15%;
+        background: rgba(20, 184, 140, 0.65);
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+      }
+
+      .layer2 {
+        position: absolute;
+      }
+
+      .medium__circle {
+        right: auto;
+        top: auto;
+        left: -8%;
+        bottom: 13%;
+        background: rgba(20, 184, 140, 0.65);
+      }
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .ui__banner {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: -223.75px;
+      padding-left: 60px;
+
+      label {
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        text-transform: capitalize;
+        cursor: text;
+        display: block;
+      }
+
+      h1 {
+        font-size: 80px;
+        line-height: 1.1;
+      }
+
+      span {
+        display: block;
+      }
+
+      span.last__child {
+        display: inline-block;
+        position: relative;
+        width: 715px;
+        line-height: 1;
+
+        &::after {
+          display: block;
+          height: 10px;
+          bottom: -15px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          content: "";
+          background: #14b88c;
+        }
+      }
+
+      ul {
+        margin: 40px 0 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+          margin: 0;
+          padding: 0 20px 0 0;
+          display: inline-block;
+        }
+      }
+
+      .ui__icon__container {
+        .ui__icon {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 2px solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: 600;
+          text-align: center;
+          margin: 10px 0 0;
+        }
+      }
+
+      a {
+        margin-top: 90px;
+        display: inline-block;
+        border: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:hover {
+          animation: green 0.6s linear 0s;
+        }
+      }
+    }
+  }
+
+  #attract_customer__section {
+    position: relative;
+
+    .parallax {
+      .layer3 {
+        position: relative;
+      }
+
+      .layer4 {
+        position: absolute;
+      }
+
+      .large__circle {
+        bottom: -40%;
+        left: -15%;
+        width: 600px;
+        height: 600px;
+      }
+
+      .small__circle {
+        right: 3%;
+        bottom: 0;
+      }
+    }
+
+    .ecommerce_solution_content {
+      h2 {
+        width: 900px;
+      }
+
+      p {
+        width: 735px;
+      }
+    }
+  }
+
+  #what_we_offer__section {
+    .web_app_offer {
+      padding: 0 0 60px;
+    }
+
+    h2 {
+      padding: 0 0 40px;
+      font-size: 70px;
+      line-height: 1.1;
+      font-weight: 800;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.6 !important;
+      width: 925px;
+    }
+
+    .web_app_offer_child {
+      padding: 30px 0 0;
+    }
+
+    .what_we_offer_child_content {
+      border: 5px solid #14b88c;
+      padding: 60px 40px 50px;
+      margin-bottom: 10px;
+      height: 415px;
+
+      span {
+        display: block;
+        font-weight: bold;
+        font-size: 28px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.1;
+        padding: 15px 0 25px;
+      }
+
+      p {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "Raleway", sans-serif;
+        line-height: 1.5 !important;
+      }
+
+      &:nth-child(1) {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  #our__values__section {
+    padding: 80px 0;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 80px;
+      line-height: 1.1;
+      font-weight: 800;
+    }
+
+    p {
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.1 !important;
+      font-size: 30px;
+      margin: 0;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      display: block;
+      padding: 20px 15px 0;
+      text-align: center;
+    }
+
+    .values__point {
+      .value__unit {
+        text-align: center;
+        margin-bottom: 30px;
+
+        label {
+          color: #14b88c;
+          font-size: 140px;
+          cursor: text;
+          margin: 0;
+          line-height: 0.8;
+          font-weight: 300;
+          padding: 30px;
+        }
+
+        p {
+          font-size: 30px;
+          margin: 0;
+          color: #fff;
+          font-weight: 800;
+          line-height: 1.1 !important;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+    .parallax {
+      .medium__circle {
+        background: #17d5a2;
+        bottom: 10%;
+        left: -44%;
+      }
+
+      .dotted__element {
+        bottom: -47%;
+        left: -46%;
+      }
+
+      .layer5 {
+        position: relative;
+      }
+    }
+  }
+
+  #portfolio__section {
+    .portfolio__carousel {
+      .carousel__item__container {
+        .portfolio__text {
+          p {
+            line-height: 1.5 !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ const Ecommerce = lazy(() => import('../pages/Ecommerce'));
 const Powerpoint = lazy(() => import('../pages/Powerpoint'));
 const Graphics = lazy(() => import('../pages/Graphics'));
 const Cyber = lazy(() => import('../pages/Cyber'));
+const WebApp = lazy(() => import('../pages/WebApp'));
 
 function AllRoutes() {
   return (
@@ -35,6 +36,7 @@ function AllRoutes() {
         <Route path="/powerpoint" element={<Powerpoint />} />
         <Route path="/graphics" element={<Graphics />} />
         <Route path="/cyber" element={<Cyber />} />
+        <Route path="/webapp" element={<WebApp />} />
       </Routes>
     </>
   )

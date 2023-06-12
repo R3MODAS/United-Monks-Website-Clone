@@ -185,7 +185,7 @@ function Portfolio() {
                                         </div>
                                     </div>
 
-                                    <a href="https://www.behance.net/gallery/128340601/MyProGamer" className='portfolio__img__child'>
+                                    <a href="https://www.behance.net/gallery/128340601/MyProGamer" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/mpg_portfolio.jpg" alt="img" />
@@ -202,7 +202,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.njoyskratom.com/" className='portfolio__img__child'>
+                                    <a href="https://www.njoyskratom.com/" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/njoy.gif" alt="img" />
@@ -219,7 +219,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.behance.net/gallery/97762167/Adfluence" className='portfolio__img__child'>
+                                    <a href="https://www.behance.net/gallery/97762167/Adfluence" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/adfluance.jpg" alt="img" />
@@ -236,7 +236,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.behance.net/gallery/97762167/Adfluence" className='portfolio__img__child'>
+                                    <a href="https://karbonn.in/" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/karbonnmobile.gif" alt="img" />
@@ -253,7 +253,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.behance.net/gallery/86932015/Ayam-Meditation-Website-Design-and-Development" className='portfolio__img__child'>
+                                    <a href="https://www.behance.net/gallery/86932015/Ayam-Meditation-Website-Design-and-Development" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/ayam_portfolio.jpg" alt="img" />
@@ -270,7 +270,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.behance.net/gallery/110706737/The-Bump-To-Baby-Co" className='portfolio__img__child'>
+                                    <a href="https://www.behance.net/gallery/110706737/The-Bump-To-Baby-Co" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/bumptobaby.jpg" alt="img" />
@@ -288,7 +288,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="https://www.angesbags.com/" className='portfolio__img__child'>
+                                    <a href="https://www.angesbags.com/" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/angesbags.gif" alt="img" />
@@ -305,7 +305,7 @@ function Portfolio() {
 
                                     </a>
 
-                                    <a href="http://www.celestebox.com/" className='portfolio__img__child'>
+                                    <a href="http://www.celestebox.com/" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
                                             <img loading='lazy' src="asset/port__images/celestebox.jpg" alt="img" />
@@ -345,7 +345,7 @@ function Portfolio() {
                                             </div>
                                         </div>
 
-                                        <a href="https://www.behance.net/gallery/86869395/Airline-Safety-Instruction-Card-Design" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.behance.net/gallery/86869395/Airline-Safety-Instruction-Card-Design" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/sanjiv_goenka.jpg" alt="img" />
@@ -362,7 +362,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.farminbox.in/" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.farminbox.in/" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <video autoPlay muted loop playsInline>
@@ -383,7 +383,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.healthsetgo.com/" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.healthsetgo.com/" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/hsg_portfolio.gif" alt="img" />
@@ -400,7 +400,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="http://www.vintage-bloom.com/" className='portfolio__img__child' target="_blank">
+                                        <a href="http://www.vintage-bloom.com/" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/vintagebloom.jpg" alt="img" />
@@ -417,7 +417,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/79683765/Mycloudhospitality" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.behance.net/gallery/79683765/Mycloudhospitality" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/mycloud-hospitality.jpg" alt="img" />
@@ -434,7 +434,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/61256591/Consus-Global-Website-Design-and-Development" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.behance.net/gallery/61256591/Consus-Global-Website-Design-and-Development" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/consus.jpg" alt="img" />
@@ -451,7 +451,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/79090163/Ms-Travel-Bee" className='portfolio__img__child' target="_blank">
+                                        <a href="https://www.behance.net/gallery/79090163/Ms-Travel-Bee" className='portfolio__img__child' target='_blank' target="_blank">
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/mstravelbee_portfolio.jpg" alt="img" />

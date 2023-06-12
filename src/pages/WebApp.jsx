@@ -9,7 +9,7 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-function Product() {
+function WebApp() {
   const [toggle, setToggle] = useState(false);
   const [visible, setVisible] = useState(false);
   const layer1 = useRef(null);
@@ -78,7 +78,7 @@ function Product() {
 
   useEffect(() => {
     AOS.init();
-    document.title = "Product Development";
+    document.title = "United Monks | Web Application Development";
     window.addEventListener("scroll", toggleVisible);
     window.addEventListener("mousemove", Mousemove);
     window.addEventListener("scroll", scrollBehaviour);
@@ -93,7 +93,7 @@ function Product() {
 
   return (
 
-    <div className='product__wrapper'>
+    <div className='webapp__wrapper'>
 
       <div className="left__border"></div>
       <div className="right__border"></div>
@@ -173,40 +173,31 @@ function Product() {
 
           <div className="container clearfix">
             <div className="ui__banner">
-              <label className='text-white'>Product Development</label>
-              <h1 className="text-white"><span className="green">Got an idea?</span> <span className="white last__child">Let’s build on it.</span></h1>
+              <label className='text-white'>Web Application Development</label>
+              <h1 className="text-white"><span className="green">Demand Next-gen</span> <span className="white last__child">Web Application for Your Brand</span></h1>
               <ul>
                 <li>
                   <div className='ui__icon__container'>
                     <div className="ui__icon">
-                      <img src="/asset/product icons/1.png" alt="img" />
+                      <img src="/asset/web-app/1.png" alt="img" />
                     </div>
-                    <p className='text-white'>AWS</p>
+                    <p className='text-white'>PHP</p>
                   </div>
                 </li>
 
                 <li>
                   <div className='ui__icon__container'>
                     <div className="ui__icon">
-                      <img src="/asset/product icons/2.png" alt="img" />
+                      <img src="/asset/web-app/2.png" alt="img" />
                     </div>
-                    <p className='text-white'>React</p>
+                    <p className='text-white'>CakePHP</p>
                   </div>
                 </li>
 
                 <li>
                   <div className='ui__icon__container'>
                     <div className="ui__icon">
-                      <img src="/asset/product icons/3.png" alt="img" />
-                    </div>
-                    <p className='text-white'>Node.js</p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className='ui__icon__container'>
-                    <div className="ui__icon">
-                      <img src="/asset/product icons/4.png" alt="img" />
+                      <img src="/asset/web-app/3.png" alt="img" />
                     </div>
                     <p className='text-white'>Laravel</p>
                   </div>
@@ -215,14 +206,23 @@ function Product() {
                 <li>
                   <div className='ui__icon__container'>
                     <div className="ui__icon">
-                      <img src="/asset/product icons/5.png" alt="img" />
+                      <img src="/asset/web-app/4.png" alt="img" />
                     </div>
                     <p className='text-white'>Wordpress</p>
                   </div>
                 </li>
 
+                <li>
+                  <div className='ui__icon__container'>
+                    <div className="ui__icon">
+                      <img src="/asset/web-app/5.png" alt="img" />
+                    </div>
+                    <p className='text-white'>Node.js</p>
+                  </div>
+                </li>
+
               </ul>
-              <Link to="/contact" className='bg__green'>Let's get started</Link>
+              <Link to="/contact" className='bg__green'>Get in touch with us</Link>
             </div>
           </div>
 
@@ -258,15 +258,10 @@ function Product() {
             <div className="section">
               <div className="ecommerce_solution_content">
                 <h2>
-                  Want to build a scalable web and mobile platform? <br />
-                  <Link to="/contact">We can help</Link>
+                  Want to rise above the competition and attract customers? If yes,
+                  <Link to="/services">We can help?</Link>
                 </h2>
-                <p>At United Monks, we design, engineer, and develop scalable products for entrepreneurs, inventors, startups,
-                  and businesses alike. From conceptualization to realization, our team of experienced fullstack developers,
-                  UI/UX designers, QAs and DevOps engineer does it all. Masters of our
-                  craft, we create products that look good, work even better, and make an impact on the market, all while
-                  sticking to the client requirements. We don’t just propose innovative ideas and concepts, we see them
-                  through and make them work.</p>
+                <p>We are a team of experienced web architects and engineers who understand your requirements and build a trusted user-friendly and cost-effective product. Our team works dedicatedly to help you outperform the competition, reach your revenue goals, and, most importantly, turn your business idea into reality. It’s no wonder that we are trusted by some of the leading brands across the industry.</p>
               </div>
             </div>
           </div>
@@ -276,39 +271,39 @@ function Product() {
         <div className="container" id='what_we_offer__section'>
           <div className="web_app_offer">
             <h2 className="text-black">What We Offer</h2>
-            <p>As an experienced team of engineers, we address all your product requirements with the best technologies.
-              After analyzing all the specifics of your platform, we propose a combination of tools and methodology that is business-effective
+            <p>As an experienced team of web application developers, we address all your digital needs according to your industry.
+              After analyzing all the specifics of your business, we propose a combination of tools and methodology that is business-effective
               while tackling your industrial challenges at the same time.</p>
             <div className="web_app_offer_child row">
 
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
                   <img src="/asset/what we offer icons/1.png" alt="img" />
-                  <span>Node.js <br />Websites</span>
+                  <span>Node.js Based <br />Websites</span>
                   <p>We build Node.js based web applications that are stable, powerful, and profitable. In short, they meet with, and exceed, your expectations.</p>
                 </div>
               </div>
 
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
+                  <img src="/asset/web-app/cake-php-icon.png" alt="img" />
+                  <span>Cake PHP <br />Based Websites</span>
+                  <p>We build web applications that scale up with your business and allow you to meet the growing requirements of the industry and your customers.</p>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
+                <div className="what_we_offer_child_content">
                   <img src="/asset/what we offer icons/2.png" alt="img" />
-                  <span>Laravel <br />Websites</span>
+                  <span>Laravel <br />Based Websites</span>
                   <p>While laravel based websites are known to be plain and simple, we add the beauty and elegance that will blow your mind.</p>
                 </div>
               </div>
 
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
-                  <img src="/asset/what we offer icons/3.png" alt="img" />
-                  <span>CMS Based <br />Websites</span>
-                  <p>With customized CMS based applications, we ensure that you are in control of creation, modification, or removal of content from your website.</p>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
-                <div className="what_we_offer_child_content">
                   <img src="/asset/what we offer icons/4.png" alt="img" />
-                  <span>Wordpress <br />Websites</span>
+                  <span>Wordpress <br/>Based Websites</span>
                   <p>Stay ahead of your competitor while staying current with market trends with our cost-effective and customisable WordPress based website.  </p>
                 </div>
               </div>
@@ -320,6 +315,16 @@ function Product() {
                   <p>For a complete API development environment, from voice and video to payment and cloud and more, we got you covered.</p>
                 </div>
               </div>
+
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
+                <div className="what_we_offer_child_content">
+                  <img src="/asset/what we offer icons/3.png" alt="img" />
+                  <span>CMS Based <br />Websites</span>
+                  <p>With customized CMS based applications, we ensure that you are in control of creation, modification, or removal of content from your website.</p>
+                </div>
+              </div>
+           
 
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
@@ -439,7 +444,7 @@ function Product() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/1.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/6.jpg" alt="img" />
                           </div>
                         </div>
 
@@ -447,11 +452,9 @@ function Product() {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
                       <div className="portfolio__text">
-                        <h4>Quid Tutor</h4>
-                        <p>Quid Tutor is an online teaching platform which covers 45 minutes of Tutoring at just £1</p>
-                        <span>UI/UX</span>
-                        <span>Front End Development</span>
-                        <span>Product Development</span>
+                        <h4>HealthSetGO</h4>
+                        <p>HealthSetGo is India’s largest healthcare organization for schools with the mission to nurture the world’s largest network of health promoting schools. </p>
+                        <div className="clearfix"></div>
                       </div>
                     </div>
                   </div>
@@ -466,7 +469,7 @@ function Product() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/2.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/7.jpg" alt="img" />
                           </div>
                         </div>
 
@@ -474,72 +477,9 @@ function Product() {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
                       <div className="portfolio__text">
-                        <h4>FPV Lifestyle</h4>
-                        <p>FPV Lifestyle is an e-Commerce platform for customized drone.</p>
-                        <span>UI/UX</span>
-                        <span>Front End Development</span>
-                        <span>Product Development</span>
-                        <div className="clear"></div>
-                        <a target='_blank' href="https://www.fpvlifestyle.com/">VIEW WEBSITE</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="item">
-                  <div className="carousel__item__container row">
-                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
-                      <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
-
-                        <div className="portfolio__item__parent">
-                          <div className="blockside"><div className="blocker"></div></div>
-                          <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/3.jpg" alt="img" />
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
-                      <div className="portfolio__text">
-                        <h4>Engage</h4>
-                        <p>Engage is a FinTech platform that leverages financial institutions for tracking,
-                          monitoring and generating report for all international payment transfers done around the world via their startup.</p>
-                        <span>UI/UX</span>
-                        <span>Front End Development</span>
-                        <span>Product Development</span>
-                        <div className="clear"></div>
-                        <a target='_blank' href="https://www.unitedmonks.com/engage.php">VIEW CASE STUDY</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="item">
-                  <div className="carousel__item__container row">
-                    <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
-                      <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
-
-                        <div className="portfolio__item__parent">
-                          <div className="blockside"><div className="blocker"></div></div>
-                          <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/4.jpg" alt="img" />
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
-                      <div className="portfolio__text">
-                        <h4>MyProGamer</h4>
-                        <p>MyProGamer is an online gaming platform for players who want to improve their gaming skills.</p>
-                        <span>UI/UX</span>
-                        <span>Front End Development</span>
-                        <span>Product Development</span>
-                        <div className="clear"></div>
-                        <a target='_blank' href="https://www.unitedmonks.com/mpg.php">VIEW CASE STUDY</a>
+                        <h4>Poker Classified</h4>
+                        <p>Poker classified is a team of poker players and product designers working to create tools to empower online poker players in India.</p>
+                        <div className="clearfix"></div>
                       </div>
                     </div>
                   </div>
@@ -562,16 +502,14 @@ function Product() {
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 nopadding">
                       <div className="portfolio__text">
-                        <h4>Adfluencehub</h4>
-                        <p>A new-age platform for brands and influencers to collaborate and create magic.</p>
-                        <span>UI/UX</span>
-                        <span>Front End Development</span>
-                        <span>Product Development</span>
-                        <div className="clear"></div>
+                        <h4>Adfluence Hub</h4>
+                        <p>Adfluence Hub is an influencer marketing platform with a vision to combine technology and influencer marketing.</p>
+                        <div className="clearfix"></div>
                       </div>
                     </div>
                   </div>
                 </div>
+
 
               </OwlCarousel>
 
@@ -653,4 +591,4 @@ function Product() {
   )
 }
 
-export default Product
+export default WebApp

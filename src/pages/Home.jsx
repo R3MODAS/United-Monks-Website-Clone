@@ -212,7 +212,7 @@ function Home() {
 
               {/* Looking Button */}
               <div className='looking__button' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
-                <a href='/' className='looking__btn'>know more</a>
+                <Link to='/story' className='looking__btn'>know more</Link>
               </div>
 
               <div className="parallax">
@@ -716,7 +716,7 @@ function Home() {
                         <span>Front End Development</span>
                         <span>Product Development</span>
                         <div className="clear"></div>
-                        <a href="/">VIEW WEBSITE</a>
+                        <a target='_blank' href="https://www.fpvlifestyle.com/">VIEW WEBSITE</a>
                       </div>
                     </div>
                   </div>
@@ -746,7 +746,7 @@ function Home() {
                         <span>Front End Development</span>
                         <span>Product Development</span>
                         <div className="clear"></div>
-                        <a href="/">VIEW CASE STUDY</a>
+                        <a target='_blank' href="https://www.unitedmonks.com/engage.php">VIEW CASE STUDY</a>
                       </div>
                     </div>
                   </div>
@@ -775,7 +775,7 @@ function Home() {
                         <span>Front End Development</span>
                         <span>Product Development</span>
                         <div className="clear"></div>
-                        <a href="/">VIEW CASE STUDY</a>
+                        <a target='_blank' href="https://www.unitedmonks.com/mpg.php">VIEW CASE STUDY</a>
                       </div>
                     </div>
                   </div>
@@ -804,7 +804,7 @@ function Home() {
                         <span>Front End Development</span>
                         <span>Product Development</span>
                         <div className="clear"></div>
-                        <a href="/">VIEW CASE STUDY</a>
+                        <a target='_blank' href="https://www.behance.net/gallery/97762167/Adfluence">VIEW CASE STUDY</a>
                       </div>
                     </div>
                   </div>
@@ -832,7 +832,7 @@ function Home() {
                         <span>UI/UX</span>
                         <span>Front End Development</span>
                         <div className="clear"></div>
-                        <a href="/">VISIT WEBSITE</a>
+                        <a target='_blank' href="https://www.healthsetgo.com/">VISIT WEBSITE</a>
                       </div>
                     </div>
                   </div>

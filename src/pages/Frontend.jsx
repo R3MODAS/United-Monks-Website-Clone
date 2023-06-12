@@ -77,7 +77,7 @@ function Frontend() {
 
   useEffect(() => {
     AOS.init();
-    document.title = "Frontend";
+    document.title = "Frontend Development";
     window.addEventListener("scroll", toggleVisible);
     window.addEventListener("mousemove", Mousemove);
     window.addEventListener("scroll", scrollBehaviour);
