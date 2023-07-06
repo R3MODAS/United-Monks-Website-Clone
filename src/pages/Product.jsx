@@ -93,7 +93,7 @@ function Product() {
 
   return (
 
-    <div className='product__wrapper'>
+    <div className='product__wrapper overflow'>
 
       <div className="left__border"></div>
       <div className="right__border"></div>
