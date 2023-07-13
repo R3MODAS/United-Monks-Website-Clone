@@ -253,6 +253,9 @@
     }
 
     .values__point {
+      position: relative;
+      z-index: 2;
+      
       .value__unit {
         text-align: center;
         margin-bottom: 30px;

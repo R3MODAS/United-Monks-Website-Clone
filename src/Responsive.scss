@@ -469,7 +469,31 @@
   height: 535px;
 }
 
+.ecommerce_solution_content {
+  padding-bottom: 100px;
+}
 
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  font-size: 65px;
+}
+
+.product__wrapper #attract_customer__section .parallax .large__circle {
+  width: 535px;
+  height: 535px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  font-size: 65px;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 815px;
+  font-size: 65px;
+}
+
+.product__wrapper #our__values__section .parallax .medium__circle {
+  left: -35%;
+}
 
 }
 
@@ -987,6 +1011,22 @@
   height: 320px;
 }
 
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  font-size: 60px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  font-size: 60px;
+}
+
+.product__wrapper #our__values__section h2 {
+  font-size: 60px;
+}
+
+.product__wrapper #our__values__section .parallax .medium__circle {
+  left: -25%;
+}
+
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
@@ -1492,6 +1532,33 @@
   height: 290px;
 }
 
+.ecommerce_solution_content {
+  padding-bottom: 80px;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 710px;
+  font-size: 55px;
+}
+
+.product__wrapper #attract_customer__section .parallax .large__circle {
+  width: 460px;
+  height: 460px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  font-size: 55px;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 690px;
+  font-size: 55px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit p {
+  font-size: 24px;
+}
+
 }
 
 @media (max-width: 1280px) {
@@ -1774,6 +1841,15 @@
 .product__wrapper #slider__section .parallax .green__circle {
   width: 430px;
   height: 430px;
+}
+
+.product__wrapper #attract_customer__section .parallax .large__circle {
+  width: 430px;
+  height: 430px;
+}
+
+.product__wrapper #our__values__section h2 {
+  font-size: 55px;
 }
 
 }
@@ -2985,6 +3061,83 @@
   height: 100%;
 }
 
+.product__wrapper #attract_customer__section .parallax .large__circle {
+  width: 380px;
+  height: 380px;
+}
+
+.ecommerce_solution_content {
+  padding-bottom: 60px;
+  padding-left: 85px;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 645px;
+  font-size: 50px;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 645px;
+  font-size: 14px;
+}
+
+.product__wrapper #what_we_offer__section .web_app_offer {
+  padding: 0 0 30px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  padding: 0 0 20px;
+  font-size: 50px;
+}
+
+.product__wrapper #what_we_offer__section p {
+  font-size: 14px;
+  width: 807px;
+}
+
+.product__wrapper #what_we_offer__section .web_app_offer_child {
+  padding: 20px 0 0;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content {
+  padding: 40px 15px 30px;
+  height: 315px;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content img{
+  width: 30%;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content span {
+  font-size: 20px;
+  padding: 15px 0 15px;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content p {
+  font-size: 14px;
+  width: 100%;
+}
+
+.product__wrapper #our__values__section {
+  padding: 50px 0 25px;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 628px;
+  font-size: 50px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit label {
+  font-size: 120px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit p {
+  font-size: 22px;
+}
+
+.product__wrapper #our__values__section span {
+  font-size: 14px;
+}
 
 }
 
@@ -4289,6 +4442,25 @@
   height: 230px;
 }
 
+.product__wrapper #attract_customer__section .parallax .large__circle {
+  width: 300px;
+  height: 300px;
+}
+
+.product__wrapper #our__values__section h2 {
+  font-size: 45px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit label {
+  font-size: 110px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit p {
+  font-size: 20px;
+}
+
+
+
 }
 
 @media (max-width: 991px) {
@@ -4675,6 +4847,71 @@
   margin-top: 50px;
   font-size: 13px;
   padding: 10px 20px;
+}
+
+.ecommerce_solution_content {
+  padding-bottom: 60px;
+  padding-left: 85px;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 585px;
+  font-size: 45px;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 645px;
+  font-size: 14px;
+}
+
+.product__wrapper #what_we_offer__section .web_app_offer {
+  padding: 0 0 26px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  padding: 0 0 20px;
+  font-size: 45px;
+}
+
+.product__wrapper #what_we_offer__section p {
+  font-size: 14px;
+  width: 100%;
+}
+
+.product__wrapper #what_we_offer__section .web_app_offer_child {
+  padding: 20px 0 0;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content {
+  padding: 30px 15px 20px;
+  height: 320px;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content img{
+  width: 35%;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content span {
+  font-size: 18px;
+  padding: 10px 0 15px;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content p {
+  font-size: 14px;
+  width: 100%;
+}
+
+.product__wrapper #our__values__section {
+  padding: 50px 0 25px;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 565px;
+}
+
+.product__wrapper #our__values__section span {
+  font-size: 14px;
+  padding: 15px 15px 0;
 }
 
 }
@@ -6458,6 +6695,51 @@
 .product__wrapper #slider__section .parallax .medium__circle {
   width: 200px;
   height: 200px;
+}
+
+.ecommerce_solution_content {
+  padding: 0;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 350px;
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+
+.ecommerce_solution_content h2 a::after {
+  height: 5px;
+  bottom: -6px !important;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content p {
+  font-size: 14px;
+  width: 100%;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  font-size: 27px;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 505px;
+  font-size: 40px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit label {
+  font-size: 100px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit p {
+  font-size: 18px;
+}
+
+.product__wrapper #our__values__section span {
+  font-size: 14px;
+}
+
+.product__wrapper #our__values__section .parallax .medium__circle {
+  display: none;
 }
 
 }
@@ -8284,6 +8566,63 @@
   margin: 0 auto;
 }
 
+.ecommerce_solution_content {
+  padding: 0;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 271px;
+  font-size: 21px;
+}
+
+.ecommerce_solution_content h2 a::after {
+  height: 8px;
+  bottom: -10px !important;
+}
+
+.product__wrapper #attract_customer__section .ecommerce_solution_content p {
+  font-size: 14px;
+  width: 100%;
+}
+
+.product__wrapper #what_we_offer__section .web_app_offer {
+  padding: 30px 0 26px;
+}
+
+.product__wrapper #what_we_offer__section h2 {
+  padding: 0 0 15px;
+  font-size: 25px;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content:nth-child(1) {
+  margin-right: 0;
+  height: auto;
+}
+
+.product__wrapper #what_we_offer__section .what_we_offer_child_content img {
+  width: 35%;
+}
+
+.product__wrapper #our__values__section h2 {
+  width: 282px;
+  font-size: 34px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit label {
+  font-size: 100px;
+}
+
+.product__wrapper #our__values__section .values__point .value__unit p {
+  font-size: 18px;
+}
+
+.product__wrapper #our__values__section span {
+  font-size: 14px;
+}
+
+.product__wrapper #our__values__section .parallax .medium__circle {
+  display: none;
+}
 
 }
 
