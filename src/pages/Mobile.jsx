@@ -91,7 +91,7 @@ function Mobile() {
 
     return (
 
-        <div className='mobile__wrapper'>
+        <div className='mobile__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
@@ -179,7 +179,7 @@ function Mobile() {
                                         <div className="ui__icon">
                                             <img src="/asset/mobile-app/1.png" alt="img" />
                                         </div>
-                                        <p className='text-white'>AWS</p>
+                                        <p className='text-white'>Android</p>
                                     </div>
                                 </li>
 
@@ -188,7 +188,7 @@ function Mobile() {
                                         <div className="ui__icon">
                                             <img src="/asset/mobile-app/2.png" alt="img" />
                                         </div>
-                                        <p className='text-white'>React</p>
+                                        <p className='text-white'>IOS</p>
                                     </div>
                                 </li>
 
@@ -197,7 +197,7 @@ function Mobile() {
                                         <div className="ui__icon">
                                             <img src="/asset/mobile-app/3.png" alt="img" />
                                         </div>
-                                        <p className='text-white'>Node.js</p>
+                                        <p className='text-white'>Flutter</p>
                                     </div>
                                 </li>
 
@@ -206,7 +206,7 @@ function Mobile() {
                                         <div className="ui__icon">
                                             <img src="/asset/mobile-app/4.png" alt="img" />
                                         </div>
-                                        <p className='text-white'>Laravel</p>
+                                        <p className='text-white'>React Native</p>
                                     </div>
                                 </li>
 
@@ -215,7 +215,7 @@ function Mobile() {
                                         <div className="ui__icon">
                                             <img src="/asset/mobile-app/5.png" alt="img" />
                                         </div>
-                                        <p className='text-white'>Wordpress</p>
+                                        <p className='text-white'>Ionic</p>
                                     </div>
                                 </li>
 
@@ -487,7 +487,7 @@ function Mobile() {
                                         </div>
                                     </div>
 
-                                    <OwlCarousel margin={20} nav={true} items={1} animateIn="fadeIn" animateOut="fadeOut" loop={true} autoPlay={true} autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]} dots={false}>
+                                    <OwlCarousel nav={true} items={1} animateIn="fadeIn" animateOut="fadeOut" loop={true} autoPlay={true} autoplayHoverPause={true} navText={["<img src='asset/left.png' alt='img' />", "<img src='asset/right.png' alt='img' />"]} dots={false}>
                                         <div className="item">
                                             <div className="portfolio_item row">
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 nopadding">

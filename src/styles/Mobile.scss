@@ -68,9 +68,15 @@
         line-height: 1.1;
       }
 
+      span{
+        display: block;
+      }
+
       span.last__child {
         display: inline-block;
         position: relative;
+        width: 805px;
+        line-height: 1;
 
         &::after {
           display: block;
@@ -365,7 +371,7 @@
           content: "";
           display: block;
           width: 2px;
-          height: 30vh;
+          height: 35vh;
           background: #fff;
           position: absolute;
           left: 0;
@@ -406,7 +412,7 @@
           right: -2px;
           left: auto;
           top: 40px;
-          height: 27vh;
+          height: 33vh;
         }
       }
 
