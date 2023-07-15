@@ -91,7 +91,7 @@ function Ecommerce() {
 
 
     return (
-        <div className='ecommerce__wrapper'>
+        <div className='ecommerce__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
