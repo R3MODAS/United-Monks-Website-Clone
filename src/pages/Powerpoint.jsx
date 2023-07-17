@@ -79,7 +79,7 @@ function Powerpoint() {
 
     return (
 
-        <div className='powerpoint__wrapper'>
+        <div className='powerpoint__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
@@ -210,28 +210,28 @@ function Powerpoint() {
                                         diversified use cases and scenarios.</p>
                                     <div className="presentation_services_child row">
 
-                                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="services_child_element odd">
                                                 <img src="/asset/powerpoint/1.png" alt="img" />
                                                 <span>Business <br />Presentations</span>
                                                 <p>From pitch deck and client proposals to investor updates and company profiles, we ace every business presentation.</p>
                                             </div>
                                         </div>
-                                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="services_child_element even">
                                                 <img src="/asset/powerpoint/2.png" alt="img" />
                                                 <span>Marketing <br />Presentations</span>
                                                 <p>From marketing proposals to monthly metric reports, our expertise covers all the key elements of PR presentations.</p>
                                             </div>
                                         </div>
-                                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="services_child_element odd">
                                                 <img src="/asset/powerpoint/3.png" alt="img" />
                                                 <span>Sales <br />Presentations</span>
                                                 <p>With our sales presentation, you not only initiate a deal on a positive note but also close it successfully. </p>
                                             </div>
                                         </div>
-                                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="services_child_element even">
                                                 <img src="/asset/powerpoint/4.png" alt="img" />
                                                 <span>Education <br />Presentations</span>
@@ -290,6 +290,25 @@ function Powerpoint() {
                                             <p>From marketing proposals to monthly metric reports, our expertise covers all the key elements of PR presentations.</p>
                                         </div>
                                     </div>
+                                    <div className="col-xl-6 col-lg-12 col-md-12 nopadding">
+                                    <div className="presentation_services_carousel">
+                                    <OwlCarousel className="owl-carousel owl-theme" loop={true} nav={false} margin={20} dots={true} items={1} autoplayHoverPause={true} autoplay={true} autoplayTimeout={3000}>
+                                        <div className="item">
+                                            <img src="/asset/powerpoint/presentation-carousel-img1.png" alt="img" />
+                                        </div>
+                                        <div className="item">
+                                            <img src="/asset/powerpoint/presentation-carousel-img2.png" alt="img" />
+                                        </div>
+                                        <div className="item">
+                                            <img src="/asset/powerpoint/presentation-carousel-img3.png" alt="img" />
+                                        </div>
+                                        <div className="item">
+                                            <img src="/asset/powerpoint/presentation-carousel-img4.png" alt="img" />
+                                        </div>
+                                    </OwlCarousel>
+                                </div>
+                                    </div>
+
                                     <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
                                         <div className="services_child_element odd">
                                             <img src="/asset/powerpoint/3.png" alt="img" />
@@ -297,7 +316,7 @@ function Powerpoint() {
                                             <p>With our sales presentation, you not only initiate a deal on a positive note but also close it successfully. </p>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                         <div className="services_child_element even">
                                             <img src="/asset/powerpoint/4.png" alt="img" />
                                             <span>Education <br />Presentations</span>
@@ -312,7 +331,7 @@ function Powerpoint() {
 
                     <div className="powerpoint_services row mobile__visible">
 
-                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 nopadding">
                             <div className="presentation_services_left">
                                 <h2>Presentation Services</h2>
                                 <p>With deep understanding and years of experience of design and digital storytelling and communication,
@@ -321,28 +340,28 @@ function Powerpoint() {
                                     diversified use cases and scenarios.</p>
                                 <div className="presentation_services_child row">
 
-                                    <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                         <div className="services_child_element odd">
                                             <img src="/asset/powerpoint/1.png" alt="img" />
                                             <span>Business <br />Presentations</span>
                                             <p>From pitch deck and client proposals to investor updates and company profiles, we ace every business presentation.</p>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                         <div className="services_child_element even">
                                             <img src="/asset/powerpoint/2.png" alt="img" />
                                             <span>Marketing <br />Presentations</span>
                                             <p>From marketing proposals to monthly metric reports, our expertise covers all the key elements of PR presentations.</p>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                         <div className="services_child_element odd">
                                             <img src="/asset/powerpoint/3.png" alt="img" />
                                             <span>Sales <br />Presentations</span>
                                             <p>With our sales presentation, you not only initiate a deal on a positive note but also close it successfully. </p>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                         <div className="services_child_element even">
                                             <img src="/asset/powerpoint/4.png" alt="img" />
                                             <span>Education <br />Presentations</span>
@@ -354,7 +373,7 @@ function Powerpoint() {
                             </div>
                         </div>
 
-                        <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 nopadding">
                             <div className="presentation_services_carousel">
                                 <OwlCarousel className="owl-carousel owl-theme" loop={true} nav={false} margin={20} dots={true} items={1} autoplayHoverPause={true} autoplay={true} autoplayTimeout={3000}>
                                     <div className="item">

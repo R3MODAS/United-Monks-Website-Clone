@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import { lazy } from "react";
-
 const Home = lazy(() => import("../pages/Home"));
 const Story = lazy(() => import("../pages/Story"));
 const Services = lazy(() => import("../pages/Services"));
@@ -18,9 +17,9 @@ const Graphics = lazy(() => import('../pages/Graphics'));
 const Cyber = lazy(() => import('../pages/Cyber'));
 const WebApp = lazy(() => import('../pages/WebApp'));
 
+
 function AllRoutes() {
   return (
-    <>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/story" element={<Story />} />
@@ -38,7 +37,6 @@ function AllRoutes() {
         <Route path="/cyber" element={<Cyber />} />
         <Route path="/webapp" element={<WebApp />} />
       </Routes>
-    </>
   )
 }
 

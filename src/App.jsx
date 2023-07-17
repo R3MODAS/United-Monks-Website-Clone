@@ -19,13 +19,16 @@ import "./styles/Graphics.scss";
 import "./styles/Cyber.scss";
 import "./styles/WebApp.scss";
 
+
+
+
 function App() {
 
   return (
     <>
       <ScrollToTop />
       <Suspense fallback={<div id="loader"></div>}>
-          <AllRoutes />
+        <AllRoutes />
       </Suspense>
     </>
   )
