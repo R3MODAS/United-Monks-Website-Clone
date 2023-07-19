@@ -24,8 +24,6 @@ function Footer() {
                                     <li>
                                         <img src="asset/google.png" alt="img" />
                                     </li>
-                                    <li>
-                                        <a href="https://www.refrens.com/free-online-invoicing-software" target='_blank'><img src="/asset/refrens.png" alt="Refrens"/></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -52,19 +50,19 @@ function Footer() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
                             <div className="copyright__socials">
-                                <a href="https://www.facebook.com/unitedmonksco">
+                                <a href="https://www.facebook.com/unitedmonksco" className='social_icon__container'>
                                     <i className="ri-facebook-fill"></i>
                                     <i className="ri-facebook-fill"></i>
                                 </a>
-                                <a href="https://www.instagram.com/unitedmonksco/">
+                                <a href="https://www.instagram.com/unitedmonksco/" className='social_icon__container'>
                                     <i className="ri-instagram-line"></i>
                                     <i className="ri-instagram-line"></i>
                                 </a>
-                                <a href="https://www.behance.net/unitedmonksco">
+                                <a href="https://www.behance.net/unitedmonksco" className='social_icon__container'>
                                     <i className="ri-behance-line"></i>
                                     <i className="ri-behance-line"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/company/unitedmonksco/">
+                                <a href="https://www.linkedin.com/company/unitedmonksco/" className='social_icon__container'>
                                     <i className="ri-linkedin-fill"></i>
                                     <i className="ri-linkedin-fill"></i>
                                 </a>

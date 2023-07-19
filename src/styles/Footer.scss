@@ -31,7 +31,7 @@
           padding: 0 40px;
           display: inline-flex;
 
-          &:last-child{
+          &:last-child {
             padding: 0 0 0 40px;
           }
         }
@@ -111,56 +111,53 @@
 
     .copyright__socials {
       float: right;
+      overflow: hidden;
 
       a {
-        color: #14b88c;
-        border: 2px solid #14b88c;
-        margin: 0 5px;
+        margin: 0 5px 5px 0;
         width: 40px;
         height: 40px;
         font-size: 16px;
         line-height: 38px !important;
-        border-radius: 50%;
-        padding: 10px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        text-shadow: none;
+        border-radius: 3px;
         overflow: hidden;
+        color: #14b88c;
+        border: 2px solid #14b88c;
+        background: 0 0 !important;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+        display: block;
+        float: left;
+        text-align: center !important;
+        cursor: pointer;
+        font-style: normal;
+        margin-left: 8px;
+        margin-right: 0;
 
         &:hover{
-          border: 2px solid white;
-          color: white;
-          transition: top 0.4s, bottom 0.4s;
+          border: 2px solid #fff;
         }
 
-        &:hover i:nth-child(1){
-          top: -50px;
-          transition: top 0.4s, bottom 0.4s;
-        }
+        &:hover i:first-child{
+          margin-top: -38px;
+        }    
 
-        &:hover i:nth-child(2){
-          bottom: 0px;
-          transition: top 0.4s, bottom 0.4s;
+        &:first-child{
+          margin-left: 0;
         }
 
         i{
-          font-size: 20px;
+          transition: all .3s ease;
+          display: block;
           position: relative;
-          
-          &:nth-child(1){
-            position: relative;
-            left: 10px;
-          }
+          font-size: 20px;
 
-          &:nth-child(2){
-            bottom: -50px;
-            left: -10px;
-            position: relative;
+          &:last-child{
+            color: #FFF !important;
           }
         }
       }
-
-
     }
   }
 }
