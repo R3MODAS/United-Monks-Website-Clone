@@ -24,6 +24,8 @@ function Footer() {
                                     <li>
                                         <img src="asset/google.png" alt="img" />
                                     </li>
+                                    <li>
+                                        <a href="https://www.refrens.com/free-online-invoicing-software" target='_blank'><img src="/asset/refrens.png" alt="Refrens"/></a></li>
                                 </ul>
                             </div>
                         </div>

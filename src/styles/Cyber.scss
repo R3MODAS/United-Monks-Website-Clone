@@ -128,15 +128,15 @@
     display: flex;
     align-items: center;
 
+    h2 {
+      font-size: 70px;
+      line-height: 1.1;
+      font-weight: 800;
+      margin: 0;
+    }
+
     .cyber_content_left {
       padding: 0 0 0 200px;
-
-      h2 {
-        font-size: 70px;
-        line-height: 1.1;
-        font-weight: 800;
-        margin: 0;
-      }
 
       p {
         font-weight: 500;
@@ -189,6 +189,7 @@
   .cyber_content_right{
     text-align: center;
     padding-top: 0;
+
   }
 
 

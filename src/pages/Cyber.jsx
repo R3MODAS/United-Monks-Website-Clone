@@ -185,7 +185,7 @@ function Cyber() {
                             <div className="ecommerce_solution_content">
                                 <h2>
                                     Looking for a partner that looks at your entire system for threat? <br />
-                                    <Link to="/services">We can help?</Link>
+                                    <Link to="/services">We can help</Link>
                                 </h2>
                                 <p>With our state-of-the-art Full Stack Security assessments, we identify potential gaps throughout your environment.
                                     We drill all the way down to the facility and semiconductor level; we go all the way up to strategic impacts of personnel,
