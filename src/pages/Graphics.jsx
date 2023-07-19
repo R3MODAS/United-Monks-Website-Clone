@@ -79,7 +79,7 @@ function Graphics() {
 
     return (
 
-        <div className='graphics__wrapper'>
+        <div className='graphics__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
@@ -304,7 +304,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child">
+                            <div className="hire_us_child_content first_child second_child">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/packaging-icon.png" alt="img" />
                                     <span>Packaging <br />Design</span>
@@ -314,7 +314,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child">
+                            <div className="hire_us_child_content first_child third_child">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/tshirt.png" alt="img" />
                                     <span>Tshirt <br />Design</span>
@@ -324,7 +324,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child border_right">
+                            <div className="hire_us_child_content first_child border_right fourth_child">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/social-media-banner.png" alt="img" />
                                     <span>Social Media <br />Banner</span>
@@ -334,7 +334,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child border_bottom">
+                            <div className="hire_us_child_content first_child fifth_child border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/email-newsletter.png" alt="img" />
                                     <span>Email <br />Newsletter</span>
@@ -344,7 +344,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child border_top_none border_bottom">
+                            <div className="hire_us_child_content first_child sixth_child border_top_none border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/powerpoint-presentation.png" alt="img" />
                                     <span>PowerPoint <br />Presentation</span>
@@ -354,7 +354,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child border_top_none border_bottom">
+                            <div className="hire_us_child_content first_child seven_child border_top_none border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/word-template.png" alt="img" />
                                     <span>Word <br />Template</span>
@@ -364,7 +364,7 @@ function Graphics() {
                         </div>
 
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 nopadding">
-                            <div className="hire_us_child_content first_child border_top_none border_right border_bottom">
+                            <div className="hire_us_child_content last_child first_child border_top_none border_right border_bottom">
                                 <a href="#" className='hire_us_child_parent'>
                                     <img src="/asset/graphic/website-banner.png" alt="img" />
                                     <span>Website <br />Banners</span>

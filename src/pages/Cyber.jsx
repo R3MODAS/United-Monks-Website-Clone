@@ -78,7 +78,7 @@ function Cyber() {
 
     return (
 
-        <div className='cyber__wrapper'>
+        <div className='cyber__wrapper overflow'>
 
             <div className="left__border"></div>
             <div className="right__border"></div>
