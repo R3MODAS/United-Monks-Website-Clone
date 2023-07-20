@@ -69,7 +69,7 @@ function Story() {
     };
 
     useEffect(() => {
-
+        document.title = "About Us | Story and Team of United Monks"
         window.addEventListener("scroll", toggleVisible);
         const wrapper = document.querySelector(".wrapper");
         wrapper.addEventListener("mousemove", MouseMove);

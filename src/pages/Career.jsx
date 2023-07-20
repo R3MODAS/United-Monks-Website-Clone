@@ -67,7 +67,7 @@ function Career() {
     };
 
     useEffect(() => {
-
+        document.title = "Career | Always Happy To Meet New Talents - United Monks";
         window.addEventListener("scroll", toggleVisible);
         const wrapper = document.querySelector(".wrapper");
         wrapper.addEventListener("mousemove", MouseMove);
@@ -211,14 +211,15 @@ function Career() {
                             <div className="career__form__container">
                                 <h4>Looking to join our team?</h4>
                                 <p>Fill out the form, and we’ll get back to you.</p>
-                                <form id='career__form'>
+                                <form action="https://formspree.io/f/xpzgwrpg" method="POST" id='career__form' enctype="multipart/form-data">
                                     <h5>A little background maybe? </h5>
+
                                     <div className="career__textbox row">
                                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="career__textbox__left">
                                                 <div className="form__group">
-                                                    <input type="text" placeholder='Full Name' name='name' />
-                                                    <span className='aler'></span>
+                                                    <input type="text" placeholder='Full Name' name='fullName' required />
+                                                    <span className='alert'></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -226,7 +227,7 @@ function Career() {
                                             <div className="career__textbox__right">
                                                 <div className="career__textbox__left">
                                                     <div className="form__group">
-                                                        <input type="email" name="email" placeholder='Email' />
+                                                        <input type="email" name="email" placeholder='Email' required />
                                                         <span className='required__alert'></span>
                                                     </div>
                                                 </div>
@@ -234,12 +235,13 @@ function Career() {
                                         </div>
                                         <div className="last__form__group form__group">
                                             <div className='custom__file__input'>
-                                                <input type="file" name="file" className='file__input' />
-                                                <input type="text" id='resume' className='resume__input' required placeholder='Attach Resume' name='resume' />
+                                                <input type="file" className='file__input' required />
+                                                <input type="text" id='resume' className='resume__input' placeholder='Attach Resume' />
                                                 <span className='placeholder__text'>( 5MB MAX )</span>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="career__checkbox__total">
                                         <h5>You’re skilled as a …</h5>
 
@@ -249,7 +251,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox18' className='checkbox' type="checkbox" name='skill1' value="UI/UX Designer" />
+                                                            <input id='checkbox18' className='checkbox' type="checkbox" name='designer' value="UI/UX Designer" />
                                                             <label htmlFor="checkbox18" className='label'>UI/UX Designer</label>
                                                         </div>
                                                     </div>
@@ -257,7 +259,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox20' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox20' name='designer' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox20" className='label'>Graphics Designer</label>
                                                         </div>
                                                     </div>
@@ -265,7 +267,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox23' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox23' name='designer' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox23" className='label'>Design Intern</label>
                                                         </div>
                                                     </div>
@@ -279,7 +281,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox24' className='checkbox' type="checkbox" name='skill1' value="UI/UX Designer" />
+                                                            <input id='checkbox24' className='checkbox' type="checkbox" name='developer' value="UI/UX Designer" />
                                                             <label htmlFor="checkbox24" className='label'>Frontend Developer</label>
                                                         </div>
                                                     </div>
@@ -287,7 +289,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox26' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox26' name='developer' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox26" className='label'>Backend Developer</label>
                                                         </div>
                                                     </div>
@@ -295,7 +297,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox29' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox29' name='developer' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox29" className='label'>Full Stack Developer</label>
                                                         </div>
                                                     </div>
@@ -312,7 +314,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox30' className='checkbox' type="checkbox" name='skill1' value="UI/UX Designer" />
+                                                            <input id='checkbox30' className='checkbox' type="checkbox" name='marketing expert' value="UI/UX Designer" />
                                                             <label htmlFor="checkbox30" className='label'>Social Media Guru</label>
                                                         </div>
                                                     </div>
@@ -320,7 +322,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox31' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox31' name='marketing expert' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox31" className='label'>Influencer</label>
                                                         </div>
                                                     </div>
@@ -328,7 +330,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox32' name='skill2' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" id='checkbox32' name='marketing expert' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox32" className='label'>Content Writer</label>
                                                         </div>
                                                     </div>
@@ -338,10 +340,12 @@ function Career() {
                                         </div>
 
                                     </div>
+
                                     <div className="career__description">
                                         <h5>Last few months what kept you busy?</h5>
-                                        <textarea className="textarea__input raleway" name="text"></textarea>
+                                        <textarea className="textarea__input raleway" name="career__desc" required></textarea>
                                     </div>
+
                                     <div className="career__submit">
                                         <input type="submit" value="Submit" className='submit bg__black text-white' />
                                     </div>
