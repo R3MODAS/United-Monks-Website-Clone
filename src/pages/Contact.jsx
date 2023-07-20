@@ -265,7 +265,7 @@ function Contact() {
 
                     {/* ============= How can we Contact you Section =============== */}
                     <section id='contact__us__section'>
-                        <form id='contact__form'>
+                        <form action='https://formspree.io/f/xzblzrlw' method='POST' id='contact__form'>
                             <h4>How can we contact you?</h4>
                             <div className="contact__form__text row">
                                 <div className="col-xl-6 col-md-6 col-sm-6 nopadding">
@@ -302,7 +302,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-10' className='checkbox' name='service__one' value="UI/UX" />
+                                                <input type="checkbox" id='checkbox-10' className='checkbox' name='services' value="UI/UX" />
                                                 <label htmlFor="checkbox-10" className='label'>UI/UX</label>
                                             </div>
                                         </div>
@@ -311,7 +311,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-20' className='checkbox' name='service__one' value="Front End Development" />
+                                                <input type="checkbox" id='checkbox-20' className='checkbox' name='services' value="Front End Development" />
                                                 <label htmlFor="checkbox-20" className='label'>Front End Development</label>
                                             </div>
                                         </div>
@@ -320,7 +320,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-30' className='checkbox' name='service__one' value="Web Application" />
+                                                <input type="checkbox" id='checkbox-30' className='checkbox' name='services' value="Web Application" />
                                                 <label htmlFor="checkbox-30" className='label'>Web Application</label>
                                             </div>
                                         </div>
@@ -329,7 +329,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-40' className='checkbox' name='service__one' value="Product Development" />
+                                                <input type="checkbox" id='checkbox-40' className='checkbox' name='services' value="Product Development" />
                                                 <label htmlFor="checkbox-40" className='label'>Product Development</label>
                                             </div>
                                         </div>
@@ -338,7 +338,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-50' className='checkbox' name='service__one' value="Cloud Management" />
+                                                <input type="checkbox" id='checkbox-50' className='checkbox' name='services' value="Cloud Management" />
                                                 <label htmlFor="checkbox-50" className='label'>Cloud Management</label>
                                             </div>
                                         </div>
@@ -347,7 +347,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-60' className='checkbox' name='service__one' value="Digital Marketing" />
+                                                <input type="checkbox" id='checkbox-60' className='checkbox' name='services' value="Digital Marketing" />
                                                 <label htmlFor="checkbox-60" className='label'>Digital Marketing</label>
                                             </div>
                                         </div>
@@ -356,7 +356,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-70' className='checkbox' name='service__one' value="Graphics Designing" />
+                                                <input type="checkbox" id='checkbox-70' className='checkbox' name='services' value="Graphics Designing" />
                                                 <label htmlFor="checkbox-70" className='label'>Graphics Designing</label>
                                             </div>
                                         </div>
@@ -365,7 +365,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-80' className='checkbox' name='service__one' value="App Development" />
+                                                <input type="checkbox" id='checkbox-80' className='checkbox' name='services' value="App Development" />
                                                 <label htmlFor="checkbox-80" className='label'>App Development</label>
                                             </div>
                                         </div>
@@ -374,7 +374,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-90' className='checkbox' name='service__one' value="Ecommerce" />
+                                                <input type="checkbox" id='checkbox-90' className='checkbox' name='services' value="Ecommerce" />
                                                 <label htmlFor="checkbox-90" className='label'>Ecommerce</label>
                                             </div>
                                         </div>
