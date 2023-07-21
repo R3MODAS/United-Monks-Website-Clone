@@ -304,7 +304,7 @@ function Contact() {
                             </div>
                         </div>
                     </section>
-                    <Toaster />
+                    <Toaster toastOptions={{success : { duration : 4000}}} />
 
                     {/* ============= How can we Contact you Section =============== */}
                     <section id='contact__us__section'>
