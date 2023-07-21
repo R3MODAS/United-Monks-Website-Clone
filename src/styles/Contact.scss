@@ -325,6 +325,10 @@
                     box-shadow: none;
                   }
                 }
+
+                .text__input.error{
+                  border-color: #E42C3E;
+                }
               }
             }
 
@@ -333,12 +337,6 @@
                 margin-right: 0;
                 margin-left: 45px;
               }
-            }
-
-            .required__alert {
-              position: absolute;
-              left: 0;
-              color: #af1010;
             }
           }
 
@@ -451,3 +449,5 @@
     }
   }
 }
+
+

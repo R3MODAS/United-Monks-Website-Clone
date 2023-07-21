@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const form = useRef();
 
     const [toggle, setToggle] = useState(false);
     const [visible, setVisible] = useState(false);
@@ -62,6 +64,45 @@ function Contact() {
 
         sliderContainer.setAttribute('style', 'transform: translate3d(0px, ' + pos1 + 'px, 0px)');
         sliderText.style.opacity = (1 - value / 700);
+    }
+
+    // ============= Validation of Input ================
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [org, setOrg] = useState("")
+    const [mobile, setMobile] = useState('')
+
+    const InputBlank = () => {
+            let inputs = document.querySelectorAll(".text__input");
+            inputs.forEach((input) => {
+                input.classList.add("error");
+            } )
+    }
+
+    let inputs = document.querySelectorAll(".text__input");
+            inputs.forEach((input) => {
+                input.classList.remove("error");
+            } )
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if(name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0){ 
+            InputBlank();
+        }
+
+        if(name.length!== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0){
+
+            emailjs.sendForm("service_rxugb9q","template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
+            .then(() => {
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            })
+        }
+        
+
     }
 
     useEffect(() => {
@@ -265,18 +306,23 @@ function Contact() {
 
                     {/* ============= How can we Contact you Section =============== */}
                     <section id='contact__us__section'>
-                        <form action='https://formspree.io/f/xzblzrlw' method='POST' id='contact__form'>
+                        <form id='contact__form' ref={form} onSubmit={sendEmail}>
                             <h4>How can we contact you?</h4>
                             <div className="contact__form__text row">
                                 <div className="col-xl-6 col-md-6 col-sm-6 nopadding">
                                     <div className="contact__text__left">
                                         <div className='text__group'>
-                                            <input type="text" className='text__input' placeholder='Name' name='name' required autoComplete='off' />
-                                            <span className='required__alert'></span>
+                                            <input
+                                            onChange={e => setName(e.target.value)} 
+                                            type="text" className='text__input' placeholder='Name' name='name' autoComplete='off' />
+                                            <span className='error'></span>
                                         </div>
                                         <div className='text__group'>
-                                            <input type="number" className='text__input' placeholder='Phone' name='phone' required autoComplete='off' />
-                                            <span className='required__alert'></span>
+                                            <input 
+                                            onChange={e => setMobile(e.target.value)}
+                                            type="number"
+                                             className='text__input' placeholder='Phone' name='phone' autoComplete='off' />
+                                            <span className='error'></span>
                                         </div>
                                     </div>
                                 </div>
@@ -284,12 +330,16 @@ function Contact() {
                                     <div className="contact__text__right">
                                         <div className="contact__text__left">
                                             <div className='text__group'>
-                                                <input type="text" className='text__input' placeholder='Organisation' name='organisation' required autoComplete='off' />
-                                                <span className='required__alert'></span>
+                                                <input
+                                                onChange={e => setOrg(e.target.value)}
+                                                type="text" className='text__input' placeholder='Organisation' name='organisation' autoComplete='off' />
+                                                <span className='error'></span>
                                             </div>
                                             <div className='text__group'>
-                                                <input type="email" className='text__input' placeholder='Email' name='email' required autoComplete='off' />
-                                                <span className='required__alert'></span>
+                                                <input
+                                                onChange={e => setEmail(e.target.value)}
+                                                type="email" className='text__input' placeholder='Email' name='email' autoComplete='off' />
+                                                <span className='error'></span>
                                             </div>
                                         </div>
                                     </div>
