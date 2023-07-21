@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import {toast, Toaster } from 'react-hot-toast';
 
 function Contact() {
     const form = useRef();
@@ -95,10 +96,9 @@ function Contact() {
         if(name.length!== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0){
 
             emailjs.sendForm("service_rxugb9q","template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
-            .then(() => {
-                e.target.reset();
-            }, (error) => {
-                console.log(error.text);
+            .then(() =>{
+                toast.success("Thank you for Filling out the Form")
+                e.target.reset()
             })
         }
         
@@ -122,6 +122,7 @@ function Contact() {
 
     return (
         <div className='wrapper overflow'>
+
             <div className="left__border"></div>
             <div className="right__border"></div>
 
@@ -303,6 +304,7 @@ function Contact() {
                             </div>
                         </div>
                     </section>
+                    <Toaster />
 
                     {/* ============= How can we Contact you Section =============== */}
                     <section id='contact__us__section'>
