@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import {toast, Toaster } from 'react-hot-toast';
+import { toast, Toaster } from 'react-hot-toast';
 
 function Contact() {
     const form = useRef();
@@ -18,7 +18,7 @@ function Contact() {
             gotoTop.classList.remove("fadeOut");
             setVisible(true);
         }
-        else if (scrolled <= 500) {     
+        else if (scrolled <= 500) {
             gotoTop.classList.remove("fade");
             gotoTop.classList.add("fadeOut");
             setTimeout(() => {
@@ -29,8 +29,8 @@ function Contact() {
 
     const scrolltoTop = () => {
         window.scrollTo({
-            top : 0,
-            behavior : "smooth"
+            top: 0,
+            behavior: "smooth"
         });
     };
 
@@ -67,55 +67,53 @@ function Contact() {
         sliderText.style.opacity = (1 - value / 700);
     }
 
-    // ============= Validation of Input ================
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [org, setOrg] = useState("")
-    const [mobile, setMobile] = useState('')
-
-    const InputBlank = () => {
-            let inputs = document.querySelectorAll(".text__input");
-            inputs.forEach((input) => {
-                input.classList.add("error");
-            } )
-    }
-
-    let inputs = document.querySelectorAll(".text__input");
-            inputs.forEach((input) => {
-                input.classList.remove("error");
-            } )
-
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        if(name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0){ 
-            InputBlank();
-        }
-
-        if(name.length!== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0){
-
-            emailjs.sendForm("service_rxugb9q","template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
-            .then(() =>{
-                toast.success("Thank you for Filling out the Form")
-                e.target.reset()
-            })
-        }
-        
-
-    }
+       // ============= Validation of Input ================
+       const [name, setName] = useState("")
+       const [email, setEmail] = useState("")
+       const [org, setOrg] = useState("")
+       const [mobile, setMobile] = useState('')
+   
+       const InputBlank = () => {
+               let inputs = document.querySelectorAll(".text__input");
+               inputs.forEach((input) => {
+                   input.classList.add("error");
+               } )
+       }
+   
+       let inputs = document.querySelectorAll(".text__input");
+               inputs.forEach((input) => {
+                   input.classList.remove("error");
+               } )
+   
+   
+       const sendEmail = (e) => {
+           e.preventDefault();
+   
+           if(name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0){ 
+               InputBlank();
+           }
+   
+           if(name.length!== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0){
+   
+               emailjs.sendForm("service_yvebkow","template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
+               .then(() =>{
+                   toast.success("Thank you for Filling out the Form")
+                   e.target.reset()
+               })
+           }
+       }
 
     useEffect(() => {
         document.title = "Contact Us - United Monks";
         const wrapper = document.querySelector(".wrapper");
         window.addEventListener("scroll", ScrollUp);
         wrapper.addEventListener("mousemove", MouseMove);
-        window.addEventListener("scroll",toggleVisible);
+        window.addEventListener("scroll", toggleVisible);
 
         return () => {
             window.removeEventListener("scroll", ScrollUp);
             wrapper.removeEventListener("mousemove", MouseMove);
-            window.removeEventListener("scroll",toggleVisible);
+            window.removeEventListener("scroll", toggleVisible);
         }
 
     }, [])
@@ -304,7 +302,7 @@ function Contact() {
                             </div>
                         </div>
                     </section>
-                    <Toaster toastOptions={{success : { duration : 4000}}} />
+                    <Toaster toastOptions={{ success: { duration: 4000 } }} />
 
                     {/* ============= How can we Contact you Section =============== */}
                     <section id='contact__us__section'>
@@ -314,13 +312,13 @@ function Contact() {
                                 <div className="col-xl-6 col-md-6 col-sm-6 nopadding">
                                     <div className="contact__text__left">
                                         <div className='text__group'>
-                                            <input
+                                            <input 
                                             onChange={e => setName(e.target.value)} 
-                                            type="text" className='text__input' placeholder='Name' name='name' autoComplete='off' />
-                                            <span className='error'></span>
+                                                type="text" className="text__input" placeholder='Name' name='name' autoComplete='off' />
+                                                <span className='error'></span>
                                         </div>
                                         <div className='text__group'>
-                                            <input 
+                                        <input 
                                             onChange={e => setMobile(e.target.value)}
                                             type="number"
                                              className='text__input' placeholder='Phone' name='phone' autoComplete='off' />
@@ -332,13 +330,13 @@ function Contact() {
                                     <div className="contact__text__right">
                                         <div className="contact__text__left">
                                             <div className='text__group'>
-                                                <input
+                                            <input
                                                 onChange={e => setOrg(e.target.value)}
                                                 type="text" className='text__input' placeholder='Organisation' name='organisation' autoComplete='off' />
                                                 <span className='error'></span>
                                             </div>
                                             <div className='text__group'>
-                                                <input
+                                            <input
                                                 onChange={e => setEmail(e.target.value)}
                                                 type="email" className='text__input' placeholder='Email' name='email' autoComplete='off' />
                                                 <span className='error'></span>
@@ -347,6 +345,7 @@ function Contact() {
                                     </div>
                                 </div>
                             </div>
+
                             <h4>What services are you interested in?</h4>
                             <div className="contact__checkbox row">
                                 <ul>
@@ -450,7 +449,7 @@ function Contact() {
 
             <Footer />
 
-            <div id='gotoTop' onClick={scrolltoTop} style={{display : visible ? 'block' :  'none' }}>
+            <div id='gotoTop' onClick={scrolltoTop} style={{ display: visible ? 'block' : 'none' }}>
                 <i className="ri-arrow-up-s-line"></i>
             </div>
 

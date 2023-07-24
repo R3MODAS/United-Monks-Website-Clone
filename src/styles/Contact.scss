@@ -329,6 +329,10 @@
                 .text__input.error{
                   border-color: #E42C3E;
                 }
+
+                .text__input.noerror{
+                  border-color: #000;
+                }
               }
             }
 

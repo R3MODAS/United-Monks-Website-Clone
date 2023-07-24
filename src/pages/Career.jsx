@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+import { toast, Toaster } from 'react-hot-toast';
 
 function Career() {
 
+    const form = useRef();
     const [toggle, setToggle] = useState(false);
     const [visible, setVisible] = useState(false);
 
@@ -65,6 +68,22 @@ function Career() {
             behavior: "smooth"
         });
     };
+
+    // ============= Validation of Input ================
+    const [fullname, setFullName] = useState("")
+    const [email, setEmail] = useState("")
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (fullname.length !== 0 && email.length !== 0) {
+            emailjs.sendForm("service_yvebkow", "template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
+                .then(() => {
+                    toast.success("Thank you for Filling out the Form")
+                    e.target.reset()
+                })
+        }
+    }
 
     useEffect(() => {
         document.title = "Career | Always Happy To Meet New Talents - United Monks";
@@ -211,31 +230,36 @@ function Career() {
                             <div className="career__form__container">
                                 <h4>Looking to join our team?</h4>
                                 <p>Fill out the form, and we’ll get back to you.</p>
-                                <form action="https://formspree.io/f/xpzgwrpg" method="POST" id='career__form' enctype="multipart/form-data">
+                                <form ref={form} id='career__form' onSubmit={sendEmail}>
                                     <h5>A little background maybe? </h5>
-
                                     <div className="career__textbox row">
                                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="career__textbox__left">
                                                 <div className="form__group">
-                                                    <input type="text" placeholder='Full Name' name='fullName' required />
-                                                    <span className='alert'></span>
+                                                    <input
+                                                    onChange={(e) => setFullName(e.target.value)}
+                                                    type="text" placeholder='Full Name' name='fullName' className='text__input'  />
+                                                    <span className='error'></span>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 nopadding">
                                             <div className="career__textbox__right">
                                                 <div className="career__textbox__left">
                                                     <div className="form__group">
-                                                        <input type="email" name="email" placeholder='Email' required />
-                                                        <span className='required__alert'></span>
+                                                        <input
+                                                        onChange={(e) => setEmail(e.target.value)}
+                                                        type="email" name="email" placeholder='Email' className='text__input' />
+                                                        <span className='error'></span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="last__form__group form__group">
                                             <div className='custom__file__input'>
-                                                <input type="file" className='file__input' required />
+                                                <input type="file" className='file__input' />
                                                 <input type="text" id='resume' className='resume__input' placeholder='Attach Resume' />
                                                 <span className='placeholder__text'>( 5MB MAX )</span>
                                             </div>
@@ -353,6 +377,7 @@ function Career() {
                             </div>
                         </div>
                     </section>
+                    <Toaster toastOptions={{ success: { duration: 4000 } }} />
 
                 </div>
             </div>
