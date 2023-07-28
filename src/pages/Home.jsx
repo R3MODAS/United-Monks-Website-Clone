@@ -8,6 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel';
+import anime from 'animejs/lib/anime.es.js';
+
 
 
 function Home() {
@@ -79,6 +81,39 @@ function Home() {
     layer6.style.transform = "translate3d(" + xPos4 + ", " + yPos4 + ", 0)";
   }
 
+  function animation1() {
+    const text = document.querySelector(".text");
+    text.innerHTML = text.textContent.replace(/([^\x00-\x80]|\w)/g,
+      "<span class='letter'>$&</span>")
+
+    anime.timeline({ loop: false }).add({
+      targets: ".text .letter",
+      opacity: [0, 1],
+      easing: "easeInOutQuad",
+      duration: 2250,
+      delay: function (el, i) {
+        return 50 * (i + 1);
+      },
+    })
+  }
+
+  function animation2() {
+    const text = document.querySelector(".text2");
+    text.innerHTML = text.textContent.replace(/([^\x00-\x80]|\w)/g,
+      "<span class='letter'>$&</span>")
+
+    anime.timeline({ loop: false }).add({
+      targets: ".text2 .letter",
+      opacity: [0, 1],
+      easing: "easeInOutQuad",
+      duration: 2250,
+      delay: function (el, i) {
+        return 50 * (i + 1);
+      },
+    })
+  }
+
+
   useEffect(() => {
     document.title = "UI UX Design Agency | Offshore Software Development | Mobile App & Web Development";
 
@@ -102,6 +137,11 @@ function Home() {
       showCursor: false,
       smartBackspace: true
     })
+
+    const scroll = new ScrollWatcher();
+    scroll.watch(".text").on("enter", animation1)
+    scroll.watch(".text2").on("enter",animation2)
+
 
     const wrapper = document.querySelector(".wrapper");
     window.addEventListener('scroll', stickyNav);
@@ -179,7 +219,7 @@ function Home() {
       {/* ====================== Hero Section ========================== */}
       <section id='hero__section' className='clearfix bg__blue'>
         <div className="hero__right">
-          <h1 className='letters'>Master crafters of digital experiences</h1>
+          <h1 className='text'>Master crafters of digital experiences</h1>
         </div>
         <div className="hero__left">
           <img loading='lazy' src="asset/unitedmonks-banner-logo.svg" alt="United Monks" />
@@ -247,7 +287,7 @@ function Home() {
             <div className="goodAt__container">
 
               <div className="goodAt__text">
-                <h3 className='green'>What we are good at</h3>
+                <h3 className='green text2'>What we are good at</h3>
                 <div className='goodAt__para' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
                   <p className='text-white'>We take your business right from ideation & strategy to final execution with a host of web solutions like Full stack development, UI/UX, DevOps, Influencer Marketing and more.
                     And the best part? All these solutions are tailor-made for you. <br />
