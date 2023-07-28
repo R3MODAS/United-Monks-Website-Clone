@@ -142,7 +142,6 @@ function Home() {
     scroll.watch(".text").on("enter", animation1)
     scroll.watch(".text2").on("enter",animation2)
 
-
     const wrapper = document.querySelector(".wrapper");
     window.addEventListener('scroll', stickyNav);
     wrapper.addEventListener("mousemove", mouseEvent);
