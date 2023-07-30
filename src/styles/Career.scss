@@ -123,7 +123,7 @@
             margin-bottom: 50px;
             width: 100%;
 
-            input {
+             input {
               font-size: 18px;
               font-weight: 700;
               color: #000;
@@ -145,6 +145,38 @@
                 color: #000;
               }
             }
+
+            .text__input{
+              font-size: 18px;
+              font-weight: 700;
+              color: #000;
+              border: none;
+              border-bottom: 5px solid #000;
+              border-radius: 0;
+              background: 0 0;
+              font-family: Raleway, sans-serif;
+              display: block;
+              width: 100%;
+              padding: 0.375rem 0.75rem;
+              line-height: 1.5;
+              transition: border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out;
+
+              &::placeholder {
+                font-size: 18px;
+                font-weight: 700;
+                color: #000;
+              }
+            }
+
+            .text__input.error{
+              border-color: #E42C3E;
+            }
+
+            .text__input.noerror{
+              border-color: #000;
+            }
+
           }
 
           .career__textbox__right {

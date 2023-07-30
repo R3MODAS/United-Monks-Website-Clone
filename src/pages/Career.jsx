@@ -78,10 +78,26 @@ function Career() {
     const [message, setMessage] = useState("");
     const [imageUpload, setImageUpload] = useState(null)
 
+
+    const InputBlank = () => {
+        let inputs = document.querySelectorAll(".text__input");
+        inputs.forEach((input) => {
+            input.classList.add("error");
+        } )
+}
+
+let inputs = document.querySelectorAll(".text__input");
+        inputs.forEach((input) => {
+            input.classList.remove("error");
+        } )
+
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (imageUpload == null) return
+        if(fullname.length === 0 || email.length === 0 || message.length === 0 || imageUpload === null){ 
+            InputBlank();
+        }
 
         if (imageUpload != null) {
             const imageRef = ref(storage,`resumes/${imageUpload.name + v4()}`);
@@ -253,7 +269,6 @@ function Career() {
                                                     <input
                                                         onChange={(e) => setFullName(e.target.value)}
                                                         type="text" placeholder='Full Name' name='fullName' className='text__input' />
-                                                    <span className='error'></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,7 +280,6 @@ function Career() {
                                                         <input
                                                             onChange={(e) => setEmail(e.target.value)}
                                                             type="email" name="email" placeholder='Email' className='text__input' />
-                                                        <span className='error'></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -277,7 +291,7 @@ function Career() {
                                                     onChange={(e) =>
                                                         setImageUpload(e.target.files[0])
                                                     }
-                                                    type="file" className='file__input' />
+                                                    type="file" className='file__input text__input' />
                                                 <input type="text" id='resume' className='resume__input' placeholder='Attach Resume' />
                                                 <span className='placeholder__text'>( 5MB MAX )</span>
                                             </div>

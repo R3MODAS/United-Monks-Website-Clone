@@ -315,14 +315,12 @@ function Contact() {
                                             <input 
                                             onChange={e => setName(e.target.value)} 
                                                 type="text" className="text__input" placeholder='Name' name='name' autoComplete='off' />
-                                                <span className='error'></span>
                                         </div>
                                         <div className='text__group'>
                                         <input 
                                             onChange={e => setMobile(e.target.value)}
                                             type="number"
                                              className='text__input' placeholder='Phone' name='phone' autoComplete='off' />
-                                            <span className='error'></span>
                                         </div>
                                     </div>
                                 </div>
@@ -333,13 +331,11 @@ function Contact() {
                                             <input
                                                 onChange={e => setOrg(e.target.value)}
                                                 type="text" className='text__input' placeholder='Organisation' name='organisation' autoComplete='off' />
-                                                <span className='error'></span>
                                             </div>
                                             <div className='text__group'>
                                             <input
                                                 onChange={e => setEmail(e.target.value)}
                                                 type="email" className='text__input' placeholder='Email' name='email' autoComplete='off' />
-                                                <span className='error'></span>
                                             </div>
                                         </div>
                                     </div>
