@@ -111,42 +111,6 @@ function Home() {
     })
   }
 
-  function Canvas() {
-    const canvas = document.getElementById('canvas');
-    const context = canvas.getContext('2d');
-
-    let time = 0;
-    let x, y;
-
-    const color = function (x, y, r, g, b) {
-      context.fillStyle = `rgb(${r}, ${g}, ${b})`
-      context.fillRect(x, y, 10, 10);
-    }
-    const R = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 150 + time)));
-    }
-
-    const G = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 100)));
-    }
-
-    const B = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(time / 10) + ((x - 1) * (x - 1) + (y - 1) * (y - 1)) / 500)));
-    }
-
-    const startAnimation = function () {
-      for (x = 0; x <= 30; x++) {
-        for (y = 0; y <= 30; y++) {
-          color(x, y, R(x, y, time), G(x, y, time), B(x, y, time));
-        }
-      }
-      time = time + 0.03;
-      window.requestAnimationFrame(startAnimation);
-    }
-    startAnimation();
-
-  }
-
   useEffect(() => {
     document.title = "UI UX Design Agency | Offshore Software Development | Mobile App & Web Development";
 
@@ -170,8 +134,6 @@ function Home() {
       showCursor: false,
       smartBackspace: true
     })
-
-    Canvas()
 
     const scroll = new ScrollWatcher();
     scroll.watch(".text").on("enter", animation1)
@@ -251,7 +213,7 @@ function Home() {
       </header>
 
       {/* ====================== Hero Section ========================== */}
-      <section id='hero__section' className='clearfix'>
+      <section id='hero__section' className='clearfix gradient__bg'>
         <div className="hero__right">
           <h1 className='text'>Master crafters of digital experiences</h1>
         </div>
@@ -262,7 +224,6 @@ function Home() {
               <span className='after'> join your team remotely.</span></h2>
           </div>
         </div>
-        <canvas id="canvas"  width="32px" height="32px"></canvas>
       </section>
 
       <div id="main__content">
