@@ -123,15 +123,15 @@ function Home() {
       context.fillRect(x, y, 10, 10);
     }
     const R = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + time)));
+      return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 150 + time)));
     }
 
     const G = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 300)));
+      return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(time / 4) + y * y * Math.sin(time / 3)) / 100)));
     }
 
     const B = function (x, y, time) {
-      return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(time / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)));
+      return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(time / 10) + ((x - 1) * (x - 1) + (y - 1) * (y - 1)) / 500)));
     }
 
     const startAnimation = function () {
@@ -144,6 +144,7 @@ function Home() {
       window.requestAnimationFrame(startAnimation);
     }
     startAnimation();
+
   }
 
   useEffect(() => {
