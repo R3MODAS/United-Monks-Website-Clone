@@ -50,19 +50,19 @@ function Footer() {
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
                             <div className="copyright__socials">
-                                <a href="https://www.facebook.com/unitedmonksco" className='social_icon__container'>
+                                <a href="https://www.facebook.com/unitedmonksco" className='social_icon__container' aria-label="Facebook">
                                     <i className="ri-facebook-fill"></i>
                                     <i className="ri-facebook-fill"></i>
                                 </a>
-                                <a href="https://www.instagram.com/unitedmonksco/" className='social_icon__container'>
+                                <a href="https://www.instagram.com/unitedmonksco/" className='social_icon__container' aria-label="Instagram">
                                     <i className="ri-instagram-line"></i>
                                     <i className="ri-instagram-line"></i>
                                 </a>
-                                <a href="https://www.behance.net/unitedmonksco" className='social_icon__container'>
+                                <a href="https://www.behance.net/unitedmonksco" className='social_icon__container' aria-label="Behance">
                                     <i className="ri-behance-line"></i>
                                     <i className="ri-behance-line"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/company/unitedmonksco/" className='social_icon__container'>
+                                <a href="https://www.linkedin.com/company/unitedmonksco/" className='social_icon__container' aria-label="Linkedln">
                                     <i className="ri-linkedin-fill"></i>
                                     <i className="ri-linkedin-fill"></i>
                                 </a>
