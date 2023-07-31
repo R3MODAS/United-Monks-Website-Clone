@@ -208,7 +208,6 @@ textarea {
   line-height: inherit;
 }
 
-
 // ======================== Bootstrap Adjustments ===========================
 
 @media (min-width: 576px) {
@@ -832,4 +831,10 @@ a img {
       }
     }
   }
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
