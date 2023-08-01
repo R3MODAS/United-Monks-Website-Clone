@@ -142,8 +142,8 @@ function Home() {
   useEffect(() => {
     document.title = "UI UX Design Agency | Offshore Software Development | Mobile App & Web Development";
 
-    setInterval(setDate, 1000);
-
+    const timerId = setInterval(setDate, 1000);
+    
     const typed = new Typed(el.current, {
       strings: [
         "architect your Product ?",
@@ -180,6 +180,7 @@ function Home() {
       window.removeEventListener('mousemove', mouseEvent);
       window.removeEventListener("scroll", toggleVisible);
       typed.destroy();
+      clearInterval(timerId)
     }
   }, [])
 
