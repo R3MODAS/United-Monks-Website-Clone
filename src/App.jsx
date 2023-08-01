@@ -18,6 +18,7 @@ import "./styles/Powerpoint.scss";
 import "./styles/Graphics.scss";
 import "./styles/Cyber.scss";
 import "./styles/WebApp.scss";
+import "./Clock.scss";
 
 function App() {
 

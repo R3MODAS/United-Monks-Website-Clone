@@ -111,6 +111,8 @@ function Home() {
     })
   }
 
+
+
   useEffect(() => {
     document.title = "UI UX Design Agency | Offshore Software Development | Mobile App & Web Development";
 
@@ -216,6 +218,13 @@ function Home() {
       <section id='hero__section' className='clearfix gradient__bg'>
         <div className="hero__right">
           <h1 className='text'>Master crafters of digital experiences</h1>
+          <div className="clock__web">
+            <div id="clock">
+              <div id="secondi"></div>
+              <div id="minuti"></div>
+              <div id="ore"></div>
+            </div>
+          </div>
         </div>
         <div className="hero__left">
           <img loading='lazy' src="asset/unitedmonks-banner-logo.svg" alt="United Monks" />
@@ -297,25 +306,25 @@ function Home() {
                   <div className="goodAt__left">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
                       <Link to="/ui-ux">
-                        <img loading='lazy' src="asset/desc/1.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/1.webp" alt="desc-img" />
                         <span className='text-white'>UI/UX</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="250">
                       <Link to="/product">
-                        <img loading='lazy' src="asset/desc/2.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/2.webp" alt="desc-img" />
                         <span className='text-white'>Product <br /> Development</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                       <Link to="/ecommerce">
-                        <img loading='lazy' src="asset/desc/3.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/3.webp" alt="desc-img" />
                         <span className='text-white'>Ecommerce</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="350">
                       <Link to="/graphics">
-                        <img loading='lazy' src="asset/desc/4.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/4.webp" alt="desc-img" />
                         <span className='text-white'>Graphic <br /> Designing</span>
                       </Link>
                     </div>
@@ -326,25 +335,25 @@ function Home() {
                   <div className="goodAt__right">
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
                       <Link to="/frontend">
-                        <img loading='lazy' src="asset/desc/5.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/5.webp" alt="desc-img" />
                         <span className='text-white'>Front End <br /> Development</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                       <Link to="/mobile">
-                        <img loading='lazy' src="asset/desc/6.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/6.webp" alt="desc-img" />
                         <span className='text-white'>Mobile App <br /> Development</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="450">
                       <Link to="/powerpoint">
-                        <img loading='lazy' src="asset/desc/7.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/7.webp" alt="desc-img" />
                         <span className='text-white'>Powerpoint<br /> Presentation</span>
                       </Link>
                     </div>
                     <div className='goodAt__tech_item' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="350">
                       <Link to="/cyber">
-                        <img loading='lazy' src="asset/desc/8.png" alt="desc-img" />
+                        <img loading='lazy' src="asset/desc/8.webp" alt="desc-img" />
                         <span className='text-white'>Cyber <br />security</span>
                       </Link>
                     </div>
@@ -711,7 +720,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/1.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/1.webp" alt="img" />
                           </div>
                         </div>
 
@@ -738,7 +747,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/2.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/2.webp" alt="img" />
                           </div>
                         </div>
 
@@ -767,7 +776,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/3.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/3.webp" alt="img" />
                           </div>
                         </div>
 
@@ -797,7 +806,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/4.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/4.webp" alt="img" />
                           </div>
                         </div>
 
@@ -826,7 +835,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/5.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/5.webp" alt="img" />
                           </div>
                         </div>
 
@@ -855,7 +864,7 @@ function Home() {
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/6.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/6.webp" alt="img" />
                           </div>
                         </div>
 

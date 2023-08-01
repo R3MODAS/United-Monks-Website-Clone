@@ -188,7 +188,7 @@ function Portfolio() {
                                     <a href="https://www.behance.net/gallery/128340601/MyProGamer" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
-                                            <img loading='lazy' src="asset/port__images/mpg_portfolio.jpg" alt="img" />
+                                            <img loading='lazy' src="asset/port__images/mpg_portfolio.webp" alt="img" />
                                             <div className="img__overlay">
                                                 <p>MyProGamer is an online gaming platform for players who want to improve their gaming skills.</p>
                                             </div>
@@ -222,7 +222,7 @@ function Portfolio() {
                                     <a href="https://www.behance.net/gallery/97762167/Adfluence" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
-                                            <img loading='lazy' src="asset/port__images/adfluance.jpg" alt="img" />
+                                            <img loading='lazy' src="asset/port__images/adfluance.webp" alt="img" />
                                             <div className="img__overlay">
                                                 <p>Adfluence Hub is an influencer marketing platform with a vision to combine technology and influencer marketing.</p>
                                             </div>
@@ -256,7 +256,7 @@ function Portfolio() {
                                     <a href="https://www.behance.net/gallery/86932015/Ayam-Meditation-Website-Design-and-Development" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
-                                            <img loading='lazy' src="asset/port__images/ayam_portfolio.jpg" alt="img" />
+                                            <img loading='lazy' src="asset/port__images/ayam_portfolio.webp" alt="img" />
                                             <div className="img__overlay">
                                                 <p>AyamMeditation, a Mexico-based startup is on a mission to deliver digital experiences that are carefully designed to enrich customer's journey into a well-being state.</p>
                                             </div>
@@ -273,7 +273,7 @@ function Portfolio() {
                                     <a href="https://www.behance.net/gallery/110706737/The-Bump-To-Baby-Co" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
-                                            <img loading='lazy' src="asset/port__images/bumptobaby.jpg" alt="img" />
+                                            <img loading='lazy' src="asset/port__images/bumptobaby.webp" alt="img" />
                                             <div className="img__overlay">
                                                 <p>The Bump to Baby Co is the Prenatal program that focuses on developing and enhancing your baby's emotional, physical, spiritual, and intelligence
                                                     quotient. </p>
@@ -308,7 +308,7 @@ function Portfolio() {
                                     <a href="http://www.celestebox.com/" className='portfolio__img__child' target='_blank'>
 
                                         <div className='child__img'>
-                                            <img loading='lazy' src="asset/port__images/celestebox.jpg" alt="img" />
+                                            <img loading='lazy' src="asset/port__images/celestebox.webp" alt="img" />
                                             <div className="img__overlay">
                                                 <p>Celeste Box finds and supplies fashion brands across a diverse set of countries through their network of showrooms, retailers, agents, and distributors.</p>
                                             </div>
@@ -345,10 +345,10 @@ function Portfolio() {
                                             </div>
                                         </div>
 
-                                        <a href="https://www.behance.net/gallery/86869395/Airline-Safety-Instruction-Card-Design" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.behance.net/gallery/86869395/Airline-Safety-Instruction-Card-Design" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
-                                                <img loading='lazy' src="asset/port__images/sanjiv_goenka.jpg" alt="img" />
+                                                <img loading='lazy' src="asset/port__images/sanjiv_goenka.webp" alt="img" />
                                                 <div className="img__overlay">
                                                     <p>Sanjiv Goenka group needs no introduction. We helped them in creating the safety instruction card for their airline Global 5000</p>
                                                 </div>
@@ -362,7 +362,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.farminbox.in/" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.farminbox.in/" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
                                                 <video autoPlay muted loop playsInline>
@@ -383,7 +383,7 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.healthsetgo.com/" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.healthsetgo.com/" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
                                                 <img loading='lazy' src="asset/port__images/hsg_portfolio.gif" alt="img" />
@@ -400,10 +400,10 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="http://www.vintage-bloom.com/" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="http://www.vintage-bloom.com/" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
-                                                <img loading='lazy' src="asset/port__images/vintagebloom.jpg" alt="img" />
+                                                <img loading='lazy' src="asset/port__images/vintagebloom.webp" alt="img" />
                                                 <div className="img__overlay">
                                                     <p>Vintage bloom are the people behind Dubai's most fabulous weddings, events, or parties. They take pleasure in luxury and aesthetics and have a passion for artistic expression.</p>
                                                 </div>
@@ -417,10 +417,10 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/79683765/Mycloudhospitality" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.behance.net/gallery/79683765/Mycloudhospitality" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
-                                                <img loading='lazy' src="asset/port__images/mycloud-hospitality.jpg" alt="img" />
+                                                <img loading='lazy' src="asset/port__images/mycloud-hospitality.webp" alt="img" />
                                                 <div className="img__overlay">
                                                     <p>Mycloud hospitality is a global leader in providing PMS and POS solutions to the hospitality industry across UK, Asia, Africa, and the Middle East.</p>
                                                 </div>
@@ -434,10 +434,10 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/61256591/Consus-Global-Website-Design-and-Development" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.behance.net/gallery/61256591/Consus-Global-Website-Design-and-Development" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
-                                                <img loading='lazy' src="asset/port__images/consus.jpg" alt="img" />
+                                                <img loading='lazy' src="asset/port__images/consus.webp" alt="img" />
                                                 <div className="img__overlay">
                                                     <p>Consus is a result-oriented team with offices in 10 countries. They have 10+ years of experience in selling, implementing, supporting, and operating Source-to-Pay solutions.</p>
                                                 </div>
@@ -451,10 +451,10 @@ function Portfolio() {
 
                                         </a>
 
-                                        <a href="https://www.behance.net/gallery/79090163/Ms-Travel-Bee" className='portfolio__img__child' target='_blank' target="_blank">
+                                        <a href="https://www.behance.net/gallery/79090163/Ms-Travel-Bee" className='portfolio__img__child' target='_blank'>
 
                                             <div className='child__img'>
-                                                <img loading='lazy' src="asset/port__images/mstravelbee_portfolio.jpg" alt="img" />
+                                                <img loading='lazy' src="asset/port__images/mstravelbee_portfolio.webp" alt="img" />
                                                 <div className="img__overlay">
                                                     <p>A one of a kind an exclusive women travel portal which is an alliance by the women, of the women &amp; only for the women<br />
                                                     </p>

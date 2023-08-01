@@ -694,6 +694,11 @@
   width: 80%;
 }
 
+.clock__web {
+  bottom: 50px;
+  right: 40px;
+}
+
 }
 
 @media (max-width: 1440px) {
@@ -1431,6 +1436,11 @@ font-size: 60px;
 
 .cyber__wrapper .cyber_security_content .cyber_content_left {
   padding: 0 0 0 130px;
+}
+
+.clock__web {
+  bottom: 50px;
+  right: 40px;
 }
 
 }
@@ -2219,6 +2229,11 @@ font-size: 60px;
 
 .cyber__wrapper .cyber_security_content h2 {
   font-size: 55px;
+}
+
+.clock__web {
+  bottom: 45px;
+  right: 30px;
 }
 
 }
@@ -4596,6 +4611,11 @@ display: none;
   font-size: 14px;
 }
 
+.clock__web {
+  bottom: 40px;
+  right: 35px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6151,6 +6171,11 @@ display: none;
 .cyber__wrapper #slider__section .ui__banner a {
   font-size: 13px;
   padding: 10px 20px;
+}
+
+.clock__web {
+  bottom: 50px;
+  right: 30px;
 }
 
 }
@@ -9758,6 +9783,10 @@ display: none;
   width: 65%;
 }
 
+.clock__web {
+display: none;
+}
+
 }
 
 @media (max-width: 575px) {
@@ -12447,6 +12476,9 @@ display: none;
   width: 100%;
 }
 
+.clock__web {
+display: none;
+}
 
 }
 
