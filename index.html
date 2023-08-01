@@ -37,6 +37,19 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/scroll-watcher@latest/dist/scroll-watcher.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    // Passive event listeners
+    jQuery.event.special.touchstart = {
+      setup: function (_, ns, handle) {
+        this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+      }
+    };
+    jQuery.event.special.touchmove = {
+      setup: function (_, ns, handle) {
+        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+      }
+    };
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
