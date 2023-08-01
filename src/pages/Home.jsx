@@ -227,7 +227,7 @@ function Home() {
           </div>
         </div>
         <div className="hero__left">
-          <img loading='lazy' src="asset/unitedmonks-banner-logo.svg" alt="United Monks" />
+          <img src="asset/unitedmonks-banner-logo.svg" alt="United Monks" />
           <div className="hero__text">
             <h2>We are a Full Stack Development Agency <span className="hero__text__span">ready to <span className='after'>build your next product</span></span> or
               <span className='after'> join your team remotely.</span></h2>
