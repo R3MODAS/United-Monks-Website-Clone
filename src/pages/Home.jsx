@@ -554,7 +554,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/1.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/1.webp" alt="img" />
                         </div>
                       </div>
 
@@ -574,7 +574,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/2.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/2.webp" alt="img" />
                         </div>
                       </div>
 
@@ -594,7 +594,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/3.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/3.webp" alt="img" />
                         </div>
                       </div>
 
@@ -614,7 +614,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/4.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/4.webp" alt="img" />
                         </div>
                       </div>
 
@@ -634,7 +634,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/5.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/5.webp" alt="img" />
                         </div>
                       </div>
 
@@ -654,7 +654,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/6.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/6.webp" alt="img" />
                         </div>
                       </div>
 
@@ -674,7 +674,7 @@ function Home() {
 
                       <div className='col-xl-5 col-lg-5 col-md-5 col-sm-12 nopadding'>
                         <div className='work_feature__carousel_img'>
-                          <img loading='lazy' src="asset/youarebound/7.png" alt="img" />
+                          <img loading='lazy' src="asset/youarebound/7.webp" alt="img" />
                         </div>
                       </div>
 
