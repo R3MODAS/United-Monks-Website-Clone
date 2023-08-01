@@ -167,7 +167,7 @@ function Home() {
           </span>
           <div className="mobile__logo">
             <a href="/" className='retina__logo'>
-              <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+              <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
             </a>
           </div>
 
@@ -196,10 +196,10 @@ function Home() {
 
         <div className="logo">
           <a href="/" className='standard__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
+            <img src="asset/unitedmonks-logo.webp" alt="img" />
           </a>
           <a href="/" className='retina__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+            <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
           </a>
         </div>
 
@@ -715,7 +715,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
@@ -742,7 +742,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
@@ -771,7 +771,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
@@ -801,7 +801,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
@@ -830,7 +830,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
@@ -859,7 +859,7 @@ function Home() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>

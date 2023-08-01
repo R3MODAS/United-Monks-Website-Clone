@@ -67,41 +67,41 @@ function Contact() {
         sliderText.style.opacity = (1 - value / 700);
     }
 
-       // ============= Validation of Input ================
-       const [name, setName] = useState("")
-       const [email, setEmail] = useState("")
-       const [org, setOrg] = useState("")
-       const [mobile, setMobile] = useState('')
-   
-       const InputBlank = () => {
-               let inputs = document.querySelectorAll(".text__input");
-               inputs.forEach((input) => {
-                   input.classList.add("error");
-               } )
-       }
-   
-       let inputs = document.querySelectorAll(".text__input");
-               inputs.forEach((input) => {
-                   input.classList.remove("error");
-               } )
-   
-   
-       const sendEmail = (e) => {
-           e.preventDefault();
-   
-           if(name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0){ 
-               InputBlank();
-           }
-   
-           if(name.length!== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0){
-   
-               emailjs.sendForm("service_yvebkow","template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
-               .then(() =>{
-                   toast.success("Thank you for Filling out the Form")
-                   e.target.reset()
-               })
-           }
-       }
+    // ============= Validation of Input ================
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [org, setOrg] = useState("")
+    const [mobile, setMobile] = useState('')
+
+    const InputBlank = () => {
+        let inputs = document.querySelectorAll(".text__input");
+        inputs.forEach((input) => {
+            input.classList.add("error");
+        })
+    }
+
+    let inputs = document.querySelectorAll(".text__input");
+    inputs.forEach((input) => {
+        input.classList.remove("error");
+    })
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0) {
+            InputBlank();
+        }
+
+        if (name.length !== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0) {
+
+            emailjs.sendForm("service_yvebkow", "template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
+                .then(() => {
+                    toast.success("Thank you for Filling out the Form")
+                    e.target.reset()
+                })
+        }
+    }
 
     useEffect(() => {
         document.title = "Contact Us - United Monks";
@@ -132,18 +132,18 @@ function Contact() {
                     </span>
                     <div className="mobile__logo">
                         <a href="/" className='retina__logo'>
-                            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+                            <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
                         </a>
                     </div>
 
                     <nav className='side__panel__nav'>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/" className='active'>Home</Link></li>
                             <li><Link to="/story">Our Story</Link></li>
                             <li><Link to="/services">Services</Link></li>
                             <li><Link to="/career">Career</Link></li>
-                            <li><Link to="/portfolio" >Portfolio</Link></li>
-                            <li><Link to="/contact" className='active'>Contact</Link></li>
+                            <li><Link to="/portfolio">Portfolio</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -161,10 +161,10 @@ function Contact() {
 
                 <div className="logo">
                     <a href="/" className='standard__logo'>
-                        <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
+                        <img src="asset/unitedmonks-logo.webp" alt="img" />
                     </a>
                     <a href="/" className='retina__logo'>
-                        <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+                        <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
                     </a>
                 </div>
 
@@ -312,15 +312,15 @@ function Contact() {
                                 <div className="col-xl-6 col-md-6 col-sm-6 nopadding">
                                     <div className="contact__text__left">
                                         <div className='text__group'>
-                                            <input 
-                                            onChange={e => setName(e.target.value)} 
+                                            <input
+                                                onChange={e => setName(e.target.value)}
                                                 type="text" className="text__input" placeholder='Name' name='name' autoComplete='off' />
                                         </div>
                                         <div className='text__group'>
-                                        <input 
-                                            onChange={e => setMobile(e.target.value)}
-                                            type="number"
-                                             className='text__input' placeholder='Phone' name='phone' autoComplete='off' />
+                                            <input
+                                                onChange={e => setMobile(e.target.value)}
+                                                type="number"
+                                                className='text__input' placeholder='Phone' name='phone' autoComplete='off' />
                                         </div>
                                     </div>
                                 </div>
@@ -328,14 +328,14 @@ function Contact() {
                                     <div className="contact__text__right">
                                         <div className="contact__text__left">
                                             <div className='text__group'>
-                                            <input
-                                                onChange={e => setOrg(e.target.value)}
-                                                type="text" className='text__input' placeholder='Organisation' name='organisation' autoComplete='off' />
+                                                <input
+                                                    onChange={e => setOrg(e.target.value)}
+                                                    type="text" className='text__input' placeholder='Organisation' name='organisation' autoComplete='off' />
                                             </div>
                                             <div className='text__group'>
-                                            <input
-                                                onChange={e => setEmail(e.target.value)}
-                                                type="email" className='text__input' placeholder='Email' name='email' autoComplete='off' />
+                                                <input
+                                                    onChange={e => setEmail(e.target.value)}
+                                                    type="email" className='text__input' placeholder='Email' name='email' autoComplete='off' />
                                             </div>
                                         </div>
                                     </div>

@@ -107,17 +107,17 @@ function WebApp() {
           </span>
           <div className="mobile__logo">
             <a href="/" className='retina__logo'>
-              <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+              <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
             </a>
           </div>
 
           <nav className='side__panel__nav'>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/" className='active'>Home</Link></li>
               <li><Link to="/story">Our Story</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/career">Career</Link></li>
-              <li><Link to="/portfolio" >Portfolio</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
@@ -136,10 +136,10 @@ function WebApp() {
 
         <div className="logo">
           <a href="/" className='standard__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
+            <img src="asset/unitedmonks-logo.webp" alt="img" />
           </a>
           <a href="/" className='retina__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+            <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
           </a>
         </div>
 
@@ -303,7 +303,7 @@ function WebApp() {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
                   <img src="/asset/what we offer icons/4.png" alt="img" />
-                  <span>Wordpress <br/>Based Websites</span>
+                  <span>Wordpress <br />Based Websites</span>
                   <p>Stay ahead of your competitor while staying current with market trends with our cost-effective and customisable WordPress based website.  </p>
                 </div>
               </div>
@@ -324,7 +324,7 @@ function WebApp() {
                   <p>With customized CMS based applications, we ensure that you are in control of creation, modification, or removal of content from your website.</p>
                 </div>
               </div>
-           
+
 
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 nopadding">
                 <div className="what_we_offer_child_content">
@@ -439,12 +439,12 @@ function WebApp() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/6.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/6.webp" alt="img" />
                           </div>
                         </div>
 
@@ -464,12 +464,12 @@ function WebApp() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/7.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/7.webp" alt="img" />
                           </div>
                         </div>
 
@@ -489,12 +489,12 @@ function WebApp() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/8.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/8.webp" alt="img" />
                           </div>
                         </div>
 

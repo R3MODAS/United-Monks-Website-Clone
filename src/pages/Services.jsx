@@ -91,17 +91,17 @@ function Services() {
           </span>
           <div className="mobile__logo">
             <a href="/" className='retina__logo'>
-              <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+              <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
             </a>
           </div>
 
           <nav className='side__panel__nav'>
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li><Link to="/" className='active'>Home</Link></li>
               <li><Link to="/story">Our Story</Link></li>
-              <li><Link to="/services" className='active'>Services</Link></li>
+              <li><Link to="/services">Services</Link></li>
               <li><Link to="/career">Career</Link></li>
-              <li><Link to="/portfolio" >Portfolio</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </nav>
@@ -120,10 +120,10 @@ function Services() {
 
         <div className="logo">
           <a href="/" className='standard__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
+            <img src="asset/unitedmonks-logo.webp" alt="img" />
           </a>
           <a href="/" className='retina__logo'>
-            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+            <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
           </a>
         </div>
 

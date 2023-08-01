@@ -61,7 +61,7 @@ function Powerpoint() {
         let pos1 = -(value * 35 / 100);
         sliderContainer.setAttribute('style', `transform: translate3d(0px, ${pos1}px, 0px)`);
         sliderText.style.opacity = (1 - value / 700);
-      }
+    }
 
     useEffect(() => {
         document.title = "PowerPoint Presentation";
@@ -93,17 +93,17 @@ function Powerpoint() {
                     </span>
                     <div className="mobile__logo">
                         <a href="/" className='retina__logo'>
-                            <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+                            <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
                         </a>
                     </div>
 
                     <nav className='side__panel__nav'>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/" className='active'>Home</Link></li>
                             <li><Link to="/story">Our Story</Link></li>
                             <li><Link to="/services">Services</Link></li>
                             <li><Link to="/career">Career</Link></li>
-                            <li><Link to="/portfolio" >Portfolio</Link></li>
+                            <li><Link to="/portfolio">Portfolio</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
@@ -122,10 +122,10 @@ function Powerpoint() {
 
                 <div className="logo">
                     <a href="/" className='standard__logo'>
-                        <img loading='lazy' src="asset/unitedmonks-logo.png" alt="img" />
+                        <img src="asset/unitedmonks-logo.webp" alt="img" />
                     </a>
                     <a href="/" className='retina__logo'>
-                        <img loading='lazy' src="asset/unitedmonks-logo@2x.png" alt="img" />
+                        <img src="asset/unitedmonks-logo@2x.webp" alt="img" />
                     </a>
                 </div>
 
@@ -291,22 +291,22 @@ function Powerpoint() {
                                         </div>
                                     </div>
                                     <div className="col-xl-6 col-lg-12 col-md-12 nopadding">
-                                    <div className="presentation_services_carousel">
-                                    <OwlCarousel className="owl-carousel owl-theme" loop={true} nav={false} margin={20} dots={true} items={1} autoplayHoverPause={true} autoplay={true} autoplayTimeout={3000}>
-                                        <div className="item">
-                                            <img src="/asset/powerpoint/presentation-carousel-img1.png" alt="img" />
+                                        <div className="presentation_services_carousel">
+                                            <OwlCarousel className="owl-carousel owl-theme" loop={true} nav={false} margin={20} dots={true} items={1} autoplayHoverPause={true} autoplay={true} autoplayTimeout={3000}>
+                                                <div className="item">
+                                                    <img src="/asset/powerpoint/presentation-carousel-img1.png" alt="img" />
+                                                </div>
+                                                <div className="item">
+                                                    <img src="/asset/powerpoint/presentation-carousel-img2.png" alt="img" />
+                                                </div>
+                                                <div className="item">
+                                                    <img src="/asset/powerpoint/presentation-carousel-img3.png" alt="img" />
+                                                </div>
+                                                <div className="item">
+                                                    <img src="/asset/powerpoint/presentation-carousel-img4.png" alt="img" />
+                                                </div>
+                                            </OwlCarousel>
                                         </div>
-                                        <div className="item">
-                                            <img src="/asset/powerpoint/presentation-carousel-img2.png" alt="img" />
-                                        </div>
-                                        <div className="item">
-                                            <img src="/asset/powerpoint/presentation-carousel-img3.png" alt="img" />
-                                        </div>
-                                        <div className="item">
-                                            <img src="/asset/powerpoint/presentation-carousel-img4.png" alt="img" />
-                                        </div>
-                                    </OwlCarousel>
-                                </div>
                                     </div>
 
                                     <div className="col-xl-6 col-lg-6 col-md-6 nopadding">
