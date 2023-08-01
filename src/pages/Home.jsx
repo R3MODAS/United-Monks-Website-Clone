@@ -142,9 +142,9 @@ function Home() {
     scroll.watch(".text2").on("enter", animation2)
 
     const wrapper = document.querySelector(".wrapper");
-    window.addEventListener('scroll', stickyNav);
-    wrapper.addEventListener("mousemove", mouseEvent);
-    window.addEventListener("scroll", toggleVisible);
+    window.addEventListener('scroll', stickyNav,{passive: true});
+    wrapper.addEventListener("mousemove", mouseEvent,{passive: true});
+    window.addEventListener("scroll", toggleVisible,{passive: true});
     AOS.init();
 
     return () => {
