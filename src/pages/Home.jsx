@@ -111,10 +111,38 @@ function Home() {
     })
   }
 
+  function setDate() {
 
+    const secondHand = document.querySelector('#second');
+    const minHand = document.querySelector('#minute');
+    const hourHand = document.querySelector('#hour');
+
+    const now = new Date();
+    const second = now.getSeconds();
+    const secondsDegree = ((360 / 60) * second) + 90;
+    secondHand.style.transition = secondsDegree === 90 ? 'all 0s' : 'all 0.05s';
+    secondHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+    secondHand.style.transform = `rotate(${secondsDegree}deg)`;
+
+    const min = now.getMinutes()
+    const minsDegree = ((360 / 60) * min) + 90;
+    minHand.style.transform = `rotate(${minsDegree}deg)`;
+    minHand.style.transition = minsDegree === 90 ? 'all 0s' : 'all 0.05s';
+    minHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+    minHand.style.transform = `rotate(${minsDegree}deg)`;
+
+    const hour = now.getHours();
+    const hoursDegree = ((360 / 12) * hour) + 90 + (minsDegree / 12 - 8);
+    hourHand.style.transform = `rotate(${hoursDegree}deg)`;
+    hourHand.style.transition = hoursDegree === 90 ? 'all 0s' : 'all 0.05s';
+    hourHand.style['transition-timing-function'] = 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+    hourHand.style.transform = `rotate(${hoursDegree}deg)`;
+  }
 
   useEffect(() => {
     document.title = "UI UX Design Agency | Offshore Software Development | Mobile App & Web Development";
+
+    setInterval(setDate, 1000);
 
     const typed = new Typed(el.current, {
       strings: [
@@ -142,9 +170,9 @@ function Home() {
     scroll.watch(".text2").on("enter", animation2)
 
     const wrapper = document.querySelector(".wrapper");
-    window.addEventListener('scroll', stickyNav,{passive: true});
-    wrapper.addEventListener("mousemove", mouseEvent,{passive: true});
-    window.addEventListener("scroll", toggleVisible,{passive: true});
+    window.addEventListener('scroll', stickyNav, { passive: true });
+    wrapper.addEventListener("mousemove", mouseEvent, { passive: true });
+    window.addEventListener("scroll", toggleVisible, { passive: true });
     AOS.init();
 
     return () => {
@@ -220,9 +248,9 @@ function Home() {
           <h1 className='text'>Master crafters of digital experiences</h1>
           <div className="clock__web">
             <div id="clock">
-              <div id="secondi"></div>
-              <div id="minuti"></div>
-              <div id="ore"></div>
+              <div className='hand' id="hour"></div>
+              <div className='hand' id="minute"></div>
+              <div className='hand' id="second"></div>
             </div>
           </div>
         </div>

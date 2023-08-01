@@ -17,7 +17,7 @@
   height: 85px;
 }
 
-#clock:after {
+#clock::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -31,35 +31,36 @@
   transform: translate(-50%, -50%);
 }
 
-#secondi,
-#ore,
-#minuti {
+.hand {
+  width : 35%;
+  height: 6px;
+  background-color: #fff;
   position: absolute;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
+  top: 49.5%;
+  left: 17.5%;
+  transform-origin: 95%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-#ore:after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 3px;
-  left: 40.5px;
-  height: 32px;
-  top: 21px;
+#second {
+  height: 2px;
+  visibility: hidden;
 }
 
-#minuti:after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 2px;
-  left: 42.5px;
-  height: 39px;
-  top: 14px;
+#minute{
+  width: 35px;
+  height: 2px;
+  left: 4%;
+  top: 55%;
+}
+
+#hour {
+  width: 35px;
+  left: 7%;
+  top: 40%;
+  height: 3px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
