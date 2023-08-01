@@ -699,6 +699,33 @@
   right: 40px;
 }
 
+.webapp__wrapper #slider__section .ui__banner {
+  margin-top: -238.25px;
+  padding-left: 120px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 65px;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 580px;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  width: 535px;
+  height: 535px;
+}
+
+.webapp__wrapper #attract_customer__section .parallax .large__circle {
+  width: 535px;
+  height: 535px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+    font-size: 65px;
+}
+
 }
 
 @media (max-width: 1440px) {
@@ -1441,6 +1468,33 @@ font-size: 60px;
 .clock__web {
   bottom: 50px;
   right: 40px;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  right: -18%;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  left: -9%;
+  width: 320px;
+  height: 320px;
+}
+
+.webapp__wrapper #slider__section .ui__banner {
+  margin-top: -230.25px;
+  padding-left: 200px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 60px;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 535px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  font-size: 60px;
 }
 
 }
@@ -2236,6 +2290,34 @@ font-size: 60px;
   right: 30px;
 }
 
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 495px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 55px;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  width: 460px;
+  height: 460px;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  width: 290px;
+  height: 290px;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+  width: 90px;
+  height: 90px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 710px;
+  font-size: 55px;
+}
+
 }
 
 @media (max-width: 1280px) {
@@ -2609,6 +2691,25 @@ font-size: 60px;
 
 .cyber__wrapper #slider__section .ui__banner h1 {
   font-size: 55px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 55px;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  width: 430px;
+  height: 430px;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  width: 290px;
+  height: 290px;
+}
+
+.webapp__wrapper #attract_customer__section .parallax .large__circle {
+  width: 430px;
+  height: 430px;
 }
 
 }
@@ -4616,6 +4717,63 @@ display: none;
   right: 35px;
 }
 
+.webapp__wrapper #slider__section {
+  margin: 0;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  right: -20%;
+  width: 380px;
+  height: 380px;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  left: -12%;
+  width: 260px;
+  height: 260px;
+}
+
+.webapp__wrapper #slider__section .ui__banner {
+  margin-top: -206px;
+  padding-left: 150px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 50px;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 450px;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+  width: 85px;
+  height: 85px;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img{
+  width: 55%;
+}
+
+.webapp__wrapper #slider__section .ui__banner a {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 645px;
+  font-size: 50px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 645px;
+}
+
+.webapp__wrapper #attract_customer__section .parallax .large__circle {
+  width: 380px;
+  height: 380px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6178,6 +6336,40 @@ display: none;
   right: 30px;
 }
 
+.webapp__wrapper #slider__section .ui__banner a {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 45px;
+}
+
+.webapp__wrapper #slider__section .ui__banner {
+  padding-left: 70px;
+  margin-top: -207px;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  width: 300px;
+  height: 300px;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  width: 230px;
+  height: 230px;
+}
+
+.webapp__wrapper #attract_customer__section .parallax .large__circle {
+  width: 300px;
+  height: 300px;
+}
+
+.webapp__wrapper #attract_customer__section .parallax .small__circle {
+  width: 40px;
+  height: 40px;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -7238,6 +7430,45 @@ display: none;
 
 .cyber__wrapper .cyber_security_content .cyber_content_right img {
   width: 90%;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  right: -15%;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  left: -13%;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 405px;
+}
+
+.webapp__wrapper #slider__section .ui__banner ul li {
+  padding: 0 10px 0 0;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img{
+  width: 55%;
+}
+
+.webapp__wrapper #slider__section .ui__banner a {
+  margin-top: 50px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 585px;
+  font-size: 45px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 645px;
 }
 
 }
@@ -9785,6 +10016,47 @@ display: none;
 
 .clock__web {
 display: none;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  width: 300px;
+  height: 300px;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  width: 200px;
+  height: 200px;
+}
+
+.webapp__wrapper #slider__section .ui__banner {
+  margin-top: -230.25px;
+  padding-left: 30px;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 35px;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 320px;
+}
+
+.webapp__wrapper #slider__section .ui__banner a {
+  margin: 40px 0;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 350px;
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 }
@@ -12478,6 +12750,79 @@ display: none;
 
 .clock__web {
 display: none;
+}
+
+.webapp__wrapper #slider__section .parallax .green__circle {
+  display: none;
+}
+
+.webapp__wrapper #slider__section .parallax .medium__circle {
+  display: none;
+}
+
+.webapp__wrapper #slider__section .ui__banner {
+  margin-top: -200px;
+  padding-left: 0px;
+  padding-bottom: 10px !important;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.webapp__wrapper #slider__section .ui__banner label {
+  font-size: 16px;
+  text-align: left;
+}
+
+.webapp__wrapper #slider__section .ui__banner h1 {
+  font-size: 22px;
+  text-align: left;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child {
+  width: 200px;
+}
+
+.webapp__wrapper #slider__section .ui__banner span.last__child::after {
+  bottom: -10px;
+  height: 5px;
+}
+
+.webapp__wrapper #slider__section .ui__banner ul li {
+  padding: 0 10px 20px 0;
+  display: inline-block;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.webapp__wrapper #slider__section .ui__banner .ui__icon__container .ui__icon img{
+  width: 55%;
+}
+
+.webapp__wrapper #slider__section .ui__banner a {
+  margin: 40px 0;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+.webapp__wrapper #slider__section {
+  height: 100vh;
+}
+
+.webapp__wrapper #slider__section .slider__container {
+  height: 100vh;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content h2 {
+  width: 271px;
+  font-size: 21px;
+}
+
+.webapp__wrapper #attract_customer__section .ecommerce_solution_content p {
+  width: 100%;
 }
 
 }

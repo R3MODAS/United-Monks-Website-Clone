@@ -93,7 +93,7 @@ function WebApp() {
 
   return (
 
-    <div className='webapp__wrapper'>
+    <div className='webapp__wrapper overflow'>
 
       <div className="left__border"></div>
       <div className="right__border"></div>
