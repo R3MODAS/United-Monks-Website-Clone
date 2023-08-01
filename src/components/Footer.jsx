@@ -19,10 +19,10 @@ function Footer() {
                             <div className="partnership__img">
                                 <ul>
                                     <li>
-                                        <img src="asset/amazon-web.png" alt="img" />
+                                        <img loading='lazy' src="asset/amazon-web.webp" alt="img" />
                                     </li>
                                     <li>
-                                        <img src="asset/google.png" alt="img" />
+                                        <img loading='lazy' src="asset/google.webp" alt="img" />
                                     </li>
                                 </ul>
                             </div>
