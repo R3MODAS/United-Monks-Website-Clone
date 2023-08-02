@@ -434,12 +434,12 @@ function Product() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/1.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/1.webp" alt="img" />
                           </div>
                         </div>
 
@@ -461,12 +461,12 @@ function Product() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/2.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/2.webp" alt="img" />
                           </div>
                         </div>
 
@@ -490,12 +490,12 @@ function Product() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/3.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/3.webp" alt="img" />
                           </div>
                         </div>
 
@@ -520,12 +520,12 @@ function Product() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/4.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/4.webp" alt="img" />
                           </div>
                         </div>
 
@@ -549,12 +549,12 @@ function Product() {
                   <div className="carousel__item__container row">
                     <div className="col-xl-8 col-lg-8 col-md-7 col-sm-12 nopadding">
                       <div className="portfolio__item__img">
-                        <img loading='lazy' src="asset/mac.png" alt="mac__img" className='img' />
+                        <img loading='lazy' src="asset/mac.webp" alt="mac__img" className='img' />
 
                         <div className="portfolio__item__parent">
                           <div className="blockside"><div className="blocker"></div></div>
                           <div className="reveal__content">
-                            <img loading='lazy' src="asset/portfolio/8.jpg" alt="img" />
+                            <img loading='lazy' src="asset/portfolio/8.webp" alt="img" />
                           </div>
                         </div>
 
