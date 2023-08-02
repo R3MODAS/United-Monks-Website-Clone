@@ -97,9 +97,9 @@ function Services() {
 
           <nav className='side__panel__nav'>
             <ul>
-              <li><Link to="/" className='active'>Home</Link></li>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/story">Our Story</Link></li>
-              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/services" className='active'>Services</Link></li>
               <li><Link to="/career">Career</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
               <li><Link to="/contact">Contact</Link></li>
