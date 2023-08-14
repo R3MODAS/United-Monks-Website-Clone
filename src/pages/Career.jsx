@@ -1,11 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import { toast, Toaster } from 'react-hot-toast';
-import { storage } from "../config/firebase";
-import { ref, uploadBytes } from "firebase/storage"
-import { v4 } from 'uuid';
 
 function Career() {
 
@@ -76,8 +72,42 @@ function Career() {
     const [fullname, setFullName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("");
-    const [imageUpload, setImageUpload] = useState(null)
+    const [file, setFile] = useState(null);
+    const [checkVal, setCheckVal] = useState([]);
 
+    const getCheckVal = (e) => {
+        const {value,checked} = e.target
+        if(checked){
+            setCheckVal([...checkVal, value])
+        }
+        else{
+            setCheckVal(checkVal.filter((e) => e !== value))
+        }
+    }
+
+    const getBase64 = (file) => {
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            setFile(reader.result);
+        };
+        reader.onerror = function (error) {
+            console.log("Error: ", error);
+        };
+    };
+
+
+    const handleFile = (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            const base64String = reader.result
+                .replace("data:", "")
+                .replace(/^.+,/, "");
+            setFile(base64String);
+        }
+        reader.readAsDataURL(file);
+    }
 
     const InputBlank = () => {
         let inputs = document.querySelectorAll(".text__input");
@@ -95,23 +125,43 @@ function Career() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (fullname.length === 0 || email.length === 0 || message.length === 0 || imageUpload === null) {
-            InputBlank();
+        if (fullname === "" && email === "" && message === "" && file === null) {
+            InputBlank()
         }
 
-        if (imageUpload != null) {
-            const imageRef = ref(storage, `resumes/${imageUpload.name + v4()}`);
-            uploadBytes(imageRef, imageUpload).then(() => {
-                toast.success("Resume has been uploaded")
+        if (fullname.length !== 0 && email.length !== 0 && message.length !== 0 && file !== null){
+            fetch("https://api.brevo.com/v3/smtp/email", {
+                method: "POST",
+                headers: {
+                    accept: "application/json",
+                    "api-key":
+                        "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",
+                    "content-type": "application/json",
+                    "Content-Disposition": "attachment",
+                    charset: "utf-8",
+                },
+                body: `{  
+              "sender":{  
+                  "name": ${fullname},
+                  "email": ${email}
+              },
+              "to":[  
+                  {  
+                    "email":"remodas7774@gmail.com",
+                    "name":"Sharadindu Das"
+                  }
+              ],
+              "subject":"Career Form Fillup",
+              "htmlContent":"<html><head></head><body><p>Hello,</p>This is my first transactional email sent from Brevo.</p></body></html>",
+              "attachment": [{"content": "${file}", "name":"test.pdf"}]
+            }`,
             })
-        }
-
-        if (fullname.length !== 0 && email.length !== 0 && message.length !== 0) {
-            emailjs.sendForm("service_yvebkow", "template_c1ifaw3", form.current, "xlslGdNMUBppt4K4T")
                 .then(() => {
                     toast.success("Thank you for Filling out the Form")
                     e.target.reset()
                 })
+                .then((data) => console.log(data))
+                .catch((err) => console.log(err));
         }
     }
 
@@ -286,11 +336,8 @@ function Career() {
 
                                         <div className="last__form__group form__group">
                                             <div className='custom__file__input'>
-                                                <input
-                                                    onChange={(e) =>
-                                                        setImageUpload(e.target.files[0])
-                                                    }
-                                                    type="file" className='file__input text__input' />
+                                                <input onChange={handleFile}
+                                                    type="file" className='file__input text__input' accept='application/pdf' />
                                                 <input type="text" id='resume' className='resume__input' placeholder='Attach Resume' />
                                                 <span className='placeholder__text'>( 5MB MAX )</span>
                                             </div>
@@ -306,7 +353,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox18' className='checkbox' type="checkbox" name='designer' value="UI/UX Designer" />
+                                                            <input id='checkbox18' className='checkbox' type="checkbox" onChange={(e) => getCheckVal(e)} name='designer' value="UI/UX Designer" />
                                                             <label htmlFor="checkbox18" className='label'>UI/UX Designer</label>
                                                         </div>
                                                     </div>
@@ -314,7 +361,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox20' name='designer' value="Graphics Designer" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox20' name='designer' value="Graphics Designer" className='checkbox' />
                                                             <label htmlFor="checkbox20" className='label'>Graphics Designer</label>
                                                         </div>
                                                     </div>
@@ -322,7 +369,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox23' name='designer' value="Design Intern" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox23' name='designer' value="Design Intern" className='checkbox' />
                                                             <label htmlFor="checkbox23" className='label'>Design Intern</label>
                                                         </div>
                                                     </div>
@@ -336,7 +383,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox24' className='checkbox' type="checkbox" name='developer' value="Frontend Developer" />
+                                                            <input id='checkbox24' className='checkbox' type="checkbox" onChange={(e) => getCheckVal(e)} name='developer' value="Frontend Developer" />
                                                             <label htmlFor="checkbox24" className='label'>Frontend Developer</label>
                                                         </div>
                                                     </div>
@@ -344,7 +391,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox26' name='developer' value="Backend Developer" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox26' name='developer' value="Backend Developer" className='checkbox' />
                                                             <label htmlFor="checkbox26" className='label'>Backend Developer</label>
                                                         </div>
                                                     </div>
@@ -352,7 +399,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox29' name='developer' value="Full Stack Developer" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox29' name='developer' value="Full Stack Developer" className='checkbox' />
                                                             <label htmlFor="checkbox29" className='label'>Full Stack Developer</label>
                                                         </div>
                                                     </div>
@@ -369,7 +416,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__checkbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input id='checkbox30' className='checkbox' type="checkbox" name='marketing expert' value="Social Media Guru" />
+                                                            <input id='checkbox30' className='checkbox' type="checkbox" onChange={(e) => getCheckVal(e)} name='marketing expert' value="Social Media Guru" />
                                                             <label htmlFor="checkbox30" className='label'>Social Media Guru</label>
                                                         </div>
                                                     </div>
@@ -377,7 +424,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox31' name='marketing expert' value="Influencer" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox31' name='marketing expert' value="Influencer" className='checkbox' />
                                                             <label htmlFor="checkbox31" className='label'>Influencer</label>
                                                         </div>
                                                     </div>
@@ -385,7 +432,7 @@ function Career() {
                                                 <div className="col-xl-4 col-lg-4 col-md-4 nopadding">
                                                     <div className="career__textbox__parent">
                                                         <div className="career__checkbox__child">
-                                                            <input type="checkbox" id='checkbox32' name='marketing expert' value="Content Writer" className='checkbox' />
+                                                            <input type="checkbox" onChange={(e) => getCheckVal(e)} id='checkbox32' name='marketing expert' value="Content Writer" className='checkbox' />
                                                             <label htmlFor="checkbox32" className='label'>Content Writer</label>
                                                         </div>
                                                     </div>
