@@ -96,12 +96,13 @@ function Home() {
   }
 
   function animation2() {
-    const text = document.querySelector(".text__fade");
-    text.innerHTML = text.textContent.replace(/([^\x00-\x80]|\w)/g,
+    const text2 = document.querySelector(".text2");
+    text2.innerHTML = text2.textContent.replace(/([^\x00-\x80]|\w)/g,
       "<span class='letter'>$&</span>")
+      console.log(text2)
 
     anime.timeline({ loop: false }).add({
-      targets: ".text__fade .letter",
+      targets: ".text2 .letter",
       opacity: [0, 1],
       easing: "easeInOutQuad",
       duration: 2250,
@@ -321,7 +322,7 @@ function Home() {
             <div className="goodAt__container">
 
               <div className="goodAt__text">
-                <h3 className='green text__fade'>What we are good at</h3>
+                <h3 className='green text2'>What we are good at</h3>
                 <div className='goodAt__para' data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
                   <p className='text-white'>We take your business right from ideation & strategy to final execution with a host of web solutions like Full stack development, UI/UX, DevOps, Influencer Marketing and more.
                     And the best part? All these solutions are tailor-made for you. <br />
