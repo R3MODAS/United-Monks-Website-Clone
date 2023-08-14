@@ -97,7 +97,7 @@ function Home() {
 
   function animation2() {
     const text2 = document.querySelector(".text2");
-    text2.innerHTML = text.textContent.replace(/([^\x00-\x80]|\w)/g,
+    text2.innerHTML = text2.textContent.replace(/([^\x00-\x80]|\w)/g,
       "<span class='letter'>$&</span>")
 
     anime.timeline({ loop: false }).add({
