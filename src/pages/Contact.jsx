@@ -126,7 +126,7 @@ function Contact() {
               ],
               "subject":"Contact Form Fillup",
               "htmlContent":
-              "<html><head></head><body><h2>Career Form Fillup</h2><div><i> <b>Name</b> : ${name} </i></div><div><i> <b>Email</b> : ${email} </i></div><div><i> <b>Organisation</b> : ${org} </i></div><div><i> <b>Phone Number</b> : ${mobile} </i></div><div><i> <b>Services</b> : ${services} </i></div></body></html>"
+              "<html><head></head><body><h2>Contact Form Fillup</h2><div><i> <b>Name</b> : ${name} </i></div><div><i> <b>Email</b> : ${email} </i></div><div><i> <b>Organisation</b> : ${org} </i></div><div><i> <b>Phone Number</b> : ${mobile} </i></div><div><i> <b>Services</b> : ${services} </i></div></body></html>"
             }`
         })
         .then(() => {
