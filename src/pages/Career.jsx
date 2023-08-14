@@ -134,8 +134,7 @@ function Career() {
                 method: "POST",
                 headers: {
                     accept: "application/json",
-                    "api-key":
-                        "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",
+                    "api-key": import.meta.env.VITE_SENDINBLUE_API,
                     "content-type": "application/json",
                     "Content-Disposition": "attachment",
                     charset: "utf-8",
