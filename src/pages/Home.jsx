@@ -99,7 +99,6 @@ function Home() {
     const text2 = document.querySelector(".text2");
     text2.innerHTML = text2.textContent.replace(/([^\x00-\x80]|\w)/g,
       "<span class='letter'>$&</span>")
-      console.log(text2)
 
     anime.timeline({ loop: false }).add({
       targets: ".text2 .letter",
