@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, json } from 'react-router-dom';
 import { toast, Toaster } from 'react-hot-toast';
 
 function Career() {
@@ -76,11 +76,11 @@ function Career() {
     const [checkVal, setCheckVal] = useState([]);
 
     const getCheckVal = (e) => {
-        const {value,checked} = e.target
-        if(checked){
+        const { value, checked } = e.target
+        if (checked) {
             setCheckVal([...checkVal, value])
         }
-        else{
+        else {
             setCheckVal(checkVal.filter((e) => e !== value))
         }
     }
@@ -125,11 +125,12 @@ function Career() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (fullname === "" && email === "" && message === "" && file === null) {
+        if (fullname.length === 0 && email.length === 0 && message.length === "" && file === null) {
             InputBlank()
         }
 
-        if (fullname.length !== 0 && email.length !== 0 && message.length !== 0 && file !== null){
+        if (fullname.length !== 0 && email.length !== 0 && message.length !== 0 && file !== null) {
+            let skills = checkVal.toString();
             fetch("https://api.brevo.com/v3/smtp/email", {
                 method: "POST",
                 headers: {
@@ -141,8 +142,8 @@ function Career() {
                 },
                 body: `{  
               "sender":{  
-                  "name": ${fullname},
-                  "email": ${email}
+                  "name": "${fullname}",
+                  "email": "${email}"
               },
               "to":[  
                   {  
@@ -151,16 +152,19 @@ function Career() {
                   }
               ],
               "subject":"Career Form Fillup",
-              "htmlContent":"<html><head></head><body><p>Hello,</p>This is my first transactional email sent from Brevo.</p></body></html>",
-              "attachment": [{"content": "${file}", "name":"test.pdf"}]
-            }`,
+              "htmlContent":
+              "<html><head></head><body><h2>Career Form Fillup</h2><div><i> <b>Name</b> : ${fullname} </i></div><div><i> <b>Email</b> : ${email} </i></div><div><i> <b>Skills</b> : ${skills} </i></div><div><i> <b>Message</b> : ${message} </i></div></body></html>",
+              "attachment": [{"content": "${file}", "name":"${fullname}'s Resume.pdf"}]
+            }`
+
+
             })
                 .then(() => {
                     toast.success("Thank you for Filling out the Form")
                     e.target.reset()
                 })
-                .then((data) => console.log(data))
-                .catch((err) => console.log(err));
+                .then((data) => data)
+                .catch((err) => err);
         }
     }
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import { toast, Toaster } from 'react-hot-toast';
 
 function Contact() {
@@ -72,6 +71,17 @@ function Contact() {
     const [email, setEmail] = useState("")
     const [org, setOrg] = useState("")
     const [mobile, setMobile] = useState('')
+    const [checkVal, setCheckVal] = useState([]);
+
+    const getCheckVal = (e) => {
+        const { value, checked } = e.target
+        if (checked) {
+            setCheckVal([...checkVal, value])
+        }
+        else {
+            setCheckVal(checkVal.filter((e) => e !== value))
+        }
+    }
 
     const InputBlank = () => {
         let inputs = document.querySelectorAll(".text__input");
@@ -89,18 +99,43 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (name.length === 0 || email.length === 0 || org.length === 0 || mobile.length === 0) {
+        if (name.length === 0 && email.length === 0 && org.length === 0 && mobile.length === 0) {
             InputBlank();
         }
 
         if (name.length !== 0 && email.length !== 0 && org.length !== 0 && mobile.length !== 0) {
-
-            emailjs.sendForm("service_yvebkow", "template_tnb0vts", form.current, "xlslGdNMUBppt4K4T")
-                .then(() => {
-                    toast.success("Thank you for Filling out the Form")
-                    e.target.reset()
-                })
-        }
+            let services = checkVal.toString();
+            fetch("https://api.brevo.com/v3/smtp/email", {
+                method: "POST",
+                headers: {
+                    accept: "application/json",
+                    "api-key": import.meta.env.VITE_STMP_API_KEY,
+                    "content-type": "application/json",
+                    charset: "utf-8",
+                },
+                body: `{  
+              "sender":{  
+                  "name": "${name}",
+                  "email": "${email}"
+              },
+              "to":[  
+                  {  
+                    "email":"remodas7774@gmail.com",
+                    "name":"Sharadindu Das"
+                  }
+              ],
+              "subject":"Contact Form Fillup",
+              "htmlContent":
+              "<html><head></head><body><h2>Career Form Fillup</h2><div><i> <b>Name</b> : ${name} </i></div><div><i> <b>Email</b> : ${email} </i></div><div><i> <b>Organisation</b> : ${org} </i></div><div><i> <b>Phone Number</b> : ${mobile} </i></div><div><i> <b>Services</b> : ${services} </i></div></body></html>"
+            }`
+        })
+        .then(() => {
+            toast.success("Thank you for Filling out the Form")
+            e.target.reset()
+        })
+        .then((data) => data)
+        .catch((err) => err);
+}
     }
 
     useEffect(() => {
@@ -349,7 +384,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-10' className='checkbox' name='services' value="UI/UX" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-10' className='checkbox' name='services' value="UI/UX" />
                                                 <label htmlFor="checkbox-10" className='label'>UI/UX</label>
                                             </div>
                                         </div>
@@ -358,7 +393,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-20' className='checkbox' name='services' value="Front End Development" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-20' className='checkbox' name='services' value="Front End Development" />
                                                 <label htmlFor="checkbox-20" className='label'>Front End Development</label>
                                             </div>
                                         </div>
@@ -367,7 +402,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-30' className='checkbox' name='services' value="Web Application" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-30' className='checkbox' name='services' value="Web Application" />
                                                 <label htmlFor="checkbox-30" className='label'>Web Application</label>
                                             </div>
                                         </div>
@@ -376,7 +411,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-40' className='checkbox' name='services' value="Product Development" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-40' className='checkbox' name='services' value="Product Development" />
                                                 <label htmlFor="checkbox-40" className='label'>Product Development</label>
                                             </div>
                                         </div>
@@ -385,7 +420,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-50' className='checkbox' name='services' value="Cloud Management" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-50' className='checkbox' name='services' value="Cloud Management" />
                                                 <label htmlFor="checkbox-50" className='label'>Cloud Management</label>
                                             </div>
                                         </div>
@@ -394,7 +429,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-60' className='checkbox' name='services' value="Digital Marketing" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-60' className='checkbox' name='services' value="Digital Marketing" />
                                                 <label htmlFor="checkbox-60" className='label'>Digital Marketing</label>
                                             </div>
                                         </div>
@@ -403,7 +438,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-70' className='checkbox' name='services' value="Graphics Designing" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-70' className='checkbox' name='services' value="Graphics Designing" />
                                                 <label htmlFor="checkbox-70" className='label'>Graphics Designing</label>
                                             </div>
                                         </div>
@@ -412,7 +447,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-80' className='checkbox' name='services' value="App Development" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-80' className='checkbox' name='services' value="App Development" />
                                                 <label htmlFor="checkbox-80" className='label'>App Development</label>
                                             </div>
                                         </div>
@@ -421,7 +456,7 @@ function Contact() {
                                     <li>
                                         <div className="checkbox__parent">
                                             <div className="checkbox__child">
-                                                <input type="checkbox" id='checkbox-90' className='checkbox' name='services' value="Ecommerce" />
+                                                <input onChange={(e) => getCheckVal(e)} type="checkbox" id='checkbox-90' className='checkbox' name='services' value="Ecommerce" />
                                                 <label htmlFor="checkbox-90" className='label'>Ecommerce</label>
                                             </div>
                                         </div>
@@ -429,11 +464,6 @@ function Contact() {
 
                                 </ul>
                             </div>
-                            {/* <div className="contact-recaptcha">
-                                <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
-                                <div className="g-recaptcha" data-sitekey="6Lcq1PQUAAAAAAFCbD4Y2lY4r_ZBMw3Ceb1ZhblU"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcq1PQUAAAAAAFCbD4Y2lY4r_ZBMw3Ceb1ZhblU&amp;co=aHR0cHM6Ly93d3cudW5pdGVkbW9ua3MuY29tOjQ0Mw..&amp;hl=en&amp;v=4q6CtudrwcI-LSEYlfoEbDXg&amp;size=normal&amp;cb=d1xm0tt7rusr" width="304" height="78" role="presentation" name="a-pc4dsq5fi7p1" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" className="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
-                                <input type="hidden" name="gresponse" id="gresponse" value="" />
-                            </div> */}
                             <div className="contact__submit">
                                 <input type="submit" value="Submit" className='bg__green' />
                             </div>
