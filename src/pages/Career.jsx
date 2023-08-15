@@ -85,18 +85,6 @@ function Career() {
         }
     }
 
-    const getBase64 = (file) => {
-        var reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = function () {
-            setFile(reader.result);
-        };
-        reader.onerror = function (error) {
-            console.log("Error: ", error);
-        };
-    };
-
-
     const handleFile = (e) => {
         const file = e.target.files[0];
         const reader = new FileReader();
